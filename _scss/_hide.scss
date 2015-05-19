@@ -1,3 +1,5 @@
+/* --- HIDE START --- */
+
 #showhidediv, /*populære artikler*/
 .EXLFacebookIframe, /*Facebook Likes*/
 /*li#exlidTab0, /* Mitt bibliotek - fanen */ /* Trenger vi egentlig å ha denne ?*/
@@ -9,7 +11,7 @@ li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
 	display: none;
 }
 
-/* Skjuling av fasetter */
+/* hide unwanted facets */
 .EXLFacetContainer.facet_series, /*Serie*/
 .EXLFacetContainer.facet_jtitle, /*Tidsskrift*/
 .EXLFacetContainer.facet_collection, /*Kilde*/
@@ -25,7 +27,8 @@ li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
 #exlidFacetSublist2  { /*Liste med årstall*/
     display:none;
 }
-/* Må ta bort litt av luften nå som slideren og årstall-listen er tatt vekk. */
+/* Need to adjust margins since the slider and year-list is not rendered. */
 .EXLDateRangeLine {margin-bottom: .5em; margin-top: .5em;}
 .EXLDateRangeText {margin-bottom: 0;}
 
+/* --- HIDE END --- */
