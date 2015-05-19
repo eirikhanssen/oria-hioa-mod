@@ -1,0 +1,9 @@
+
+/* Definerer utseende og setter inn bilde i første infoboks */
+#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1{ border:1px solid #cfcfcf; width:220px; height:92px; float:left; background-image: url(http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/images/bg_banner_home_iPhone.png); background-repeat:no-repeat}
+
+/* Definerer utseende og setter inn blankt-bilde i andre infoboks */
+#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer2{ border:1px solid #cfcfcf; width:220px; height:92px; float:left;  margin-left:1em; background-image:url(http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/images/bg_strip_home_banners.png); background-repeat: no-repeat}
+
+
+
