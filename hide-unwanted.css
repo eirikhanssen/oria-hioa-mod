@@ -1,0 +1,11 @@
+#showhidediv, /*populære artikler*/
+.EXLFacebookIframe, /*Facebook Likes*/
+/*li#exlidTab0, /* Mitt bibliotek - fanen */ /* Trenger vi egentlig å ha denne ?*/
+/*li#exlidTab1, /* Alle bibliotek - fanen */ /* bør velges vekk i ORIA-adm-grensesnitt */
+li#exlidMainMenuItem1, /* Nytt søk*/ /* bør velges vekk i ORIA-adm-grensesnitt */
+li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
+.EXLLanguageLink a.EXLLanguageOptionLANGse_NO /* Samisk språk fra språkmenyen */
+{
+	display: none;
+}
+

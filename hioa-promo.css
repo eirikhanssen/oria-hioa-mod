@@ -1,0 +1,62 @@
+body #exlidHomeContainer {
+    color: black;
+}
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+    width: auto;
+    padding-left: 0;
+    float: none;
+}
+#exlidHomeContainer {
+    background: url('http://www.bibsys.no/files/out/discovery/Primo_UI_files/HIOA/oria-mouse-book.jpg');
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: 20rem, 20rem;
+    width: 100%;
+}
+/*#exlidHomeContainer*/
+
+div.EXLContentBlock1,
+div.EXLContentBlock2,
+div.EXLContentBlock3 {
+    margin-left: 3rem;
+}
+div#exlidHomeContainer.EXLCustomLayoutContainer {
+    margin-left: 0;
+}
+#hioaOriaSearchTips {
+    width: 50%;
+}
+@media screen and (max-width: 35rem) {
+    body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1,
+    body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2,
+    body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock3 {
+        margin-left: 0;
+        padding-left: 0.5rem;
+        margin-right: 0.5rem;
+        padding-right: 0;
+    }
+    #exlidHomeContainer {background: none;}
+    #hioaOriaSearchTips { width: 100%; }
+
+    /*MyPage servicebox*/
+    div.EXLCustomLayoutTile.EXLHomeBlockContainer2 {
+        position: relative;
+        width: 100%;
+    }
+    body #exlidHomeContainer div.EXLHomeBlockContainer2 div.EXLContentBlock3 {
+        float: none;
+    }
+    body #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannersContainer {
+        display: block;
+        float: none;
+    }
+    body #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1 {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    #exlidHomeContainer div.EXLContentBlock3 h4 {
+       margin-bottom: .25rem;
+    }
+
+}

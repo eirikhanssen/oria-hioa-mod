@@ -1,0 +1,31 @@
+#showhidediv, /*populære artikler*/
+.EXLFacebookIframe, /*Facebook Likes*/
+/*li#exlidTab0, /* Mitt bibliotek - fanen */ /* Trenger vi egentlig å ha denne ?*/
+/*li#exlidTab1, /* Alle bibliotek - fanen */ /* bør velges vekk i ORIA-adm-grensesnitt */
+li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
+.EXLLanguageLink a.EXLLanguageOptionLANGse_NO, /* Samisk språk fra språkmenyen */
+.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO /* Nynorsk språk fra språkmenyen */
+{
+	display: none;
+}
+
+/* Skjuling av fasetter */
+.EXLFacetContainer.facet_series, /*Serie*/
+.EXLFacetContainer.facet_jtitle, /*Tidsskrift*/
+.EXLFacetContainer.facet_collection, /*Kilde*/
+.EXLFacetContainer.facet_bibliography, /*Bibliografi*/
+.EXLFacetContainer.facet_tek_words, /*TEK-ord*/
+.EXLFacetContainer.facet_humord, /*Humord*/
+.EXLFacetContainer.facet_geographical_subject_headings, /*Geografiske emneord*/
+.EXLFacetContainer.facet_agrovoc, /*Agrovoc*/
+.EXLFacetContainer.facet_udc, /*UDK*/
+.EXLFacetContainer.facet_nlm, /*NLM*/
+.EXLFacetContainer.facet_uio_class, /*UIO-klassifikasjon*/
+#slider-range, /*Årstall slider*/
+#exlidFacetSublist2  { /*Liste med årstall*/
+    display:none;
+}
+/* Må ta bort litt av luften nå som slideren og årstall-listen er tatt vekk. */
+.EXLDateRangeLine {margin-bottom: .5em; margin-top: .5em;}
+.EXLDateRangeText {margin-bottom: 0;}
+

@@ -1,9 +1,78 @@
+@import url('hioa-hide.css');
+@import url('hioa-header.css');
+@import url('hioa-footer.css');
+@import url('hioa-usermenu.css');
+@import url('hioa-mainmenu.css');
+@import url('hioa-searchfield.css');
+@import url('hioa-resultspage.css');
+@import url('hioa-homepage.css');
+@import url('hioa-messagebox.css');
+@import url('hioa-langmenu.css');
+@import url('hioa-promo.css');
+@import url('hioa-frbr.css');
+@import url('mobile500pxfix.css');
 
-/* Definerer utseende og setter inn bilde i f�rste infoboks */
-#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1{ border:1px solid #cfcfcf; width:220px; height:92px; float:left; background-image: url(http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/images/bg_banner_home_iPhone.png); background-repeat:no-repeat}
+/*@import url('hioa-diagnostic.css');*/
 
-/* Definerer utseende og setter inn blankt-bilde i andre infoboks */
-#exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer2{ border:1px solid #cfcfcf; width:220px; height:92px; float:left;  margin-left:1em; background-image:url(http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/images/bg_strip_home_banners.png); background-repeat: no-repeat}
+/* Minker minimumsbredden til body for å unngå å måtte scrolle horisontalt  */
 
+/* body {background-color: white; min-width: 45rem;} */
 
+/* denne reglen klarer ikke msie<9 og da vil den gjelde for alle nyere nettlesere som også får andre tilpasninger*/
 
+/* HUSK å last oria med DEBUG MODE for å få ny css til å bli aktiv: append til slutten av url: &wroDevMode=true 
+dette tvinger serveren til å generere nytt css-stilark sammensatt av alle de forskjellige css-filene. */
+
+html {
+    background-color: white;
+}
+body {
+    background-color: white;
+    max-width: 85rem;
+    margin: auto;
+}
+
+/* skygge rundt siden START */
+/* Legger skygge-definisjonen inn i media query for å unngå horisontal scrollbar. 
+Det er bare aktuelt med skygge når siden er over maxbredden uansett. */
+/*Det oppstår nå horisontal scrollbar mellom 85 og 87 rem, men det er kanskje ikke noe problem.*/
+@media screen and (min-width: 85rem) {
+    html:root #contentEXL {
+        position: relative;
+    }
+    html:root #contentEXL:before {
+        position: absolute;
+        content: "";
+        width: 1rem;
+        height: 100%;
+        top: 0;
+        left: -1rem;
+        box-shadow: inset -1rem 0 1rem -1rem #999;
+    }
+    html:root #contentEXL:after {
+        position: absolute;
+        content: "";
+        width: 1rem;
+        height: 100%;
+        top: 0;
+        right: -1rem;
+        box-shadow: inset 1rem 0 1rem -1rem #999;
+    }
+}
+/* Skygge rundt siden SLUTT*/
+
+@media screen and (min-width: 35rem) {
+    html:root body {
+        min-width: 35rem;
+    }
+}
+/*body > * {
+    background-color: white;
+}*/
+
+@media screen and (max-width: 500px),
+screen and (max-width: 35rem) {
+    html:root body {
+        min-width: 10rem;
+    }
+}
