@@ -877,10 +877,19 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a:hover {
   background-color: #e67300; }
 
+.EXLDateRangeLine input {
+  margin-right: .75em; }
+
+.EXLSliderRefine {
+  display: inline-block;
+  padding: .75em 0; }
+
 .EXLDateRangeLine .EXLSliderRefine a {
   padding: 0.4em 0.8em;
   background-color: #0075B0;
-  margin-left: .5em; }
+  margin-left: 0em;
+  margin-top: .5em;
+  border: none; }
 
 .EXLDateRangeLine .EXLSliderRefine a:hover,
 .EXLDateRangeLine .EXLSliderRefine a:focus {
