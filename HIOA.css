@@ -537,7 +537,7 @@ tr.EXLResult:nth-child(2n) {
   left: 100%;
   margin: 0;
   top: 1.5em;
-  padding: 0;
+  padding: .25em 0;
   width: auto;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
   box-sizing: border-box;
@@ -555,12 +555,13 @@ tr.EXLResult:nth-child(2n) {
   position: relative;
   top: -.25em;
   display: inline;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.25em; }
 
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a,
 #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
   margin: 0;
-  padding: 0.4em 0.8em;
+  padding: 0.5em 0.8em;
   color: white;
   background: #0075B0;
   display: inline-block;
@@ -569,21 +570,29 @@ tr.EXLResult:nth-child(2n) {
   clear: none;
   min-width: 10em; }
 
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:hover,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:hover {
+  background: #e67300; }
+
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink {
   padding: 0;
   line-height: 2.5em; }
 
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
-  display: block; }
+  display: block;
+  color: white;
+  background: #0075B0;
+  margin: 0.25em .5em; }
 
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
-  background-color: #fcfcfc; }
+  color: white;
+  background: #e67300; }
 
 .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
   color: #555; }
 
 div.EXLResultsSortBy .EXLSortByLink a {
-  padding: .5em 1em;
+  padding: 0.5em 0.8em;
   line-height: 1.5em; }
 
 #resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover,
@@ -1029,7 +1038,7 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a {
   background-color: #0075B0;
   color: white;
-  padding: 0.4em 0.8em;
+  padding: 0.5em 0.8em;
   font-weight: normal;
   text-decoration: none; }
 
@@ -1053,7 +1062,7 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
   padding: .75em 0; }
 
 .EXLDateRangeLine .EXLSliderRefine a {
-  padding: 0.4em 0.8em;
+  padding: 0.5em 0.8em;
   background-color: #0075B0;
   margin-left: 0em;
   margin-top: .5em;
