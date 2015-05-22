@@ -220,6 +220,10 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
 		color: $button-fg;
 }
 
+.EXLResultsList td.EXLSummary {
+	padding: 1em 0;
+}
+
 /* SLUTT Treffliste*/
 
 @media screen and (max-width: 35rem) {

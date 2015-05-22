@@ -1,46 +1,47 @@
 /* --- FRBR START --- */
 
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-   width: auto;
-   text-align: right;
-   padding-left: 1rem;
-   /* negativ marg gjør at 'vis flere versjoner' ikke blir dyttet ned av tittelen */
-   margin-left: -3rem;
+	 width: auto;
+	 text-align: right;
+	 padding-left: 1rem;
+	 /* negativ marg gjør at 'vis flere versjoner' ikke blir dyttet ned av tittelen */
+	 margin-left: -3rem;
 }
 
 /*Fjerner skrå felt som bare er til for presentasjonens skyld*/
 #contentEXL span.EXLResultBgFRBR {display: none;}
 
 html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-   position: relative;
-   z-index: 1;
-   box-shadow: 0px -1px 3px inset #aaaaff;
-   background-color: white;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px -1px 3px inset #aaaaff;
+	background-color: white;
+	top: -1em;
 }
 
 html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
-   position: absolute;
-   top:0;right:0;bottom:0;left:0;
-   border-bottom-left-radius: 3em;
-   content:"";
-   box-shadow: 0px 1px 1px gray;
-   z-index: -1;
+	position: absolute;
+	top:0;right:0;bottom:0;left:0;
+	border-bottom-left-radius: 3em;
+	content:"";
+	box-shadow: 0px 1px 1px gray;
+	z-index: -1;
 }
 
 /* Tilpasninger ved smal bredde for å unngå kollison mellom 'vis flere versjoner' og tittel i treffet */
 @media screen and (max-width: 41rem) {
-   html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-      margin-left: -4rem;
-      padding-left: .5rem;
-   }
-   html:root #contentEXL .EXLResultTitle {
-      margin-right: 3rem;
-   }
+	html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
+		margin-left: -4rem;
+		padding-left: .5rem;
+	}
+	html:root #contentEXL .EXLResultTitle {
+		margin-right: 3rem;
+	}
 }
 
 /* sørg for at EXLResultTitle ikke havner under EXLResultFRBR, dvs 'vis flere versjoner'  */
 #contentEXL .EXLResultTitle {
-   margin-right: 1rem;
+	margin-right: 1rem;
 }
 
 /* --- FRBR END --- */
