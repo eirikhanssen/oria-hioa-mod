@@ -5,6 +5,13 @@ Maintained by Eirik Hanssen, HiOA
 
 ## Oria instances
 
+## 2015-restructuring
+This is the branch currently on the oria test instance for HiOA. 
+
+We are re-working the appearance of several links to make them more like buttons to make it easier to see and use them.
+
+The facet menu has undergone a facelift.
+
 ### Debug mode
 The oria server merges css rules from different sources, including institution modifications.
 
