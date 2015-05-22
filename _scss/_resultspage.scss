@@ -1,5 +1,5 @@
+@import 'vars';
 /* --- RESULTSPAGE START --- */
-
 /* START treffliste */
 /* Søkeresultatene - annenhver trefflinje får lysegrå bakgrunn */
 tr.EXLResult:nth-child(2n) {
@@ -18,6 +18,183 @@ tr.EXLResult:nth-child(2n) {
 /* Vis flere treff - måtte endre for at denne skal skille seg ut fra bakgrunnen i annenhvert treff */
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {background-color: #ffc;  border: 1px solid #ccc; border-top: none; border-right: none; border-bottom-left-radius: 3em;}
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}
+
+/* Results navigation */
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+	width: 12em;
+}
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
+	left: 100%;
+	margin: 0;
+	top: 1.5em;
+	padding: 0;
+	width: auto;
+	box-shadow: 0 0 1em rgba(0,0,0,0.75);
+	box-sizing: border-box;
+	border: 1px solid $button-bg;
+}
+
+#resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
+	top: auto;
+	bottom: -3em;
+}
+
+#resultsNumbersTile .EXLSortByLink  a:hover {
+	text-decoration: underline;
+}
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel{
+	position: relative;
+	top: -.25em;
+	display: inline;
+	font-weight: bold;
+}
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
+	margin: 0;
+	padding: $button-padding;
+	color: $button-fg;
+	background: $button-bg;
+	display: inline-block;
+	width: auto;
+	float: left;
+	clear: none;
+	min-width: 10em;
+}
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink {
+	padding: 0;
+	line-height: 2.5em;
+}
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
+	display: block;
+}
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
+	background-color: #fcfcfc;
+}
+
+.EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
+	color: #555;
+}
+
+div.EXLResultsSortBy .EXLSortByLink a {
+	padding: .5em 1em;
+	line-height: 1.5em;
+}
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLSortByLink a:hover {
+	text-decoration: underline;
+}
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
+	content: " … ↳";
+}
+
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
+	content: " … ↱";
+}
+
+.EXLResultsHeader {
+	text-align: center;
+}
+
+.EXLResultsHeader h1 {
+	text-align: center;
+	width: 100%;
+}
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+	float: none;
+	clear: both;
+	font-size: 0.8em;
+	margin: .5em auto .5em 1em;
+	padding: .5em 0;
+}
+.EXLResultsHeader div.EXLResultsNumbers {
+	width: auto;
+	float: none;
+}
+
+.EXLResultsHeader div.EXLResultsNavigation {
+	width: auto;
+	float: none;
+	display: inline-block;
+	margin: .5em auto 1em auto;
+	padding: 0;
+}
+
+div.EXLResultsNavigation .EXLDisplayedCount {
+	font-size: 1em;
+	padding: $resultPaginationSquare-padding;
+	background-color: $resultPaginationDisplayedCount-bg;
+	color: $resultPaginationDisplayedCount-fg;
+	width: $resultPaginationSquare-len;
+	height: $resultPaginationSquare-len;
+	line-height: $resultPaginationSquare-len;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	float: left;
+	margin: $resultPaginationSquare-margin;
+	border: 1px solid $resultPaginationSquare-bg;
+}
+div.EXLResultsNavigation a.EXLBriefResultsPagination {
+	font-size: 1em;
+	background-color: $resultPaginationSquare-bg;
+	color: $resultPaginationSquare-fg;
+	width: $resultPaginationSquare-len;
+	height: $resultPaginationSquare-len;
+	line-height: $resultPaginationSquare-len;
+	display: inline-block;
+	margin: $resultPaginationSquare-margin;
+	padding: 0;
+	float: left;
+	text-align: center;
+}
+div.EXLResultsNavigation a.EXLBriefResultsPagination a {
+	padding: $resultPaginationSquare-padding;
+	background-color: $resultPaginationSquare-bg;
+	color: $resultPaginationSquare-fg;
+	margin: 0;
+	padding: 0;
+	width: $resultPaginationSquare-len;
+	height: $resultPaginationSquare-len;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+}
+div.EXLResultsNavigation a.EXLBriefResultsPagination:hover,
+div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
+	background: $button-hover-bg;
+	color: $button-fg;
+	text-decoration: none;
+}
+
+a.EXLBriefResultsPaginationLinkPrevious {position: relative;}
+a.EXLBriefResultsPaginationLinkNext {position: relative;}
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPaginationLinkNext:last-child::after {
+	position: absolute;
+	text-align: center;
+	font-weight: bold;
+	background: transparent;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after {content: "<";}
+a.EXLBriefResultsPaginationLinkNext:last-child::after {content:">";}
+a.EXLBriefResultsPaginationLinkPrevious img, a.EXLBriefResultsPaginationLinkNext img { display: none; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after,
+a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
+		background: $button-hover-bg;
+		color: $button-fg;
+}
 
 /* SLUTT Treffliste*/
 

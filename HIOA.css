@@ -529,6 +529,174 @@ tr.EXLResult:nth-child(2n) {
   background-image: none;
   background-color: transparent; }
 
+/* Results navigation */
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  width: 12em; }
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
+  left: 100%;
+  margin: 0;
+  top: 1.5em;
+  padding: 0;
+  width: auto;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  border: 1px solid #0075B0; }
+
+#resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
+  top: auto;
+  bottom: -3em; }
+
+#resultsNumbersTile .EXLSortByLink a:hover {
+  text-decoration: underline; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel {
+  position: relative;
+  top: -.25em;
+  display: inline;
+  font-weight: bold; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
+  margin: 0;
+  padding: 0.4em 0.8em;
+  color: white;
+  background: #0075B0;
+  display: inline-block;
+  width: auto;
+  float: left;
+  clear: none;
+  min-width: 10em; }
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink {
+  padding: 0;
+  line-height: 2.5em; }
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
+  display: block; }
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
+  background-color: #fcfcfc; }
+
+.EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
+  color: #555; }
+
+div.EXLResultsSortBy .EXLSortByLink a {
+  padding: .5em 1em;
+  line-height: 1.5em; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLSortByLink a:hover {
+  text-decoration: underline; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
+  content: " … ↳"; }
+
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
+  content: " … ↱"; }
+
+.EXLResultsHeader {
+  text-align: center; }
+
+.EXLResultsHeader h1 {
+  text-align: center;
+  width: 100%; }
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  float: none;
+  clear: both;
+  font-size: 0.8em;
+  margin: .5em auto .5em 1em;
+  padding: .5em 0; }
+
+.EXLResultsHeader div.EXLResultsNumbers {
+  width: auto;
+  float: none; }
+
+.EXLResultsHeader div.EXLResultsNavigation {
+  width: auto;
+  float: none;
+  display: inline-block;
+  margin: .5em auto 1em auto;
+  padding: 0; }
+
+div.EXLResultsNavigation .EXLDisplayedCount {
+  font-size: 1em;
+  padding: 0;
+  background-color: #eee;
+  color: black;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 0.4em;
+  border: 1px solid #0075B0; }
+
+div.EXLResultsNavigation a.EXLBriefResultsPagination {
+  font-size: 1em;
+  background-color: #0075B0;
+  color: white;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+  margin: 0 0.4em;
+  padding: 0;
+  float: left;
+  text-align: center; }
+
+div.EXLResultsNavigation a.EXLBriefResultsPagination a {
+  padding: 0;
+  background-color: #0075B0;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box; }
+
+div.EXLResultsNavigation a.EXLBriefResultsPagination:hover,
+div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
+  background: #e67300;
+  color: white;
+  text-decoration: none; }
+
+a.EXLBriefResultsPaginationLinkPrevious {
+  position: relative; }
+
+a.EXLBriefResultsPaginationLinkNext {
+  position: relative; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPaginationLinkNext:last-child::after {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after {
+  content: "<"; }
+
+a.EXLBriefResultsPaginationLinkNext:last-child::after {
+  content: ">"; }
+
+a.EXLBriefResultsPaginationLinkPrevious img, a.EXLBriefResultsPaginationLinkNext img {
+  display: none; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after,
+a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
+  background: #e67300;
+  color: white; }
+
 /* SLUTT Treffliste*/
 /* --- RESULTSPAGE END --- */
 /* --- HOMEPAGE START --- */
