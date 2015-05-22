@@ -20,6 +20,19 @@ tr.EXLResult:nth-child(2n) {
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}
 
 /* Results navigation */
+.EXLTabsRibbon div li.EXLResultTab {padding: 0;}
+.EXLTabsRibbon div li.EXLResultTab + li.EXLResultTab {margin-left: .25em;}
+#exlidResultsTable .EXLResultTab a {
+	background-color: $button-bg;
+	color: $button-fg;
+	padding: $button-padding;
+}
+#exlidResultsTable .EXLResultTab a:hover {
+	background-color: $button-hover-bg;
+	color: $button-hover-fg;
+	padding: $button-padding;
+	text-decoration: none;
+}
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
 	width: 12em;
