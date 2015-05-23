@@ -558,7 +558,11 @@ tr.EXLResult:nth-child(2n) {
   width: auto;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
   box-sizing: border-box;
-  border: 1px solid #0075B0; }
+  border: 1px solid #0075B0;
+  background-color: white; }
+
+.EXLResultsHeader div.EXLResultsNumbers li.EXLSortByLink {
+  background: white; }
 
 #resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
   top: auto;
@@ -606,7 +610,8 @@ tr.EXLResult:nth-child(2n) {
   background: #e67300; }
 
 .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
-  color: #555; }
+  color: black;
+  padding: .25em 0; }
 
 div.EXLResultsSortBy .EXLSortByLink a {
   padding: 0.5em 0.8em;
@@ -622,11 +627,29 @@ div.EXLResultsSortBy .EXLSortByLink a {
 #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
   content: " … ↱"; }
 
+li.EXLSortByLinkSelected {
+  position: relative;
+  z-index: 1;
+  color: black; }
+
+li.EXLSortByLinkSelected::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: .25em .5em;
+  background-color: #eee;
+  box-sizing: border-box;
+  border: 1px solid #0075b0; }
+
 .EXLResultsHeader {
   text-align: center; }
 
 .EXLResultsHeader h1 {
-  text-align: center;
+  text-align: left;
   width: 100%; }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {

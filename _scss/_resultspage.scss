@@ -47,6 +47,11 @@ tr.EXLResult:nth-child(2n) {
 	box-shadow: 0 0 1em rgba(0,0,0,0.75);
 	box-sizing: border-box;
 	border: 1px solid $button-bg;
+	background-color: white;
+}
+
+.EXLResultsHeader div.EXLResultsNumbers li.EXLSortByLink {
+	background: white;
 }
 
 #resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
@@ -101,8 +106,11 @@ tr.EXLResult:nth-child(2n) {
 }
 
 .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
-	color: #555;
+	color: black;
+	padding: .25em 0;
 }
+
+
 
 div.EXLResultsSortBy .EXLSortByLink a {
 	padding: $button-padding;
@@ -122,12 +130,31 @@ div.EXLResultsSortBy .EXLSortByLink a {
 	content: " … ↱";
 }
 
+li.EXLSortByLinkSelected {
+	position:relative;
+	z-index: 1;
+	color:black;
+}
+li.EXLSortByLinkSelected::after {
+ position: absolute;
+ content: "";
+ z-index: -1;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ left: 0;
+ margin: .25em .5em;
+ background-color: #eee;
+ box-sizing: border-box;
+ border: 1px solid rgb(0, 117, 176);
+}
+
 .EXLResultsHeader {
 	text-align: center;
 }
 
 .EXLResultsHeader h1 {
-	text-align: center;
+	text-align: left;
 	width: 100%;
 }
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
