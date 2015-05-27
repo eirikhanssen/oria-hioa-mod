@@ -1,0 +1,112 @@
+@media screen and (max-width: 500px) {
+	/* enable "narrow down the results" in mobile layout */
+	
+	body #exliWhiteContent {
+		position: fixed;
+		width: auto;
+		height: auto;
+		top: .5em;
+		right: .5em;
+		left: .5em;
+		bottom: 3.5em;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		border: 1px solid $results-border-color;
+		background: white;
+	}
+	#exlidFacetsLightboxListWrapper {
+		padding-bottom: 3em;
+	}
+	#exlidFacetsLightboxTile {
+		height: auto;
+		width: 100%;
+		padding: .25em;
+		border: none;
+	}
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxListContainer {
+		padding: 0;
+		height: auto;
+		width: auto;
+		height: auto;
+		margin-bottom: 1em;
+	}
+	#exlidFacetsLightboxContainer {
+		height: auto;
+		width: 100%;
+		padding: 0;
+		background: red;
+	}
+	.EXLFacetsLightboxTabsRibbon {
+		padding-left: .5em;
+	}
+	.EXLFacetsLightboxTabsRibbon span {
+		margin-right: auto;
+		min-width: auto;
+	}
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
+		padding: 0;
+	}
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
+		margin-left: 1em;
+		margin-top: 0;
+	}
+	/* position buttons fixed */
+	
+	#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
+		position: fixed;
+		bottom: .5em;
+		left: 4%;
+		width: 44%;
+	}
+	#exlidFacetsLightboxContainer a.EXLSubmit {
+		height: 3em;
+		box-sizing: border-box;
+		width: 100%;
+		text-align: center;
+		line-height: 3em;
+		padding: 0;
+	}
+	#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {
+		position: fixed;
+		bottom: .5em;
+		right: 4%;
+		width: 44%;
+	}
+	#exlidFacetsLightboxContainer input.EXLReset {
+		height: 3em;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	/* style the rows with narrow down entries */
+	
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
+		font-size: 1.25em;
+		position: relative;
+		background-color: #f0f0f0;
+	}
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow + .EXLFacetsLightboxListRow {
+		margin-top: .5em;
+	}
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxListRow input[type="checkbox"].EXLChkInclude {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: .25em;
+		margin: auto;
+	}
+	#exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
+		margin-left: 0;
+		padding: .25em 0;
+		padding-left: 1.75em;
+	}
+	/* CSS to make labels clickable, the spans have to be renamed to label and add for attribute with JS to make it work  */
+	#exlidFacetsLightboxTile #exlidFacetsLightboxListWrapper label.legend {
+		display: block;
+		font-size: inherit;
+		height: auto;
+		width: auto;
+		position: static;
+		width: auto;
+		margin-left: 1.75em;
+	}
+}

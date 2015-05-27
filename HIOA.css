@@ -20,8 +20,8 @@ li#exlidMainMenuItem3,
 .EXLFacetContainer.facet_nlm,
 .EXLFacetContainer.facet_uio_class,
 #slider-range,
-#exlidFacetSublist2 {
-  /*Liste med årstall*/
+#exlidFacetSublist2,
+.EXLTabsRibbon .EXLReviewsTab {
   display: none; }
 
 /* Need to adjust margins since the slider and year-list is not rendered. */
@@ -499,6 +499,208 @@ html:root #exlidSearchRibbon fieldset {
     top: .25rem;
     box-shadow: 0 0 0.125rem rgba(136, 136, 136, 0.69); } }
 /* --- SEARCHFIELD END --- */
+/*@import '_rp_frbr';*/
+/* --- FRBR START --- */
+/* (Vis flere treff) */
+.EXLResultsList div.EXLSummaryContainer {
+  margin-top: .25em; }
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
+  top: 1px;
+  right: 0;
+  position: absolute; }
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a {
+  width: auto;
+  padding: 0.25em 0.4em;
+  color: white;
+  background: #0075B0;
+  text-decoration: none; }
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a:hover {
+  color: white;
+  background: #e67300; }
+
+/*Fjerner skrå felt som bare er til for presentasjonens skyld*/
+#contentEXL span.EXLResultBgFRBR {
+  display: none; }
+
+/* Tilpasninger ved smal bredde for å unngå kollison mellom 'vis flere versjoner' og tittel i treffet */
+/* sørg for at EXLResultTitle ikke havner under EXLResultFRBR, dvs 'vis flere versjoner'  */
+#contentEXL .EXLResultTitle {
+  /*margin-right: 1rem;*/ }
+
+/*.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {background-color: #ffc;  border: 1px solid #ccc; border-top: none; border-right: none; border-bottom-left-radius: 3em;}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}*/
+/* --- FRBR END --- */
+.EXLResultsTile,
+.EXLFacetTile {
+  box-sizing: border-box; }
+
+.EXLResultsContainer div.EXLResultsTile {
+  display: block;
+  width: 100%;
+  float: right;
+  margin-left: -16em;
+  padding-left: 16.5em; }
+
+.EXLFacetTile {
+  float: left;
+  display: inline-block;
+  width: 16em;
+  padding-right: .5em; }
+
+#exlidFacetTile,
+#exlidResultsContainer {
+  position: relative;
+  z-index: 1; }
+
+#exlidResultsContainer {
+  /* clearfix */
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: .5em; }
+
+#exlidResultsContainer::after {
+  /*clearfix*/
+  content: "";
+  display: table;
+  clear: both; }
+
+@media screen and (min-width: 501px) {
+  /* border between #exlidFacetTile and .EXLResultsContainer
+   when screen layout is bigger than 500px */
+  #exlidResultsContainer::after {
+    position: absolute;
+    top: .5em;
+    bottom: .5em;
+    content: "";
+    z-index: 2;
+    left: 16.5em;
+    border-left: 1px solid #666; }
+
+  #exlidFacetTile::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 100%;
+    top: 0;
+    bottom: -1em;
+    border-right: 1px solid #666; } }
+@media screen and (max-width: 500px) {
+  #exlidFacetTile {
+    margin-top: 4em;
+    display: block;
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  /* enable "narrow down the results" in mobile layout */
+  body #exliWhiteContent {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: .5em;
+    right: .5em;
+    left: .5em;
+    bottom: 3.5em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #666;
+    background: white; }
+
+  #exlidFacetsLightboxListWrapper {
+    padding-bottom: 3em; }
+
+  #exlidFacetsLightboxTile {
+    height: auto;
+    width: 100%;
+    padding: .25em;
+    border: none; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListContainer {
+    padding: 0;
+    height: auto;
+    width: auto;
+    height: auto;
+    margin-bottom: 1em; }
+
+  #exlidFacetsLightboxContainer {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    background: red; }
+
+  .EXLFacetsLightboxTabsRibbon {
+    padding-left: .5em; }
+
+  .EXLFacetsLightboxTabsRibbon span {
+    margin-right: auto;
+    min-width: auto; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
+    padding: 0; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
+    margin-left: 1em;
+    margin-top: 0; }
+
+  /* position buttons fixed */
+  #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
+    position: fixed;
+    bottom: .5em;
+    left: 4%;
+    width: 44%; }
+
+  #exlidFacetsLightboxContainer a.EXLSubmit {
+    height: 3em;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    line-height: 3em;
+    padding: 0; }
+
+  #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {
+    position: fixed;
+    bottom: .5em;
+    right: 4%;
+    width: 44%; }
+
+  #exlidFacetsLightboxContainer input.EXLReset {
+    height: 3em;
+    width: 100%;
+    box-sizing: border-box; }
+
+  /* style the rows with narrow down entries */
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
+    font-size: 1.25em;
+    position: relative;
+    background-color: #f0f0f0; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow + .EXLFacetsLightboxListRow {
+    margin-top: .5em; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow input[type="checkbox"].EXLChkInclude {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: .25em;
+    margin: auto; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
+    margin-left: 0;
+    padding: .25em 0;
+    padding-left: 1.75em; }
+
+  /* CSS to make labels clickable, the spans have to be renamed to label and add for attribute with JS to make it work  */
+  #exlidFacetsLightboxTile #exlidFacetsLightboxListWrapper label.legend {
+    display: block;
+    font-size: inherit;
+    height: auto;
+    width: auto;
+    position: static;
+    width: auto;
+    margin-left: 1.75em; } }
 /* --- RESULTSPAGE START --- */
 /* START treffliste */
 /* Søkeresultatene - annenhver trefflinje får lysegrå bakgrunn */
@@ -517,24 +719,11 @@ tr.EXLResult:nth-child(2n) {
   margin-bottom: 1em;
   font-style: italic; }
 
-/* Vis flere treff - måtte endre for at denne skal skille seg ut fra bakgrunnen i annenhvert treff */
-.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-  background-color: #ffc;
-  border: 1px solid #ccc;
-  border-top: none;
-  border-right: none;
-  border-bottom-left-radius: 3em; }
-
-.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {
-  background-image: none;
-  background-color: transparent; }
-
 /* Results navigation */
 .EXLTabsRibbon div li.EXLResultTab {
-  padding: 0; }
-
-.EXLTabsRibbon div li.EXLResultTab + li.EXLResultTab {
-  margin-left: .25em; }
+  margin: 0;
+  padding: .25em .2em;
+  height: 2em; }
 
 #exlidResultsTable .EXLResultTab a {
   background-color: #0075B0;
@@ -650,7 +839,8 @@ li.EXLSortByLinkSelected::after {
 
 .EXLResultsHeader h1 {
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box; }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
   float: none;
@@ -669,6 +859,9 @@ li.EXLSortByLinkSelected::after {
   display: inline-block;
   margin: .5em auto 1em auto;
   padding: 0; }
+
+#exlidResultsContainer {
+  padding-bottom: 1em; }
 
 div.EXLResultsNavigation .EXLDisplayedCount {
   font-size: 1em;
@@ -747,7 +940,25 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
   color: white; }
 
 .EXLResultsList td.EXLSummary {
-  padding: 1em 0; }
+  padding: 1.5em 0 1em 0;
+  position: relative; }
+
+.EXLResultsList, .EXLResultsList td {
+  border-color: #666; }
+
+.EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
+  width: auto; }
+
+.EXLResultsList div.EXLSummaryContainer {
+  box-sizing: border-box;
+  padding-right: .25em; }
+
+.EXLResultsList h3 {
+  font-style: italic;
+  margin-bottom: .5em; }
+
+.EXLResultsList h2 {
+  margin-bottom: .5em; }
 
 /* SLUTT Treffliste*/
 /* --- RESULTSPAGE END --- */
@@ -938,10 +1149,6 @@ div#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
 /* Languages - optimalisert layout for nyere nettlesere*/
 /* Smal layout, flytt language label over språkmenyen */
 @media screen and (max-width: 40rem) {
-  html:root #exlidResultsContainer {
-    padding-left: 0;
-    padding-right: 0rem; }
-
   html:root div.EXLResultsNavigation {
     margin-right: 1rem; } }
 /* --- LANGMENU END --- */
@@ -1007,49 +1214,6 @@ div#exlidHomeContainer.EXLCustomLayoutContainer {
   #exlidHomeContainer div.EXLContentBlock3 h4 {
     margin-bottom: .25rem; } }
 /* --- PROMO END --- */
-/* --- FRBR START --- */
-.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-  width: auto;
-  text-align: right;
-  padding-left: 1rem;
-  /* negativ marg gjør at 'vis flere versjoner' ikke blir dyttet ned av tittelen */
-  margin-left: -3rem; }
-
-/*Fjerner skrå felt som bare er til for presentasjonens skyld*/
-#contentEXL span.EXLResultBgFRBR {
-  display: none; }
-
-html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-  position: relative;
-  z-index: 1;
-  box-shadow: 0px -1px 3px inset #aaaaff;
-  background-color: white;
-  top: -1em; }
-
-html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-bottom-left-radius: 3em;
-  content: "";
-  box-shadow: 0px 1px 1px gray;
-  z-index: -1; }
-
-/* Tilpasninger ved smal bredde for å unngå kollison mellom 'vis flere versjoner' og tittel i treffet */
-@media screen and (max-width: 41rem) {
-  html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
-    margin-left: -4rem;
-    padding-left: .5rem; }
-
-  html:root #contentEXL .EXLResultTitle {
-    margin-right: 3rem; } }
-/* sørg for at EXLResultTitle ikke havner under EXLResultFRBR, dvs 'vis flere versjoner'  */
-#contentEXL .EXLResultTitle {
-  margin-right: 1rem; }
-
-/* --- FRBR END --- */
 /* --- MOBILE500PXFIX START --- */
 /* Denne lastes inn av primo ved max-width 500px */
 @media screen and (max-width: 500px) {
@@ -1061,8 +1225,12 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
 
   /* Skjuler labelen som er glemt skjult av mobile.css */
   /* Hent frem denne med sorterings drop down senere når css er klar. */
-  html:root .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel {
-    display: none; } }
+  html:root .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel,
+  #exlidResultsContainer div.EXLResultsSortBy {
+    display: none; }
+
+  html .EXLResultsHeader {
+    margin-bottom: .5em; } }
 /* --- MOBILE500PXFIX END --- */
 /* --- FACETS START --- */
 /* Decide how many facets are visible.
@@ -1135,7 +1303,7 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
   margin-bottom: .5em;
   padding: 0;
   margin-left: 0.3333em;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #666; }
 
 .EXLFacetContainer h4 {
   font-size: 1em;
@@ -1147,5 +1315,7 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
   margin-top: 0; }
 
 /* --- FACETS END --- */
+body {
+  min-width: auto; }
 
 /*# sourceMappingURL=HIOA.css.map */

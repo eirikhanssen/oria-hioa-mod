@@ -1,0 +1,72 @@
+@import 'vars';
+.EXLResultsTile,
+.EXLFacetTile {
+	box-sizing: border-box;
+}
+
+.EXLResultsContainer div.EXLResultsTile {
+	display: block;
+	width: 100%;
+	float: right;
+	margin-left: -$leftmenuwidth;
+	padding-left: $leftmenuwidth+.5em;
+}
+
+.EXLFacetTile {
+	float: left;
+	display: inline-block;
+	width: $leftmenuwidth;
+	padding-right: .5em;
+}
+
+#exlidFacetTile,
+#exlidResultsContainer {
+	position: relative;
+	z-index: 1;
+}
+
+#exlidResultsContainer {
+	/* clearfix */
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: .5em;
+}
+
+#exlidResultsContainer::after {
+	/*clearfix*/
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (min-width: 501px) {
+	/* border between #exlidFacetTile and .EXLResultsContainer
+	 when screen layout is bigger than 500px */
+	#exlidResultsContainer::after {
+		position: absolute;
+		top: .5em;
+		bottom: .5em;
+		content: "";
+		z-index: 2;
+		left: 16.5em;
+		border-left: 1px solid $results-border-color;
+	}
+	#exlidFacetTile::after {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	left: 100%;
+	top: 0;
+	bottom: -1em;
+	border-right: 1px solid $results-border-color;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#exlidFacetTile {
+		margin-top: 4em;
+		display: block;
+		width: 100%;
+	}
+}

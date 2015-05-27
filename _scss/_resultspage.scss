@@ -1,4 +1,8 @@
 @import 'vars';
+/*@import '_rp_frbr';*/
+@import 'rp_frbr_btn';
+@import 'rp_resultscontainer_layout';
+@import 'rp_narrow_results_mobile_popup';
 /* --- RESULTSPAGE START --- */
 /* START treffliste */
 /* Søkeresultatene - annenhver trefflinje får lysegrå bakgrunn */
@@ -15,13 +19,15 @@ tr.EXLResult:nth-child(2n) {
 .EXLResultsList p.EXLResultSnippet {
 	color: #555; margin-top: 1em; margin-bottom: 1em; font-style: italic;
 }
-/* Vis flere treff - måtte endre for at denne skal skille seg ut fra bakgrunnen i annenhvert treff */
-.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {background-color: #ffc;  border: 1px solid #ccc; border-top: none; border-right: none; border-bottom-left-radius: 3em;}
-.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}
 
 /* Results navigation */
-.EXLTabsRibbon div li.EXLResultTab {padding: 0;}
-.EXLTabsRibbon div li.EXLResultTab + li.EXLResultTab {margin-left: .25em;}
+
+.EXLTabsRibbon div li.EXLResultTab {
+	margin: 0;
+	padding: .25em .2em;
+	height: 2em;
+}
+
 #exlidResultsTable .EXLResultTab a {
 	background-color: $button-bg;
 	color: $button-fg;
@@ -35,7 +41,7 @@ tr.EXLResult:nth-child(2n) {
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
-	width: 12em;
+	width: $EXLResultsSortBy-width;
 }
 
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
@@ -156,6 +162,7 @@ li.EXLSortByLinkSelected::after {
 .EXLResultsHeader h1 {
 	text-align: left;
 	width: 100%;
+	box-sizing: border-box;
 }
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
 	float: none;
@@ -176,6 +183,10 @@ li.EXLSortByLinkSelected::after {
 	margin: .5em auto 1em auto;
 	padding: 0;
 }
+
+#exlidResultsContainer {
+		padding-bottom: 1em;
+	}
 
 div.EXLResultsNavigation .EXLDisplayedCount {
 	font-size: 1em;
@@ -248,8 +259,32 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
 }
 
 .EXLResultsList td.EXLSummary {
-	padding: 1em 0;
+	padding: 1.5em 0 1em 0;
+	position: relative;
 }
+
+.EXLResultsList, .EXLResultsList td {
+	border-color: $results-border-color;
+}
+
+.EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
+	width: auto;
+}
+
+.EXLResultsList div.EXLSummaryContainer {
+	box-sizing: border-box;
+	padding-right: .25em;
+}
+
+.EXLResultsList h3 {
+	font-style: italic;
+	margin-bottom: .5em;
+}
+
+.EXLResultsList h2 {
+	margin-bottom: .5em;
+}
+
 
 /* SLUTT Treffliste*/
 

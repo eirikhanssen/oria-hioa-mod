@@ -1,5 +1,6 @@
+@import 'vars';
 /* --- FRBR START --- */
-
+/* (Vis flere treff) */
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
 	 width: auto;
 	 text-align: right;
@@ -43,5 +44,10 @@ html:root .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR:after {
 #contentEXL .EXLResultTitle {
 	margin-right: 1rem;
 }
+
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {background-color: #ffc;  border: 1px solid #ccc; border-top: none; border-right: none; border-bottom-left-radius: 3em;}
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}
+
 
 /* --- FRBR END --- */

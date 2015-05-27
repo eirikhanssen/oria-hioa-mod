@@ -22,9 +22,11 @@ li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
 .EXLFacetContainer.facet_agrovoc, /*Agrovoc*/
 .EXLFacetContainer.facet_udc, /*UDK*/
 .EXLFacetContainer.facet_nlm, /*NLM*/
-.EXLFacetContainer.facet_uio_class, /*UIO-klassifikasjon*/
+.EXLFacetContainer.facet_uio_class,/*UIO-klassifikasjon*/
 #slider-range, /*Årstall slider*/
-#exlidFacetSublist2  { /*Liste med årstall*/
+#exlidFacetSublist2, /*Liste med årstall*/
+.EXLTabsRibbon .EXLReviewsTab /* Omtaler & tagger*/
+{ 
     display:none;
 }
 /* Need to adjust margins since the slider and year-list is not rendered. */
