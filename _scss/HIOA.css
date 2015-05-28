@@ -1099,11 +1099,15 @@ a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after, a.EXLBriefResu
   padding-right: 0.25em; }
 
 /* line 282, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
-.EXLResultsList h3 {
+h2.EXLResultTitle {
+  font-size: 1.25em; }
+
+/* line 286, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+.EXLResultsList h3.EXLResultAuthor {
   font-weight: bold;
   margin-bottom: 0.5em; }
 
-/* line 287, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 291, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList h2 {
   margin-bottom: 0.5em; }
 

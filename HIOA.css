@@ -956,7 +956,10 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
   box-sizing: border-box;
   padding-right: .25em; }
 
-.EXLResultsList h3 {
+h2.EXLResultTitle {
+  font-size: 1.25em; }
+
+.EXLResultsList h3.EXLResultAuthor {
   font-weight: bold;
   margin-bottom: .5em; }
 
