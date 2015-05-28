@@ -196,15 +196,18 @@ div.EXLResultsNavigation .EXLDisplayedCount {
 	width: $resultPaginationSquare-len;
 	height: $resultPaginationSquare-len;
 	line-height: $resultPaginationSquare-len;
+	font-size: $resultPaginationSquare-font-size;
+	font-weight: bold;
 	text-align: center;
 	display: inline-block;
 	box-sizing: border-box;
 	float: left;
 	margin: $resultPaginationSquare-margin;
-	border: 1px solid $resultPaginationSquare-bg;
+	border: 1px solid $resultPaginationDisplayedCount-bordercolor;
 }
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
-	font-size: 1em;
+	font-size: $resultPaginationSquare-font-size;
+	font-weight: bold;
 	background-color: $resultPaginationSquare-bg;
 	color: $resultPaginationSquare-fg;
 	width: $resultPaginationSquare-len;
@@ -277,7 +280,7 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
 }
 
 .EXLResultsList h3 {
-	font-style: italic;
+	font-weight: bold;
 	margin-bottom: .5em;
 }
 

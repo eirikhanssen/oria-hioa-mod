@@ -866,11 +866,13 @@ li.EXLSortByLinkSelected::after {
 div.EXLResultsNavigation .EXLDisplayedCount {
   font-size: 1em;
   padding: 0;
-  background-color: #eee;
+  background-color: white;
   color: black;
   width: 2em;
   height: 2em;
   line-height: 2em;
+  font-size: 1.15em;
+  font-weight: bold;
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
@@ -879,9 +881,10 @@ div.EXLResultsNavigation .EXLDisplayedCount {
   border: 1px solid #0075B0; }
 
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
-  font-size: 1em;
-  background-color: #0075B0;
-  color: white;
+  font-size: 1.15em;
+  font-weight: bold;
+  background-color: #eee;
+  color: #0075B0;
   width: 2em;
   height: 2em;
   line-height: 2em;
@@ -893,8 +896,8 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination {
 
 div.EXLResultsNavigation a.EXLBriefResultsPagination a {
   padding: 0;
-  background-color: #0075B0;
-  color: white;
+  background-color: #eee;
+  color: #0075B0;
   margin: 0;
   padding: 0;
   width: 2em;
@@ -954,7 +957,7 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
   padding-right: .25em; }
 
 .EXLResultsList h3 {
-  font-style: italic;
+  font-weight: bold;
   margin-bottom: .5em; }
 
 .EXLResultsList h2 {
