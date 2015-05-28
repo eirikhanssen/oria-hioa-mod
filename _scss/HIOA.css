@@ -821,35 +821,34 @@ tr.EXLResult:nth-child(2n) {
 /* line 19, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList p.EXLResultSnippet {
   color: #555;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin: 0.75em 0;
   font-style: italic; }
 
 /* Results navigation */
-/* line 25, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 27, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabsRibbon div li.EXLResultTab {
   margin: 0;
   padding: 0.25em 0.2em;
   height: 2em; }
 
-/* line 31, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 33, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #exlidResultsTable .EXLResultTab a {
   background-color: #0075B0;
   color: white;
   padding: 0.5em 0.8em; }
 
-/* line 36, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 38, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #exlidResultsTable .EXLResultTab a:hover {
   background-color: #e67300;
   color: white;
   padding: 0.5em 0.8em;
   text-decoration: none; }
 
-/* line 43, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 45, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
   width: 12em; }
 
-/* line 47, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 49, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
   left: 100%;
   margin: 0;
@@ -861,20 +860,20 @@ tr.EXLResult:nth-child(2n) {
   border: 1px solid #0075B0;
   background-color: white; }
 
-/* line 59, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 61, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers li.EXLSortByLink {
   background: white; }
 
-/* line 63, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 65, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
   top: auto;
   bottom: -3em; }
 
-/* line 68, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 70, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile .EXLSortByLink a:hover {
   text-decoration: underline; }
 
-/* line 72, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 74, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel {
   position: relative;
   top: -0.25em;
@@ -882,7 +881,7 @@ tr.EXLResult:nth-child(2n) {
   font-weight: bold;
   font-size: 1.25em; }
 
-/* line 81, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 83, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
   margin: 0;
   padding: 0.5em 0.8em;
@@ -894,56 +893,56 @@ tr.EXLResult:nth-child(2n) {
   clear: none;
   min-width: 10em; }
 
-/* line 94, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 96, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:hover, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:hover {
   background: #e67300; }
 
-/* line 98, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 100, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink {
   padding: 0;
   line-height: 2.5em; }
 
-/* line 103, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 105, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
   display: block;
   color: white;
   background: #0075B0;
   margin: 0.25em 0.5em; }
 
-/* line 109, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 111, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
   color: white;
   background: #e67300; }
 
-/* line 114, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 116, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
   color: black;
   padding: 0.25em 0; }
 
-/* line 121, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 123, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsSortBy .EXLSortByLink a {
   padding: 0.5em 0.8em;
   line-height: 1.5em; }
 
-/* line 127, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 129, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLSortByLink a:hover {
   text-decoration: underline; }
 
-/* line 131, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 133, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
   content: " … ↳"; }
 
-/* line 135, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 137, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
   content: " … ↱"; }
 
-/* line 139, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 141, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 li.EXLSortByLinkSelected {
   position: relative;
   z-index: 1;
   color: black; }
 
-/* line 144, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 146, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 li.EXLSortByLinkSelected::after {
   position: absolute;
   content: "";
@@ -957,17 +956,17 @@ li.EXLSortByLinkSelected::after {
   box-sizing: border-box;
   border: 1px solid #0075b0; }
 
-/* line 158, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 160, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader {
   text-align: center; }
 
-/* line 162, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 164, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader h1 {
   text-align: left;
   width: 100%;
   box-sizing: border-box; }
 
-/* line 167, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 169, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
   float: none;
   clear: both;
@@ -975,12 +974,12 @@ li.EXLSortByLinkSelected::after {
   margin: 0.5em auto 0.5em 1em;
   padding: 0.5em 0; }
 
-/* line 174, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 176, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers {
   width: auto;
   float: none; }
 
-/* line 179, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 181, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNavigation {
   width: auto;
   float: none;
@@ -988,11 +987,11 @@ li.EXLSortByLinkSelected::after {
   margin: 0.5em auto 1em auto;
   padding: 0; }
 
-/* line 187, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 189, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #exlidResultsContainer {
   padding-bottom: 1em; }
 
-/* line 191, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 193, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation .EXLDisplayedCount {
   font-size: 1em;
   padding: 0;
@@ -1010,7 +1009,7 @@ div.EXLResultsNavigation .EXLDisplayedCount {
   margin: 0 0.4em;
   border: 1px solid #0075B0; }
 
-/* line 208, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 210, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
   font-size: 1.15em;
   font-weight: bold;
@@ -1025,7 +1024,7 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination {
   float: left;
   text-align: center; }
 
-/* line 222, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 224, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation a.EXLBriefResultsPagination a {
   padding: 0;
   background-color: #eee;
@@ -1038,21 +1037,21 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination a {
   display: inline-block;
   box-sizing: border-box; }
 
-/* line 235, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 237, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation a.EXLBriefResultsPagination:hover, div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
   background: #e67300;
   color: white;
   text-decoration: none; }
 
-/* line 241, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 243, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious {
   position: relative; }
 
-/* line 242, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 244, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkNext {
   position: relative; }
 
-/* line 243, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 245, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPaginationLinkNext:last-child::after {
   position: absolute;
   text-align: center;
@@ -1063,51 +1062,51 @@ a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPag
   left: 0;
   right: 0; }
 
-/* line 254, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 256, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious:first-child::after {
   content: "<"; }
 
-/* line 255, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 257, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkNext:last-child::after {
   content: ">"; }
 
-/* line 256, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 258, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious img, a.EXLBriefResultsPaginationLinkNext img {
   display: none; }
 
-/* line 259, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 261, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after, a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
   background: #e67300;
   color: white; }
 
-/* line 264, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 266, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList td.EXLSummary {
   padding: 1.5em 0 1em 0;
   position: relative; }
 
-/* line 269, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 271, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList, .EXLResultsList td {
   border-color: #666; }
 
-/* line 273, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 275, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
   width: auto; }
 
-/* line 277, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 279, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList div.EXLSummaryContainer {
   box-sizing: border-box;
   padding-right: 0.25em; }
 
-/* line 282, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 284, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 h2.EXLResultTitle {
   font-size: 1.25em; }
 
-/* line 286, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 288, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList h3.EXLResultAuthor {
   font-weight: bold;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.75em; }
 
-/* line 291, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+/* line 293, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList h2 {
   margin-bottom: 0.5em; }
 
