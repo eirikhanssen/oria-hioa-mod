@@ -43,9 +43,7 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 	width: 100%;
 }
 
-#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {
-	border: none;
-}
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {}
 /* Styling av språkvalg som ikke er aktiv */
 
 #exlidHeaderContainer #exlidMainMenuTile #exlidLanguages a {
@@ -66,26 +64,21 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 /* border top når språkmenyen vises for at man skal skille valgene bedre */
 
 #exlidMainMenuTile .EXLLanguageMenuShow li#exlidSelectedLanguage {
-	border-top: 1px solid #ddd;
+	border: none;
 }
 /* Ekstra vertikal luft rundt språkvalgene gjør det lettere å trykke riktig */
 
 .EXLLanguageMenuHide a,
-.EXLLanguageMenuHide.EXLLanguageMenuShow a {
-	height: 1.5rem;
-	line-height: 1.5rem;
-}
-
+.EXLLanguageMenuHide.EXLLanguageMenuShow a,
 .EXLLanguageMenuShow a {
 	height: 1.75rem;
-	line-height: 1.75rem;
+	line-height: 1.5rem;
 }
-
-.EXLLanguageMenuShow a {
+/*.EXLLanguageMenuShow a {
 	font-size: 1em;
 	display: block;
 	padding: 0;
-}
+}*/
 
 .EXLLanguageMenuShow.EXLLanguageMenuHide a {
 	font-size: 1em;
@@ -98,40 +91,45 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 	padding: 0;
 }
 
-#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li + li {
-	border-top: 1px solid #ddd;
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {
+	border: none;
 }
+/*#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li + li {
+	border-top: 1px solid #ddd;
+}*/
 /*bedre plassering av drop-down-pil*/
 /*li.EXLLanguageLink {padding-right: 1.5em;}*/
 
-li#exlidSelectedLanguage {
+li.EXLLanguageLink {
 	position: relative;
 }
 
-li#exlidSelectedLanguage img:last-child {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	bottom: 0;
-	left: auto;
-	right: 5px;
+li.EXLLanguageLink a {
+	padding: 0;
+	height: 2.25em;
+	line-height: 2em;
+	text-align: center;
+	display: block;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	margin: 0;
 }
-/* bedre plassering for flagg */
 
-ul#exlidLanguages img:first-child {
+li.EXLLanguageLink + li a {
+	margin-top: -1px;
+}
+
+li.EXLLanguageLink img:first-child {
 	position: static;
 	vertical-align: middle;
 	margin-left: 5px;
 }
-/* viktig at den fyller 100% av sin parent */
+
 
 ul#exlidLanguages.EXLLanguageMenuShow {
 	width: 100%;
-	/* Skygge under språkmeny når alle valgene visesv */
-
 	box-shadow: 0 0 5px black;
 }
-/* Fjern skyggen under språkmeny når bare valgt språk vises */
 
 ul#exlidLanguages.EXLLanguageMenuHide {
 	box-shadow: none;
@@ -141,12 +139,54 @@ ul#exlidLanguages.EXLLanguageMenuHide {
 div#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
 	display: none;
 }
-/* Languages - optimalisert layout for nyere nettlesere*/
-/* Smal layout, flytt language label over språkmenyen */
+/* Narrow langmenu */
 
-@media screen and (max-width: 40rem) {
-	html:root div.EXLResultsNavigation {
-		margin-right: 1rem;
+html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+		position: absolute;
+		margin: 0 auto;
+		margin-right: 1px;
+		box-sizing: border-box;
+		width: 10em;
+		border: none;
+		float: none;
+		height: 2em;
+	}
+
+#exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink img[src$="arrow_sendTo.png"] {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: auto;
+		right: 5px;
+	}
+	#exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink img {
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: .4em;
+		right: auto;
+	}
+	#exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
+		float: none;
+		position: absolute;
+		z-index: 2;
+		border: 1px solid black;
+	}
+
+@media screen and (max-width: 500px) {
+	#exlidMainMenuTile div.EXLLanguagesContainer {
+		display: block !important;
+	}
+	#exlidUserAreaRibbon li:not([id]) {
+		display: none;
+	}
+	html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+		display: block;
+		width: auto;
+		position: static;
+		margin: 1px auto;
 	}
 }
 /* --- LANGMENU END --- */

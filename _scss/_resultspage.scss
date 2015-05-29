@@ -178,12 +178,13 @@ li.EXLSortByLinkSelected::after {
 	float: none;
 }
 
-.EXLResultsHeader div.EXLResultsNavigation {
+.EXLResultsContainer .EXLResultsHeader div.EXLResultsNavigation {
 	width: auto;
 	float: none;
 	display: inline-block;
-	margin: .5em auto 1em auto;
+	margin: .5em auto;
 	padding: 0;
+	font-size: $resultPaginationSquare-font-size;
 }
 
 #exlidResultsContainer {
@@ -198,7 +199,6 @@ div.EXLResultsNavigation .EXLDisplayedCount {
 	width: $resultPaginationSquare-len;
 	height: $resultPaginationSquare-len;
 	line-height: $resultPaginationSquare-len;
-	font-size: $resultPaginationSquare-font-size;
 	font-weight: bold;
 	text-align: center;
 	display: inline-block;
@@ -208,7 +208,7 @@ div.EXLResultsNavigation .EXLDisplayedCount {
 	border: 1px solid $resultPaginationDisplayedCount-bordercolor;
 }
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
-	font-size: $resultPaginationSquare-font-size;
+	font-size: 1em;
 	font-weight: bold;
 	background-color: $resultPaginationSquare-bg;
 	color: $resultPaginationSquare-fg;
