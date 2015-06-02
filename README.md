@@ -24,8 +24,7 @@ This is done by appending ```&wroDevMode=true``` to the end of the oria-url.
 - **Production instance in debug mode**: http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=HIOA&wroDevMode=true
 
 ### Testing instances
-- **Test instance**: http://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?
-vid=HIOA
+- **Test instance**: http://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?vid=HIOA
 - **Test instance - welcome page in debug mode** 
     - http://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?vid=HIOA&wroDevMode=true
 - **Test instance - search hits page in debug mode**
