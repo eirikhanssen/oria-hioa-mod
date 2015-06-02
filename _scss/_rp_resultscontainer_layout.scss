@@ -12,11 +12,24 @@
 	padding-left: $leftmenuwidth+.5em;
 }
 
+@media screen and (min-width: $leftmenu-wide-breakpoint) {
+	.EXLResultsContainer div.EXLResultsTile {
+		margin-left: -$leftmenu-wide-width;
+		padding-left: $leftmenu-wide-width +1em;}
+}
+
 .EXLFacetTile {
 	float: left;
 	display: inline-block;
 	width: $leftmenuwidth;
 	padding-right: .5em;
+}
+
+@media screen and (min-width: $leftmenu-wide-breakpoint) {
+	.EXLFacetTile {
+		width: $leftmenu-wide-width;
+		padding-right: 1em;
+	}
 }
 
 #exlidFacetTile,
@@ -49,17 +62,23 @@
 		bottom: .5em;
 		content: "";
 		z-index: 2;
-		left: 16.5em;
+		left: $leftmenuwidth + .5em;
 		border-left: 1px solid $results-border-color;
 	}
 	#exlidFacetTile::after {
-	position: absolute;
-	content: "";
-	z-index: -1;
-	left: 100%;
-	top: 0;
-	bottom: -1em;
-	border-right: 1px solid $results-border-color;
+		position: absolute;
+		content: "";
+		z-index: -1;
+		left: 100%;
+		top: 0;
+		bottom: -1em;
+		border-right: 1px solid $results-border-color;
+		}
+	/* adjust the border placement when the left-menu is wide */
+	@media screen and (min-width: $leftmenu-wide-breakpoint) {
+		#exlidResultsContainer::after {
+			left: $leftmenu-wide-width + .5em;
+		}
 	}
 }
 
