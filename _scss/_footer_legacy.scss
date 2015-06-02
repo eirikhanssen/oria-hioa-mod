@@ -1,4 +1,3 @@
-@import 'vars';
 /* --- FOOTER START --- */
 
 #footerEXL,
@@ -6,12 +5,12 @@
 /* Wrapper rundt footeren */
 
 {
-    background-color: $footer-bg;
+    background-color: black;
     background-image: none;
 }
 #footerEXL *,
 .EXLFooterTile * {
-    /*color: white;*/
+    color: white;
 }
 
 /* footer link colors specified in hioa-header.css (uses the same colors) */
@@ -38,7 +37,7 @@
         height: 2rem;
         float: left;
         /*background-color: #808080;*/
-        /*color: white;*/
+        color: white;
         border: none;
         position: relative;
     }

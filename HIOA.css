@@ -35,7 +35,7 @@ li#exlidMainMenuItem3,
 /* --- HIDE END --- */
 /* --- HEADER START --- */
 div#exlidHeaderContainer {
-  background-color: black; }
+  background-color: transparent; }
 
 /* denne må være relative slik at langmenu kan posisjoneres i forhold til denne */
 html:root div#exlidHeaderContainer {
@@ -43,7 +43,7 @@ html:root div#exlidHeaderContainer {
 
 /* Denne borderen er nødvendig for at språkmenyen skal holdes innenfor den sorte bakgrunnen i headeren */
 #exlidMainMenuTile {
-  border-bottom: 2px solid black; }
+  /*border-bottom: 2px solid black;*/ }
 
 /* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
 /* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
@@ -62,7 +62,7 @@ html:root #exlidHeaderTile {
   top: -.2em;
   width: 72px;
   min-height: 67px;
-  background-color: black;
+  background-color: transparent;
   background-image: url("hioa-blue-nor-portrait-72x67.png");
   background-position: -9999px -9999px;
   background-repeat: no-repeat; }
@@ -104,7 +104,7 @@ a.hioalogo:hover {
 
 a.hioasearchtitle:link,
 a.hioasearchtitle:visited {
-  color: white;
+  /*color: white;*/
   text-decoration: none; }
 
 a.hioasearchtitle:hover,
@@ -134,7 +134,7 @@ a.hioasearchtitle:active {
 .EXLFooterTile a:link,
 #footerEXL a:visited,
 .EXLFooterTile a:visited {
-  color: white; }
+  /*color: white;*/ }
 
 #exlidMainMenuContainer a:hover,
 #exlidMainMenuContainer a:active,
@@ -153,12 +153,12 @@ a.hioasearchtitle:active {
 #footerEXL,
 .EXLFooterTile
  {
-  background-color: black;
+  background-color: transparent;
   background-image: none; }
 
 #footerEXL *,
 .EXLFooterTile * {
-  color: white; }
+  /*color: white;*/ }
 
 /* footer link colors specified in hioa-header.css (uses the same colors) */
 @media screen and (max-width: 35rem) {
@@ -181,7 +181,7 @@ a.hioasearchtitle:active {
     height: 2rem;
     float: left;
     /*background-color: #808080;*/
-    color: white;
+    /*color: white;*/
     border: none;
     position: relative; }
 
@@ -317,6 +317,94 @@ html:root #exlidMainMenuRibbon {
     height: auto; } }
 /* --- MAINMENU END --- */
 /* --- SEARCHFIELD START --- */
+#exlidSearchTile {
+  border-top: 5px solid #ccc;
+  border-bottom: 5px solid #ccc; }
+
+#exlidSearchRibbon div.EXLSearchFieldRibbon {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+#exlidSearchTabs {
+  margin-bottom: 1.3em;
+  position: static;
+  /*padding-top: 2px;*/ }
+
+#exlidSearchRibbon #exlidSearchTabs li {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0 .5em;
+  height: 1.75em;
+  font-size: 1em;
+  background-color: #eee;
+  position: relative;
+  z-index: 50;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-bottom-color: transparent;
+  top: 10px; }
+
+#exlidSearchRibbon #exlidSearchTabs li span {
+  line-height: 1.75em; }
+
+#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected {
+  background-color: white;
+  border: 1px solid #0075B0;
+  padding-bottom: 1px;
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  z-index: 51; }
+
+#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: -1px;
+  right: -1px;
+  border: 1px solid #0075B0;
+  border-bottom-color: white; }
+
+#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::before {
+  content: "";
+  border-left: 1px solid #0075B0;
+  border-right: 1px solid #0075B0;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  z-index: 55;
+  top: auto;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  box-sizing: border-box; }
+
+#exlidSearchRibbon #exlidSearchTabs li + li {
+  margin-left: 1em; }
+
+#exlidSearchRibbon div.EXLSearchFieldRibbon {
+  border: 1px solid #0075B0;
+  position: relative;
+  z-index: 50; }
+
+#exlidSearchTile {
+  padding: 1em;
+  font-size: 1em;
+  height: auto;
+  background-image: none;
+  float: none;
+  box-sizing: border-box; }
+
+#exlidSearchTile::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 div.EXLSearchFieldRibbonFormLinks {
   margin-left: 1em; }
 
@@ -324,7 +412,9 @@ div.EXLSearchFieldRibbonFormLinks {
 #exlidSearchRibbon input#goButton.submit {
   border: none;
   border-radius: 0;
-  font-weight: bold; }
+  font-weight: normal;
+  font-size: 1.25em;
+  background-image: none; }
 
 /* Utnytte hele bredden til søkefeltet */
 html:root #exlidSearchRibbon {
@@ -333,17 +423,18 @@ html:root #exlidSearchRibbon {
 
 /* Sette bredde på søk-knappen */
 html:root #exlidSearchRibbon input#goButton {
-  width: 4rem;
+  width: 100%;
+  height: 100%;
   float: right;
   border: none;
-  padding-top: 0; }
+  padding: 0; }
 
 /* gjør søkefeltet tykkere vertikalt */
 html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
 html:root .EXLSearchFieldRibbonFormFields,
 html:root .EXLClearSimpleSearchBoxButtonClose,
-html:root #exlidSearchRibbon input#goButton {
-  height: 2rem; }
+html:root .EXLSearchFieldRibbonFormSubmitSearch {
+  height: 2.5rem; }
 
 /* søkefeltet */
 html:root .EXLSearchFieldRibbonFormFields,
@@ -358,13 +449,15 @@ html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
   box-sizing: border-box;
   width: 100%;
   padding-right: 6.5rem;
-  padding-left: .25rem;
-  height: 2rem; }
+  padding-left: .5rem;
+  height: 2.5rem; }
 
 /* søkeknapp */
 html:root .EXLSearchFieldRibbonFormSubmitSearch {
-  width: 4rem;
-  margin-left: -4rem; }
+  width: 6rem;
+  margin-left: -6rem;
+  box-sizing: border-box;
+  padding: 1px; }
 
 /* Søkeknappen i avansert søk - da må den ikke ha negativ marg  */
 html:root #exlidAdvancedSearchTile .EXLSearchFieldRibbonFormSubmitSearch {
@@ -373,23 +466,36 @@ html:root #exlidAdvancedSearchTile .EXLSearchFieldRibbonFormSubmitSearch {
 /* Trekke clear-søk knappen til plassen sin */
 html:root .EXLSearchFieldRibbonFormSearchClear {
   width: 2rem;
-  margin-left: -6.25rem; }
+  margin-left: -8.75rem; }
 
 /* Setter bredden på nullstill-knappen litt utenfor ikonet */
 /* Det blir da .5rem luft til søkeknappen for å unngå feiltrykk */
 html:root .EXLClearSimpleSearchBoxButtonClose {
-  width: 2rem; }
+  width: 2.5rem; }
+
+.EXLSearchFieldRibbonAdvancedSearchLink,
+.EXLSearchFieldRibbonBrowseSearchLink {
+  width: auto; }
+
+.EXLSearchFieldRibbonAdvancedSearchLink {
+  margin: 0;
+  margin-right: 2%; }
+
+.EXLSearchFieldRibbonBrowseSearchLink {
+  margin-right: 2em; }
+
+#exlidSearchTile a.EXLSearchFieldRibbonAdvancedTwoLinks {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+  float: right;
+  margin: .25em 0 0 0; }
 
 /* Flytte søkefeltet ++ litt til høyre */
 html:root #exlidSearchRibbon fieldset {
-  position: relative;
-  left: .5rem;
   overflow: hidden; }
 
 /* Luft mellom Avansert Søk og Bla i innhold lenkene til søkeknappen */
-html:root a.EXLSearchFieldRibbonAdvancedTwoLinks {
-  padding-left: .3rem; }
-
 /* Øker skriftstørrelsen i søkefeltet litt for bedre lesbarhet */
 html:root input#search_field {
   font-size: 1.125rem;
@@ -403,14 +509,6 @@ html:root input#search_field {
 /* Optimalisert layout for moderne nettlesere (de støtter element:root selectoren) */
 /* Unngår at reglene treffer msie<=8 som kan skape problemer  */
 /* search */
-html:root a.EXLSearchFieldRibbonAdvancedTwoLinks {
-  padding: 0;
-  height: 1rem;
-  display: block;
-  text-align: left;
-  padding-left: .5rem;
-  margin-bottom: -1px; }
-
 html:root #exlidSearchRibbon {
   position: relative; }
 
@@ -419,22 +517,16 @@ html:root #exlidSearchRibbon {
     margin: 0;
     top: .5rem; } }
 /* lenkene avansert søk og browse søk plasseres til høyre for søkeknapp */
-html:root div.EXLSearchFieldRibbonAdvancedSearchLink,
-html:root div.EXLSearchFieldRibbonBrowseSearchLink {
-  width: 6rem;
-  position: absolute;
-  right: 0;
-  bottom: -3rem; }
-
-html:root div.EXLSearchFieldRibbonAdvancedSearchLink {
-  bottom: -2rem; }
-
-/*søkefeltet*/
 html:root #exlidSearchRibbon fieldset {
-  position: absolute;
-  right: 6rem;
-  width: auto; }
+  display: block;
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  float: left; }
 
+@media screen and (min-width: 501px) {
+  html:root #exlidSearchRibbon fieldset {
+    /*padding-right: 8rem;*/ } }
 /* TODO: Må gå gjennom mobiltilpasset css */
 @media screen and (max-width: 35rem) {
   html:root .EXLSearchFieldRibbonAdvancedSearchLink,
@@ -481,7 +573,6 @@ html:root #exlidSearchRibbon fieldset {
     position: absolute;
     bottom: -2.5rem;
     z-index: 200;
-    width: 100%;
     left: 0;
     right: 0;
     margin: auto;
@@ -580,15 +671,15 @@ html:root #exlidSearchRibbon fieldset {
 @media screen and (min-width: 501px) {
   /* border between #exlidFacetTile and .EXLResultsContainer
    when screen layout is bigger than 500px */
-  #exlidResultsContainer::after {
-    position: absolute;
-    top: .5em;
-    bottom: .5em;
-    content: "";
-    z-index: 2;
-    left: 16.5em;
-    border-left: 1px solid #666; }
-
+  /*#exlidResultsContainer::after {
+  	position: absolute;
+  	top: .5em;
+  	bottom: .5em;
+  	content: "";
+  	z-index: 2;
+  	left: $leftmenuwidth + .5em;
+  	border-left: 1px solid $results-border-color;
+  }*/
   #exlidFacetTile::after {
     position: absolute;
     content: "";
@@ -598,10 +689,12 @@ html:root #exlidSearchRibbon fieldset {
     bottom: -1em;
     border-right: 1px solid #666; }
 
-  /* adjust the border placement when the left-menu is wide */ }
-@media screen and (min-width: 501px) and (min-width: 70em) {
-  #exlidResultsContainer::after {
-    left: 20.5em; } }
+  /*adjust the border placement when the left-menu is wide */
+  /*@media screen and (min-width: $leftmenu-wide-breakpoint) {
+  	#exlidResultsContainer::after {
+  		left: $leftmenu-wide-width + .5em;
+  	}
+  }*/ }
 @media screen and (max-width: 500px) {
   #exlidFacetTile {
     margin-top: 4em;
@@ -1183,7 +1276,7 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
   float: none;
   position: absolute;
   z-index: 2;
-  border: 1px solid black; }
+  border: none; }
 
 @media screen and (max-width: 500px) {
   #exlidMainMenuTile div.EXLLanguagesContainer {

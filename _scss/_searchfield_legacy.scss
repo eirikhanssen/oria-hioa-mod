@@ -1,0 +1,216 @@
+/* --- SEARCHFIELD START --- */
+
+div.EXLSearchFieldRibbonFormLinks {
+    margin-left: 1em;
+}
+/* Opera 12.6 browser styles bruker en sort border her som ikke tar seg fint ut */
+
+#exlidSearchRibbon input#goButton.submit {
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+}
+/* Utnytte hele bredden til søkefeltet */
+
+html:root #exlidSearchRibbon {
+    width: 100%;
+    padding-left: 0;
+}
+/* Sette bredde på søk-knappen */
+
+html:root #exlidSearchRibbon input#goButton {
+    width: 4rem;
+    float: right;
+    border: none;
+    padding-top: 0;
+}
+/* gjør søkefeltet tykkere vertikalt */
+
+html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
+html:root .EXLSearchFieldRibbonFormFields,
+html:root .EXLClearSimpleSearchBoxButtonClose,
+html:root #exlidSearchRibbon input#goButton {
+    height: 2rem;
+}
+/* søkefeltet */
+
+html:root .EXLSearchFieldRibbonFormFields,
+html:root .EXLSearchFieldRibbonFormSearchForMaximized .EXLSearchFieldRibbonFormSearchFor {
+    width: 100% !important;
+    padding-left: 0;
+}
+/* Selve input som man søker i */
+
+/* box-sizing: border-box er helt nødvendig for å beregne plass riktig. Må sjekke kompatibilitet. */
+
+/* padding for å gi plass til søk og tøm-søk knappene */
+
+html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 6.5rem;
+    padding-left: .25rem;
+    height: 2rem;
+}
+/* søkeknapp */
+
+html:root .EXLSearchFieldRibbonFormSubmitSearch {
+    width: 4rem;
+    margin-left: -4rem;
+}
+/* Søkeknappen i avansert søk - da må den ikke ha negativ marg  */
+
+html:root #exlidAdvancedSearchTile .EXLSearchFieldRibbonFormSubmitSearch {
+    margin: 0;
+}
+/* Trekke clear-søk knappen til plassen sin */
+
+html:root .EXLSearchFieldRibbonFormSearchClear {
+    width: 2rem;
+    margin-left: -6.25rem;
+}
+/* Setter bredden på nullstill-knappen litt utenfor ikonet */
+
+/* Det blir da .5rem luft til søkeknappen for å unngå feiltrykk */
+
+html:root .EXLClearSimpleSearchBoxButtonClose {
+    width: 2rem;
+}
+/* Flytte søkefeltet ++ litt til høyre */
+
+html:root #exlidSearchRibbon fieldset {
+    position: relative;
+    left: .5rem;
+    overflow: hidden;
+}
+/* Luft mellom Avansert Søk og Bla i innhold lenkene til søkeknappen */
+
+html:root a.EXLSearchFieldRibbonAdvancedTwoLinks {
+    padding-left: .3rem;
+}
+/* Øker skriftstørrelsen i søkefeltet litt for bedre lesbarhet */
+
+html:root input#search_field {
+    font-size: 1.125rem;
+    line-height: 1rem;
+    /*margin-top: 5px;*/
+}
+/* Kanskje unødvendig, men setter bakgrunnsfargen til hvit siden den ligger strukturelt inne i headeren som er sort */
+
+#exlidSearchTile {
+    background-color: #e1e9ef;
+}
+/* Optimalisert layout for moderne nettlesere (de støtter element:root selectoren) */
+
+/* Unngår at reglene treffer msie<=8 som kan skape problemer  */
+
+/* search */
+
+html:root a.EXLSearchFieldRibbonAdvancedTwoLinks {
+    padding: 0;
+    height: 1rem;
+    display: block;
+    text-align: left;
+    padding-left: .5rem;
+    margin-bottom: -1px;
+}
+html:root #exlidSearchRibbon {
+    position: relative;
+}
+@media screen and (max-width: 35rem) {
+    html:root #exlidSearchRibbon {
+        margin: 0;
+        top: .5rem;
+    }
+}
+/* lenkene avansert søk og browse søk plasseres til høyre for søkeknapp */
+
+html:root div.EXLSearchFieldRibbonAdvancedSearchLink,
+html:root div.EXLSearchFieldRibbonBrowseSearchLink {
+    width: 6rem;
+    position: absolute;
+    right: 0;
+    bottom: -3rem;
+}
+html:root div.EXLSearchFieldRibbonAdvancedSearchLink {
+    bottom: -2rem;
+}
+/*søkefeltet*/
+
+html:root #exlidSearchRibbon fieldset {
+    position: absolute;
+    right: 6rem;
+    width: auto;
+}
+/* TODO: Må gå gjennom mobiltilpasset css */
+
+@media screen and (max-width: 35rem) {
+    html:root .EXLSearchFieldRibbonAdvancedSearchLink,
+    html:root .EXLSearchFieldRibbonBrowseSearchLink,
+    html:root div#exlidSearchRibbon div.EXLSearchTabsContainer {
+        display: none;
+    }
+    /* fyll hele bredden */
+    html:root #exlidSearchRibbon fieldset {
+        right: 0;
+        left: 0;
+    }
+    html:root #exlidSearchTile {
+        height: 3rem;
+        border: none;
+        /* denne overskriver regel fra mobile.css */
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        box-shadow: 0 0 1rem black;
+    }
+}
+/* søkefelt får hele bredden, søk-knapp kommer under */
+
+@media screen and (max-width: 20rem) {
+    html:root .EXLSearchFieldRibbonFormSubmitSearch {
+        position: static;
+    }
+    html:root #exlidSearchRibbon fieldset {
+        height: 5rem;
+    }
+    div#exlidSearchTile.EXLSearch {
+        padding-bottom: 3rem;
+    }
+    #exlidSearchRibbon div.EXLSearchFieldRibbon {
+        z-index: 1;
+    }
+    html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+        padding: 0;
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+    html:root .EXLSearchFieldRibbonFormSearchClear,
+    html:root .EXLClearSimpleSearchBoxButtonClose {
+        display: none;
+    }
+    html:root #exlidSearchRibbon input#goButton {
+        position: absolute;
+        bottom: -2.5rem;
+        z-index: 200;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-top: 1px solid #a3420a;
+        border-bottom: 1px solid #a3420a;
+        border-left: none;
+        border-right: none;
+        box-shadow: 0 .125rem .25rem rgba(136, 136, 136, 0.69);
+        margin-bottom: .25rem;
+    }
+    
+    html:root #exlidSearchRibbon fieldset {
+        margin-top: -.25rem;
+    }
+    html:root div.EXLSearchFieldRibbon {
+        top: .25rem;
+        box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
+    }
+}
+
+/* --- SEARCHFIELD END --- */

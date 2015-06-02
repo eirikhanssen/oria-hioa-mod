@@ -1,8 +1,7 @@
-@import 'vars';
 /* --- HEADER START --- */
 
 div#exlidHeaderContainer {
-    background-color: $header-bg;
+    background-color: black;
 }
 
 /* denne må være relative slik at langmenu kan posisjoneres i forhold til denne */
@@ -10,7 +9,7 @@ html:root div#exlidHeaderContainer {position: relative;}
 /* Denne borderen er nødvendig for at språkmenyen skal holdes innenfor den sorte bakgrunnen i headeren */
 
 #exlidMainMenuTile {
-    /*border-bottom: 2px solid black;*/
+    border-bottom: 2px solid black;
 }
 
 /* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
@@ -29,7 +28,7 @@ html:root #exlidHeaderTile {padding-top: .75rem; padding-left: .75rem; padding-b
     top: -.2em;
     width: 72px;
     min-height: 67px;
-    background-color: $header-bg;
+    background-color: black;
     background-image: url('hioa-blue-nor-portrait-72x67.png');
     background-position: -9999px -9999px;
     background-repeat: no-repeat;
@@ -71,7 +70,7 @@ a.hioalogo:hover {
 }
 a.hioasearchtitle:link,
 a.hioasearchtitle:visited {
-    /*color: white;*/
+    color: white;
     text-decoration: none;
 }
 a.hioasearchtitle:hover,
@@ -104,7 +103,7 @@ a.hioasearchtitle:active {
 .EXLFooterTile a:link,
 #footerEXL a:visited,
 .EXLFooterTile a:visited {
-    /*color: white;*/
+    color: white;
 }
 #exlidMainMenuContainer a:hover,
 /*prøver å fjerne #contentEXL i starten av denne regelen */

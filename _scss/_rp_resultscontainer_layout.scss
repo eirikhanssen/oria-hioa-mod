@@ -56,7 +56,7 @@
 @media screen and (min-width: 501px) {
 	/* border between #exlidFacetTile and .EXLResultsContainer
 	 when screen layout is bigger than 500px */
-	#exlidResultsContainer::after {
+	/*#exlidResultsContainer::after {
 		position: absolute;
 		top: .5em;
 		bottom: .5em;
@@ -64,7 +64,7 @@
 		z-index: 2;
 		left: $leftmenuwidth + .5em;
 		border-left: 1px solid $results-border-color;
-	}
+	}*/
 	#exlidFacetTile::after {
 		position: absolute;
 		content: "";
@@ -74,12 +74,12 @@
 		bottom: -1em;
 		border-right: 1px solid $results-border-color;
 		}
-	/* adjust the border placement when the left-menu is wide */
-	@media screen and (min-width: $leftmenu-wide-breakpoint) {
+	 /*adjust the border placement when the left-menu is wide */
+	/*@media screen and (min-width: $leftmenu-wide-breakpoint) {
 		#exlidResultsContainer::after {
 			left: $leftmenu-wide-width + .5em;
 		}
-	}
+	}*/
 }
 
 @media screen and (max-width: 500px) {
