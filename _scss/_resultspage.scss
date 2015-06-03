@@ -1,27 +1,28 @@
 @import 'vars';
 /*@import '_rp_frbr';*/
+
 @import 'rp_frbr_btn';
 @import 'rp_resultscontainer_layout';
 @import 'rp_narrow_results_mobile_popup';
 /* --- RESULTSPAGE START --- */
 /* START treffliste */
 /* Søkeresultatene - annenhver trefflinje får lysegrå bakgrunn */
+
 tr.EXLResult:nth-child(2n) {
 	background-color: #f5f5f5;
 }
-
 /* I trefflisten er det på noen treff et lite utdrag fra kilden
  * Har tydeligere markert dette ved å gi litt luft over og under dette utdraget.
  * og gjøre teksten kursiv.
  * Har også gjort tekten en anelse mørkere enn standard for å ha nok kontrast med 
  * den lyseblå bakgrunnen som kommer annenhver treff.
  */
+
 .EXLResultsList p.EXLResultSnippet {
-	color: #555; 
+	color: #555;
 	margin: .75em 0;
 	font-style: italic;
 }
-
 /* Results navigation */
 
 .EXLTabsRibbon div li.EXLResultTab {
@@ -35,6 +36,7 @@ tr.EXLResult:nth-child(2n) {
 	color: $button-fg;
 	padding: $button-padding;
 }
+
 #exlidResultsTable .EXLResultTab a:hover {
 	background-color: $button-hover-bg;
 	color: $button-hover-fg;
@@ -42,17 +44,14 @@ tr.EXLResult:nth-child(2n) {
 	text-decoration: none;
 }
 
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
-	width: $EXLResultsSortBy-width;
-}
-
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
-	left: 100%;
+	left: auto;
+	right: 0;
 	margin: 0;
-	top: 1.5em;
+	top: 2.75em;
 	padding: .25em 0;
 	width: auto;
-	box-shadow: 0 0 1em rgba(0,0,0,0.75);
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
 	box-sizing: border-box;
 	border: 1px solid $button-bg;
 	background-color: white;
@@ -63,20 +62,40 @@ tr.EXLResult:nth-child(2n) {
 }
 
 #resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
+	bottom: .5em;
 	top: auto;
-	bottom: -3em;
 }
 
-#resultsNumbersTile .EXLSortByLink  a:hover {
+#resultsNumbersTile .EXLSortByLink a:hover {
 	text-decoration: underline;
 }
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+	float: none;
+	clear: both;
+	font-size: 0.8em;
+	/*margin: .5em auto .5em 1em;*/
+	
+	margin: .5em 0 .5em auto;
+	/* margin shorthand: top right bottom left*/
+	
+	padding: .25em;
+	/*width: auto;*/
+	
+	width: 17em;
+	/*	top: 2.75em;*/
+	/*width: $EXLResultsSortBy-width;*/
+}
+
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel,
-#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel{
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel {
 	position: relative;
-	top: -.25em;
 	display: inline;
 	font-weight: bold;
-	font-size: 1.25em;
+	/*font-size: 1.25em;*/
+	
+	line-height: 1.5em;
+	padding: .25em 1em .25em 0;
 }
 
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a,
@@ -87,9 +106,13 @@ tr.EXLResult:nth-child(2n) {
 	background: $button-bg;
 	display: inline-block;
 	width: auto;
-	float: left;
+	float: right;
+	position: relative;
+	left: -.25em;
 	clear: none;
-	min-width: 10em;
+	/*min-width: 10em;*/
+	
+	width: 8em;
 }
 
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:hover,
@@ -108,6 +131,7 @@ tr.EXLResult:nth-child(2n) {
 	background: $button-bg;
 	margin: 0.25em .5em;
 }
+
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
 	color: $button-hover-fg;
 	background: $button-hover-bg;
@@ -117,8 +141,6 @@ tr.EXLResult:nth-child(2n) {
 	color: black;
 	padding: .25em 0;
 }
-
-
 
 div.EXLResultsSortBy .EXLSortByLink a {
 	padding: $button-padding;
@@ -139,22 +161,23 @@ div.EXLResultsSortBy .EXLSortByLink a {
 }
 
 li.EXLSortByLinkSelected {
-	position:relative;
+	position: relative;
 	z-index: 1;
-	color:black;
+	color: black;
 }
+
 li.EXLSortByLinkSelected::after {
- position: absolute;
- content: "";
- z-index: -1;
- top: 0;
- bottom: 0;
- right: 0;
- left: 0;
- margin: .25em .5em;
- background-color: #eee;
- box-sizing: border-box;
- border: 1px solid rgb(0, 117, 176);
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: .25em .5em;
+	background-color: #eee;
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 117, 176);
 }
 
 .EXLResultsHeader {
@@ -166,13 +189,7 @@ li.EXLSortByLinkSelected::after {
 	width: 100%;
 	box-sizing: border-box;
 }
-.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
-	float: none;
-	clear: both;
-	font-size: 0.8em;
-	margin: .5em auto .5em 1em;
-	padding: .5em 0;
-}
+
 .EXLResultsHeader div.EXLResultsNumbers {
 	width: auto;
 	float: none;
@@ -183,15 +200,15 @@ li.EXLSortByLinkSelected::after {
 	float: none;
 	display: block;
 	margin: .5em;
-	float:left;
+	float: left;
 	clear: left;
 	padding: 0;
 	font-size: $resultPaginationSquare-font-size;
 }
 
 #exlidResultsContainer {
-		padding-bottom: 1em;
-	}
+	padding-bottom: 1em;
+}
 
 div.EXLResultsNavigation .EXLDisplayedCount {
 	font-size: 1em;
@@ -209,6 +226,7 @@ div.EXLResultsNavigation .EXLDisplayedCount {
 	margin: $resultPaginationSquare-margin;
 	border: 1px solid $resultPaginationDisplayedCount-bordercolor;
 }
+
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
 	font-size: 1em;
 	font-weight: bold;
@@ -223,6 +241,7 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination {
 	float: left;
 	text-align: center;
 }
+
 div.EXLResultsNavigation a.EXLBriefResultsPagination a {
 	padding: $resultPaginationSquare-padding;
 	background-color: $resultPaginationSquare-bg;
@@ -235,6 +254,7 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination a {
 	display: inline-block;
 	box-sizing: border-box;
 }
+
 div.EXLResultsNavigation a.EXLBriefResultsPagination:hover,
 div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
 	background: $button-hover-bg;
@@ -242,9 +262,16 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
 	text-decoration: none;
 }
 
-a.EXLBriefResultsPaginationLinkPrevious {position: relative;}
-a.EXLBriefResultsPaginationLinkNext {position: relative;}
-a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPaginationLinkNext:last-child::after {
+a.EXLBriefResultsPaginationLinkPrevious {
+	position: relative;
+}
+
+a.EXLBriefResultsPaginationLinkNext {
+	position: relative;
+}
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after,
+a.EXLBriefResultsPaginationLinkNext:last-child::after {
 	position: absolute;
 	text-align: center;
 	font-weight: bold;
@@ -255,14 +282,23 @@ a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPag
 	right: 0;
 }
 
-a.EXLBriefResultsPaginationLinkPrevious:first-child::after {content: "<";}
-a.EXLBriefResultsPaginationLinkNext:last-child::after {content:">";}
-a.EXLBriefResultsPaginationLinkPrevious img, a.EXLBriefResultsPaginationLinkNext img { display: none; }
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after {
+	content: "<";
+}
+
+a.EXLBriefResultsPaginationLinkNext:last-child::after {
+	content: ">";
+}
+
+a.EXLBriefResultsPaginationLinkPrevious img,
+a.EXLBriefResultsPaginationLinkNext img {
+	display: none;
+}
 
 a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after,
 a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
-		background: $button-hover-bg;
-		color: $button-fg;
+	background: $button-hover-bg;
+	color: $button-fg;
 }
 
 .EXLResultsList td.EXLSummary {
@@ -270,7 +306,8 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
 	position: relative;
 }
 
-.EXLResultsList, .EXLResultsList td {
+.EXLResultsList,
+.EXLResultsList td {
 	border-color: $results-border-color;
 }
 
@@ -295,16 +332,15 @@ h2.EXLResultTitle {
 .EXLResultsList h2 {
 	margin-bottom: .5em;
 }
+/* Ikon for bok og stjerne for lagre treff, dette posisjonerer dem like høyt som toppen av tittel i søketreffet */
 
-
+.EXLResultsList td.EXLMyShelfStar,
+.EXLResultsList td.EXLThumbnail {
+	padding-top: 2.5em;
+}
 /* SLUTT Treffliste*/
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 35rem) {}
 
-}
-
-@media screen and (max-width: 15rem) {
-
-}
-
+@media screen and (max-width: 15rem) {}
 /* --- RESULTSPAGE END --- */
