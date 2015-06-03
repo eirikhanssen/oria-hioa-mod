@@ -1,15 +1,35 @@
 /* --- SEARCHFIELD START --- */
 
-#exlidSearchTile {
-	border-top: 5px solid #ccc;
-	border-bottom: 5px solid #ccc;
+div#exlidSearchRibbon {
+	max-width: 70em;
+	float: none;
+	margin: auto;
 }
+
+@media screen and (min-width: 501px) {
+	div#exlidSearchRibbon {
+		left: .5em;
+	}
+}
+
+@media screen and (min-width: 85em) {
+	div#exlidSearchRibbon {
+		left: -3em;
+	}
+	.EXLSearchFieldRibbonAdvancedSearchLink {
+		position: absolute;
+		right: -8.5em;
+		top: 2.5em;
+	}
+}
+
 #exlidSearchRibbon div.EXLSearchFieldRibbon {
-width: 98%;
+	width: 98%;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 }
+
 #exlidSearchTabs {
 	margin-bottom: 1.3em;
 	position: static;
@@ -23,11 +43,10 @@ width: 98%;
 	padding: 0 .5em;
 	height: 1.75em;
 	font-size: 1em;
-	background-color: #eee;
 	position: relative;
 	z-index: 50;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
+	border: none;
 	border-bottom-color: transparent;
 	top: 10px;
 }
@@ -42,27 +61,17 @@ width: 98%;
 	padding-bottom: 1px;
 	color: black;
 	font-weight: bold;
+	border-top-left-radius: .25em;
+	border-top-right-radius: .25em;
 	border-bottom: 1px solid white;
 	z-index: 51;
 }
 
-#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::after {
-	z-index: -1;
-	content: "";
-	position: absolute;
-	top: -1px;
-	bottom: 0;
-	left: -1px;
-	right: -1px;
-	border: 1px solid $button-bg;
-	border-bottom-color: white;
-}
-
 #exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::before {
-content:"";
+	content: "";
 	border-left: 1px solid $button-bg;
 	border-right: 1px solid $button-bg;
-	height: 4px;
+	height: 3px;
 	background-color: white;
 	position: absolute;
 	z-index: 55;
@@ -90,6 +99,22 @@ content:"";
 	background-image: none;
 	float: none;
 	box-sizing: border-box;
+	border-top: 5px solid #ccc;
+	border-bottom: 5px solid #ccc;
+	background-color: #eee;
+	position: relative;
+}
+
+#exlidSearchTile::before {
+position: absolute;
+	content:"";
+	top: -5px;
+	left: 0;
+	bottom: -5px;
+	right: 0;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+
 }
 
 #exlidSearchTile::after {
@@ -213,13 +238,10 @@ html:root input#search_field {
 	line-height: 1rem;
 	/*margin-top: 5px;*/
 }
-/* Kanskje unødvendig, men setter bakgrunnsfargen til hvit siden den ligger strukturelt inne i headeren som er sort */
 
-#exlidSearchTile {
-	background-color: #e1e9ef;
-}
 /* Optimalisert layout for moderne nettlesere (de støtter element:root selectoren) */
 /* Unngår at reglene treffer msie<=8 som kan skape problemer  */
+
 /* search */
 
 html:root #exlidSearchRibbon {

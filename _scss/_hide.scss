@@ -6,7 +6,8 @@
 /*li#exlidTab1, /* Alle bibliotek - fanen */ /* bør velges vekk i ORIA-adm-grensesnitt */
 li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
 .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, /* Samisk språk fra språkmenyen */
-.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO /* Nynorsk språk fra språkmenyen */
+.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO, /* Nynorsk språk fra språkmenyen */
+.EXLSearchFieldRibbonBrowseSearchLink /* Bla i innhold - lenken ved søkefeltet */
 {
 	display: none;
 }

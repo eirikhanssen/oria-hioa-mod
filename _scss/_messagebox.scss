@@ -1,27 +1,26 @@
 /* --- MESSAGEBOX START --- */
 
-/* eventuell meldingsbox fra bibsys med driftsmeldinger  */
 div#notifierDiv {
-	margin: 0;
-	background-color: #ddd;
-        color: black;
-	border: 8px solid #E87107;
+	margin: 1em;
+	border: 5px solid #e67300;
+	line-height: 1.5em;
 	position: relative;
 }
-html:root div#notifierDiv:before { 
-	content: "";
-	position: absolute;
-	border: 1px solid black;
-	left: 0; right: 0; top: 0; bottom: 0;
-	box-shadow: 0 0 5px white;
+
+div#notifierDiv::before {
+	content: ".: System notice :.";
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	font-size: 1.25em;
+	margin-bottom: 1em;
+	border: orange;
+	padding: .5em;
+	padding-bottom: .25em;
+	border-bottom: 1px solid black;
 }
 
-html:root div#notifierDiv:after { 
-	content: "";
-	position: absolute;
-	/*border: 1px solid black;*/
-	left: -8px; right: -8px; top: -8px; bottom: -8px;
-	/*box-shadow: 0 0 5px red inset;*/
+div#notifierDiv p+p {
+	margin-top: 1em;
 }
-
 /* --- MESSAGEBOX END --- */
