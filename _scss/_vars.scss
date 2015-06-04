@@ -1,4 +1,5 @@
-$button-bg: #0075B0;
+$link-color: #0075B0;
+$button-bg: $link-color;
 $button-fg: white;
 $button-hover-fg: $button-fg;
 $button-hover-bg: #e67300;
