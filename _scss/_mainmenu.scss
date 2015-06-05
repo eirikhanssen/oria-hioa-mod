@@ -30,6 +30,7 @@
 html:root #exlidMainMenuRibbon {
 	margin-right: 0;
 	font-size: 1.25em;
+	margin-left: .75em;
 }
 
 #exlidMainMenuRibbon li {
@@ -44,7 +45,9 @@ html:root #exlidMainMenuRibbon {
 }
 #exlidMainMenuRibbon li span {
     border: none;
+	padding: 0;
 }
+#exlidMainMenuRibbon li + li { margin-left: 1em;}
 #exlidMainMenuRibbon li a {
 	color: $link-color;
 }

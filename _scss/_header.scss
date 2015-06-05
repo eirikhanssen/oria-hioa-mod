@@ -18,9 +18,7 @@ html:root div#exlidHeaderContainer {
 /* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
 
 html:root #exlidHeaderTile {
-	padding-top: .75rem;
-	padding-left: .75rem;
-	padding-bottom: .75rem;
+	padding: .25em;
 }
 /* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
 
@@ -31,19 +29,16 @@ html:root #exlidHeaderTile {
 
 .headerwrapper {
 	position: relative;
-	top: -.2em;
-	width: 72px;
-	min-height: 67px;
+	width: 100px;
+	min-height: 100px;
 	background-color: $header-bg;
-	background-image: url('hioa-blue-nor-portrait-72x67.png');
-	background-position: -9999px -9999px;
 	background-repeat: no-repeat;
 }
 
 .headerwrapper.en {
-	width: 72px;
-	min-height: 76px;
-	background-image: url('hioa-blue-en-portrait-72x76.png');
+	width: 100px;
+	min-height: 100px;
+	background-image: url('hioalogo-en-100px.svg');
 }
 
 .headerwrapper a {
@@ -51,22 +46,30 @@ html:root #exlidHeaderTile {
 }
 
 a.hioalogo {
-	background-image: url('hioa-white-nor-portrait-72x67.png');
-	width: 72px;
-	min-height: 67px;
+	background-image: url('hioalogo-no-100px.svg');
+	width: 100px;
+	min-height: 100px;
 	background-repeat: no-repeat;
 }
 
 .en a.hioalogo {
-	background-image: url('hioa-white-en-portrait-72x76.png');
+	background-image: url('hioalogo-en-100px.svg');
 }
 
 a.hioalogo:hover {
-	background-image: url('hioa-blue-nor-portrait-72x67.png');
+	background-image: url('hioalogo-hover-no-100px.svg');
 }
 
 .en a.hioalogo:hover {
-	background-image: url('hioa-blue-en-portrait-72x76.png');
+	background-image: url('hioalogo-hover-en-100px.svg');
+}
+
+a.hioalogo:focus, a.hioalogo:active {
+	background-image: url('hioalogo-focus-no-100px.svg');
+}
+
+.en a.hioalogo:focus, .en a.hioalogo:active {
+	background-image: url('hioalogo-focus-en-100px.svg');
 }
 
 .hioasearchwrapper {
@@ -74,13 +77,13 @@ a.hioalogo:hover {
 	left: 100%;
 	top: .2em;
 	margin-left: 1em;
-	padding-left: 1em;
-	border-left: 1px solid white;
+	/*padding-left: 1em;*/
+	/*border-left: 1px solid white;*/
 	width: 15rem;
 }
 
 .en a.hioalogo {
-	width: 177px;
+	width: 100px;
 }
 
 a.hioasearchtitle:link,
@@ -94,7 +97,6 @@ a.hioasearchtitle:hover,
 a.hioasearchtitle:active {
 	color: #fffa61;
 	/* lysegul - vises best */
-	
 	color: #00afff;
 	/* lyseblå - samme som lenker over sort bakgrunn */
 }
@@ -103,7 +105,6 @@ a.hioasearchtitle:active {
 	font-family: "Garamond", "Times New Roman", serif;
 	font-size: 4em;
 	font-size: 4rem;
-	margin-top: -1rem;
 	font-weight: 700;
 	display: block;
 }
