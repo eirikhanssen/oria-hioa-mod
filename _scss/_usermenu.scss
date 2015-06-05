@@ -72,6 +72,12 @@
 	}
 }
 
+@media screen and (min-width: 50em) {
+	#exlidUserAreaTile {
+		margin-right: $wide-layout-right-space-to-edge;
+	}
+}
+
 @media screen and (max-width: 20rem) {
 	#exlidUserAreaTile ul li {
 		width: 100%;

@@ -2,99 +2,122 @@
 /* --- HEADER START --- */
 
 div#exlidHeaderContainer {
-    background-color: $header-bg;
+	background-color: $header-bg;
 }
-
 /* denne må være relative slik at langmenu kan posisjoneres i forhold til denne */
-html:root div#exlidHeaderContainer {position: relative;}
+
+html:root div#exlidHeaderContainer {
+	position: relative;
+}
 /* Denne borderen er nødvendig for at språkmenyen skal holdes innenfor den sorte bakgrunnen i headeren */
 
 #exlidMainMenuTile {
-    /*border-bottom: 2px solid black;*/
+	/*border-bottom: 2px solid black;*/
 }
-
 /* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
 /* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
-html:root #exlidHeaderTile {padding-top: .75rem; padding-left: .75rem; padding-bottom: .75rem;}
 
+html:root #exlidHeaderTile {
+	padding-top: .75rem;
+	padding-left: .75rem;
+	padding-bottom: .75rem;
+}
 /* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
 
 .hioalsblink {
-    display: none;
+	display: none;
 }
 /*pre-loading background image for a.logowrapper */
 
 .headerwrapper {
-    position: relative;
-    top: -.2em;
-    width: 72px;
-    min-height: 67px;
-    background-color: $header-bg;
-    background-image: url('hioa-blue-nor-portrait-72x67.png');
-    background-position: -9999px -9999px;
-    background-repeat: no-repeat;
+	position: relative;
+	top: -.2em;
+	width: 72px;
+	min-height: 67px;
+	background-color: $header-bg;
+	background-image: url('hioa-blue-nor-portrait-72x67.png');
+	background-position: -9999px -9999px;
+	background-repeat: no-repeat;
 }
+
 .headerwrapper.en {
-    width: 72px;
-    min-height: 76px;
-    background-image: url('hioa-blue-en-portrait-72x76.png');
+	width: 72px;
+	min-height: 76px;
+	background-image: url('hioa-blue-en-portrait-72x76.png');
 }
+
 .headerwrapper a {
-    float: left;
+	float: left;
 }
+
 a.hioalogo {
-    background-image: url('hioa-white-nor-portrait-72x67.png');
-    width: 72px;
-    min-height: 67px;
-    background-repeat: no-repeat;
+	background-image: url('hioa-white-nor-portrait-72x67.png');
+	width: 72px;
+	min-height: 67px;
+	background-repeat: no-repeat;
 }
+
 .en a.hioalogo {
-    background-image: url('hioa-white-en-portrait-72x76.png');
+	background-image: url('hioa-white-en-portrait-72x76.png');
 }
+
 a.hioalogo:hover {
-    background-image: url('hioa-blue-nor-portrait-72x67.png');
+	background-image: url('hioa-blue-nor-portrait-72x67.png');
 }
+
 .en a.hioalogo:hover {
-    background-image: url('hioa-blue-en-portrait-72x76.png');
+	background-image: url('hioa-blue-en-portrait-72x76.png');
 }
+
 .hioasearchwrapper {
-    position: absolute;
-    left: 100%;
-    top: .2em;
-    margin-left: 1em;
-    padding-left: 1em;
-    border-left: 1px solid white;
-    width: 15rem;
+	position: absolute;
+	left: 100%;
+	top: .2em;
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid white;
+	width: 15rem;
 }
+
 .en a.hioalogo {
-    width: 177px;
+	width: 177px;
 }
+
 a.hioasearchtitle:link,
 a.hioasearchtitle:visited {
-    /*color: white;*/
-    text-decoration: none;
+	/*color: white;*/
+	
+	text-decoration: none;
 }
+
 a.hioasearchtitle:hover,
 a.hioasearchtitle:active {
-    color: #fffa61;
-    /* lysegul - vises best */
-    color: #00afff;
-    /* lyseblå - samme som lenker over sort bakgrunn */
+	color: #fffa61;
+	/* lysegul - vises best */
+	
+	color: #00afff;
+	/* lyseblå - samme som lenker over sort bakgrunn */
 }
+
 .tjenestetittel {
-    font-family: "Garamond", "Times New Roman", serif;
-    font-size: 4em;
-    font-size: 4rem; margin-top: -1rem;
-    font-weight: 700;
-    display: block;
+	font-family: "Garamond", "Times New Roman", serif;
+	font-size: 4em;
+	font-size: 4rem;
+	margin-top: -1rem;
+	font-weight: 700;
+	display: block;
 }
+
 .tjenestebeskrivelse {
-    font-family: "Arial", sans-serif;
-    font-size: .8em;
-    font-weight: normal;
-    white-space: pre;
+	font-family: "Arial", sans-serif;
+	font-size: .8em;
+	font-weight: normal;
+	white-space: pre;
 }
-.en .hioasearchtitle {} #exlidMainMenuContainer a:link,
+
+.en .hioasearchtitle {}
+
+#exlidMainMenuContainer a:link,
 /*prøver å fjerne #contentEXL i starten av denne regelen */
 
 #exlidMainMenuContainer a:visited,
@@ -104,8 +127,9 @@ a.hioasearchtitle:active {
 .EXLFooterTile a:link,
 #footerEXL a:visited,
 .EXLFooterTile a:visited {
-    /*color: white;*/
+	/*color: white;*/
 }
+
 #exlidMainMenuContainer a:hover,
 /*prøver å fjerne #contentEXL i starten av denne regelen */
 
@@ -116,19 +140,18 @@ a.hioasearchtitle:active {
 .EXLFooterTile a:hover,
 #footerEXL a:active,
 .EXLFooterTile a:active {
-    color: #00afff;
+	color: #00afff;
 }
 
 /* fjern litt marg over hovedmenyen for bred layout */
+
 @media screen and (min-width: 35rem) {
-   #exlidMainMenuTile {margin-top: 0;}
+	#exlidMainMenuTile {
+		margin-top: 0;
+	}
 }
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 35rem) {}
 
-}
-@media screen and (max-width: 20rem) {
-
-}
-
+@media screen and (max-width: 20rem) {}
 /* --- HEADER END --- */

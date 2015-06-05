@@ -270,6 +270,9 @@ a.hioasearchtitle:active {
     right: 0;
     bottom: 0;
     left: 0; } }
+@media screen and (min-width: 50em) {
+  #exlidUserAreaTile {
+    margin-right: 0.75em; } }
 @media screen and (max-width: 20rem) {
   #exlidUserAreaTile ul li {
     width: 100%; }
@@ -1309,6 +1312,9 @@ div#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
   z-index: 2;
   border: none; }
 
+@media screen and (min-width: 50em) {
+  html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+    margin-right: 0.75em; } }
 @media screen and (max-width: 500px) {
   #exlidMainMenuTile div.EXLLanguagesContainer {
     display: block !important; }
