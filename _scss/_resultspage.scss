@@ -391,6 +391,10 @@ html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
 	background-color: #abd3fa;
 	text-decoration: underline !important;
 }
+
+.EXLTabsRibbon div li.EXLResultTabIconPopout {
+	background-image: none;
+}
 /* SLUTT Treffliste*/
 
 @media screen and (max-width: 35rem) {}
