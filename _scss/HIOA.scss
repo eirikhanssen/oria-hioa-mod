@@ -12,4 +12,7 @@
 @import 'mobile500pxfix';
 @import 'facets';
 
-body {min-width: auto !important;}
+body {min-width: 5em;}
+@media screen and (min-width: 500px) {
+	html {overflow-x: hidden;}
+}
