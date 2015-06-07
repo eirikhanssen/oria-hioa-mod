@@ -1,3 +1,4 @@
+@import 'vars';
 /* --- SEARCHFIELD START --- */
 
 div#exlidSearchRibbon {
@@ -248,7 +249,7 @@ html:root #exlidSearchRibbon {
 	position: relative;
 }
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: $narrow-layout-breakpoint) {
 	html:root #exlidSearchRibbon {
 		margin: 0;
 		top: .5rem;
@@ -276,7 +277,7 @@ html:root #exlidSearchRibbon fieldset {
 }
 /* TODO: Må gå gjennom mobiltilpasset css */
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: $narrow-layout-breakpoint) {
 	html:root .EXLSearchFieldRibbonAdvancedSearchLink,
 	html:root .EXLSearchFieldRibbonBrowseSearchLink,
 	html:root div#exlidSearchRibbon div.EXLSearchTabsContainer {
@@ -290,22 +291,23 @@ html:root #exlidSearchRibbon fieldset {
 	}
 	html:root #exlidSearchTile {
 		height: 3rem;
-		border: none;
 		/* denne overskriver regel fra mobile.css */
-		
-		padding-top: .5rem;
-		padding-bottom: .5rem;
-		box-shadow: 0 0 1rem black;
+		padding: .5em 0;		
+		box-sizing: content-box;
+		top: 1em;
 	}
+	
+html:root form[name="searchForm"] {margin-bottom: 2em;}
 }
 /* søkefelt får hele bredden, søk-knapp kommer under */
 
-@media screen and (max-width: 20rem) {
+/*@media screen and (max-width: 20rem) {
 	html:root .EXLSearchFieldRibbonFormSubmitSearch {
 		position: static;
 	}
 	html:root #exlidSearchRibbon fieldset {
 		height: 5rem;
+		
 	}
 	div#exlidSearchTile.EXLSearch {
 		padding-bottom: 3rem;
@@ -343,5 +345,5 @@ html:root #exlidSearchRibbon fieldset {
 		top: .25rem;
 		box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
 	}
-}
+}*/
 /* --- SEARCHFIELD END --- */
