@@ -54,14 +54,12 @@ html:root #exlidMainMenuRibbon {
 
 /* SLUTT hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: $narrow-layout-breakpoint) {
    html:root #exlidMainMenuTile div.EXLMainMenuContainer {display: none;}
     html:root #exlidMainMenuTile {margin: 0;}
     html:root #exlidUserAreaRibbon {height: auto;}
 }
 
-@media screen and (max-width: 20rem) {
-      
-}
+@media screen and (max-width: 20rem) {}
 
 /* --- MAINMENU END --- */

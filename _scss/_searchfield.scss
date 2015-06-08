@@ -93,7 +93,7 @@ div#exlidSearchRibbon {
 	z-index: 50
 }
 
-#exlidSearchTile {
+html #exlidSearchTile {
 	padding: 1em;
 	font-size: 1em;
 	height: auto;
@@ -107,15 +107,14 @@ div#exlidSearchRibbon {
 }
 
 #exlidSearchTile::before {
-position: absolute;
-	content:"";
+	position: absolute;
+	content: "";
 	top: -5px;
 	left: 0;
 	bottom: -5px;
 	right: 0;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
-
 }
 
 #exlidSearchTile::after {
@@ -239,10 +238,8 @@ html:root input#search_field {
 	line-height: 1rem;
 	/*margin-top: 5px;*/
 }
-
 /* Optimalisert layout for moderne nettlesere (de støtter element:root selectoren) */
 /* Unngår at reglene treffer msie<=8 som kan skape problemer  */
-
 /* search */
 
 html:root #exlidSearchRibbon {
@@ -252,7 +249,7 @@ html:root #exlidSearchRibbon {
 @media screen and (max-width: $narrow-layout-breakpoint) {
 	html:root #exlidSearchRibbon {
 		margin: 0;
-		top: .5rem;
+		top: .25rem;
 	}
 }
 /* lenkene avansert søk og browse søk plasseres til høyre for søkeknapp */
@@ -292,16 +289,51 @@ html:root #exlidSearchRibbon fieldset {
 	html:root #exlidSearchTile {
 		height: 3rem;
 		/* denne overskriver regel fra mobile.css */
-		padding: .5em 0;		
+		
+		padding: .5em 0;
 		box-sizing: content-box;
 		top: 1em;
 	}
-	
-html:root form[name="searchForm"] {margin-bottom: 2em;}
+	html:root form[name="searchForm"] {
+		margin-bottom: 2em;
+	}
 }
 /* søkefelt får hele bredden, søk-knapp kommer under */
 
-/*@media screen and (max-width: 20rem) {
+@media screen and (max-width: $ultra-narrow-layout-breakpoint) {
+	html:root #exlidSearchRibbon input#goButton {
+		position: absolute;
+		bottom: 0.75em;
+		left: 0;
+		height: 2em;
+		border-top: 1px solid $results-border-color;
+		border-bottom: 1px solid $results-border-color;
+	}
+	html:root #exlidSearchRibbon div.EXLSearchFieldRibbonFormFields {
+		position: absolute;
+		height: 2em;
+		top: .75em;
+		bottom: auto;
+		left: 0;
+	}
+	html:root .EXLSearchFieldRibbonFormSubmitSearch,
+	html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
+	html:root #exlidSearchRibbon {
+		position: static;
+	}
+	html:root #exlidSearchTile {
+		padding: 2.25em 0;
+	}
+	html:root .EXLSearchFieldRibbonFormSearchClear,
+	html:root .EXLClearSimpleSearchBoxButtonClose {
+		display: none;
+	}
+
+	html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+		padding-right: .5em;
+		border: 1px solid $results-border-color;
+	}
+	/*
 	html:root .EXLSearchFieldRibbonFormSubmitSearch {
 		position: static;
 	}
@@ -344,6 +376,6 @@ html:root form[name="searchForm"] {margin-bottom: 2em;}
 	html:root div.EXLSearchFieldRibbon {
 		top: .25rem;
 		box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
-	}
-}*/
+	}*/
+}
 /* --- SEARCHFIELD END --- */
