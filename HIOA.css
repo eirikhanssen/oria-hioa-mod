@@ -1314,7 +1314,8 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 /* wrapperen rundt listen med språkvalgene */
 #exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
   float: left;
-  width: 100%; }
+  width: 100%;
+  position: absolute; }
 
 /* Styling av språkvalg som ikke er aktiv */
 #exlidHeaderContainer #exlidMainMenuTile #exlidLanguages a {
