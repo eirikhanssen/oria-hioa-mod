@@ -1261,7 +1261,7 @@ html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
 /* --- MESSAGEBOX START --- */
 div#notifierDiv {
   margin: 1em;
-  border: 5px solid #e67300;
+  border: 3px solid #e67300;
   line-height: 1.5em;
   position: relative; }
 
