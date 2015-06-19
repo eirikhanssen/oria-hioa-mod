@@ -12,6 +12,10 @@
   display: inline-block;
 }
 
+/* Show the 'More Options' button only if there are atleast 4 items in the list */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {display:none;}
+li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore {display:block;}
+
 .EXLFacetContainer ol li.EXLFacetsDisplayMore {
 		margin-top: .75em;
 }
