@@ -1,6 +1,6 @@
 /* --- HIDE START --- */
 /* line 9, /home/hanson/projects/oria-hioa-mod/_scss/_hide.scss */
-#showhidediv, .EXLFacebookIframe, li#exlidMainMenuItem3, .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, .EXLLanguageLink a.EXLLanguageOptionLANGnn_NO {
+#showhidediv, .EXLFacebookIframe, .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, .EXLLanguageLink a.EXLLanguageOptionLANGnn_NO {
   display: none; }
 
 /* hide unwanted facets */
