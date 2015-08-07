@@ -19,6 +19,8 @@ html:root div#exlidHeaderContainer {
 
 html:root #exlidHeaderTile {
 	padding: .25em;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 /* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
 
@@ -56,30 +58,33 @@ a.hioalogo {
 	background-image: url('hioalogo-en-100px.svg');
 }
 
-a.hioalogo:hover {
+/*a.hioalogo:hover {
 	background-image: url('hioalogo-hover-no-100px.svg');
-}
+}*/
 
-.en a.hioalogo:hover {
+/*.en a.hioalogo:hover {
 	background-image: url('hioalogo-hover-en-100px.svg');
-}
+}*/
 
-a.hioalogo:focus, a.hioalogo:active {
+/*a.hioalogo:focus, a.hioalogo:active {
 	background-image: url('hioalogo-focus-no-100px.svg');
-}
+}*/
 
-.en a.hioalogo:focus, .en a.hioalogo:active {
+/*.en a.hioalogo:focus, .en a.hioalogo:active {
 	background-image: url('hioalogo-focus-en-100px.svg');
-}
+}*/
 
 .hioasearchwrapper {
 	position: absolute;
 	left: 100%;
-	top: .2em;
+	top: 1.5em;
 	margin-left: 1em;
-	/*padding-left: 1em;*/
-	/*border-left: 1px solid white;*/
-	width: 15rem;
+}
+
+@media screen and (max-width: $narrow-layout-breakpoint) {
+	.hioasearchwrapper {
+		top: 1em;
+	}
 }
 
 .en a.hioalogo {
@@ -89,31 +94,38 @@ a.hioalogo:focus, a.hioalogo:active {
 a.hioasearchtitle:link,
 a.hioasearchtitle:visited {
 	/*color: white;*/
-	
 	text-decoration: none;
 }
-
+a.hioasearchtitle {
+	color: black;
+}
 a.hioasearchtitle:hover,
-a.hioasearchtitle:active {
-	color: #fffa61;
-	/* lysegul - vises best */
+a.hioasearchtitle:focus {
 	color: #00afff;
 	/* lyseblå - samme som lenker over sort bakgrunn */
 }
 
 .tjenestetittel {
-	font-family: "Garamond", "Times New Roman", serif;
-	font-size: 4em;
-	font-size: 4rem;
-	font-weight: 700;
+	font-family: arial, sans-serif;
+	font-size: 1.5em;
+	font-size: 1.5rem;
+	font-weight: bold;
 	display: block;
 }
+@media screen and (min-width: $narrow-layout-breakpoint) {
+	.tjenestetittel {
+		width: 30em;
+		width: 30rem;
+	}	
+	
+}
+
+/*legg til media query for smal bredde */
 
 .tjenestebeskrivelse {
 	font-family: "Arial", sans-serif;
-	font-size: .8em;
+	font-size: 1.5em;
 	font-weight: normal;
-	white-space: pre;
 }
 
 .en .hioasearchtitle {}
@@ -146,9 +158,9 @@ a.hioasearchtitle:active {
 
 /* fjern litt marg over hovedmenyen for bred layout */
 
-@media screen and (min-width: 35rem) {
+@media screen and (min-width: $narrow-layout-breakpoint) {
 	#exlidMainMenuTile {
-		margin-top: 0;
+		margin-top: -0.75em;
 	}
 }
 

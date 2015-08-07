@@ -49,7 +49,9 @@ html:root div#exlidHeaderContainer {
 /* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
 /* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
 html:root #exlidHeaderTile {
-  padding: .25em; }
+  padding: .25em;
+  padding-top: 0;
+  padding-bottom: 0; }
 
 /* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
 .hioalsblink {
@@ -80,27 +82,27 @@ a.hioalogo {
 .en a.hioalogo {
   background-image: url("hioalogo-en-100px.svg"); }
 
-a.hioalogo:hover {
-  background-image: url("hioalogo-hover-no-100px.svg"); }
-
-.en a.hioalogo:hover {
-  background-image: url("hioalogo-hover-en-100px.svg"); }
-
-a.hioalogo:focus, a.hioalogo:active {
-  background-image: url("hioalogo-focus-no-100px.svg"); }
-
-.en a.hioalogo:focus, .en a.hioalogo:active {
-  background-image: url("hioalogo-focus-en-100px.svg"); }
-
+/*a.hioalogo:hover {
+	background-image: url('hioalogo-hover-no-100px.svg');
+}*/
+/*.en a.hioalogo:hover {
+	background-image: url('hioalogo-hover-en-100px.svg');
+}*/
+/*a.hioalogo:focus, a.hioalogo:active {
+	background-image: url('hioalogo-focus-no-100px.svg');
+}*/
+/*.en a.hioalogo:focus, .en a.hioalogo:active {
+	background-image: url('hioalogo-focus-en-100px.svg');
+}*/
 .hioasearchwrapper {
   position: absolute;
   left: 100%;
-  top: .2em;
-  margin-left: 1em;
-  /*padding-left: 1em;*/
-  /*border-left: 1px solid white;*/
-  width: 15rem; }
+  top: 1.5em;
+  margin-left: 1em; }
 
+@media screen and (max-width: 40em) {
+  .hioasearchwrapper {
+    top: 1em; } }
 .en a.hioalogo {
   width: 100px; }
 
@@ -109,25 +111,30 @@ a.hioasearchtitle:visited {
   /*color: white;*/
   text-decoration: none; }
 
+a.hioasearchtitle {
+  color: black; }
+
 a.hioasearchtitle:hover,
-a.hioasearchtitle:active {
-  color: #fffa61;
-  /* lysegul - vises best */
+a.hioasearchtitle:focus {
   color: #00afff;
   /* lyseblå - samme som lenker over sort bakgrunn */ }
 
 .tjenestetittel {
-  font-family: "Garamond", "Times New Roman", serif;
-  font-size: 4em;
-  font-size: 4rem;
-  font-weight: 700;
+  font-family: arial, sans-serif;
+  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
   display: block; }
 
+@media screen and (min-width: 40em) {
+  .tjenestetittel {
+    width: 30em;
+    width: 30rem; } }
+/*legg til media query for smal bredde */
 .tjenestebeskrivelse {
   font-family: "Arial", sans-serif;
-  font-size: .8em;
-  font-weight: normal;
-  white-space: pre; }
+  font-size: 1.5em;
+  font-weight: normal; }
 
 #exlidMainMenuContainer a:link,
 #exlidMainMenuContainer a:visited,
@@ -146,9 +153,9 @@ a.hioasearchtitle:active {
   color: #00afff; }
 
 /* fjern litt marg over hovedmenyen for bred layout */
-@media screen and (min-width: 35rem) {
+@media screen and (min-width: 40em) {
   #exlidMainMenuTile {
-    margin-top: 0; } }
+    margin-top: -0.75em; } }
 /* --- HEADER END --- */
 /* --- FOOTER START --- */
 #footerEXL,
@@ -214,6 +221,9 @@ a.hioasearchtitle:active {
   position: relative;
   top: 1em; }
 
+@media screen and (min-width: 40em) {
+  #exlidUserAreaRibbon {
+    margin-top: -.75em; } }
 @media screen and (max-width: 500px), (max-width: 40em) {
   #exlidUserAreaTile {
     position: static;
@@ -308,19 +318,19 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
   margin-right: 1em;
   padding: 0;
   float: left;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  margin-left: 6em; }
 
 html:root #exlidMainMenuRibbon {
   margin-right: 0;
-  font-size: 1.25em;
-  margin-left: .75em; }
+  font-size: 1.25em; }
 
 #exlidMainMenuRibbon li {
   border-right: 1px solid white;
   height: 1.5rem;
   line-height: 1.5rem;
   margin: 0;
-  font-weight: bold; }
+  font-weight: normal; }
 
 #exlidMainMenuRibbon li:last-child {
   border-right: none; }

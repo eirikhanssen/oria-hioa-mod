@@ -10,6 +10,12 @@
 	top: 1em;
 }
 
+@media screen and (min-width: $narrow-layout-breakpoint) {
+	#exlidUserAreaRibbon {
+		margin-top: -.75em;
+	}
+}
+
 @media screen and (max-width: 500px), (max-width: $narrow-layout-breakpoint) {
 	#exlidUserAreaTile {
 		position: static;
