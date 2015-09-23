@@ -1228,6 +1228,57 @@ html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
 .EXLTabsRibbon div li.EXLResultTabIconPopout {
   background-image: none; }
 
+/* BEGIN FIX popup - send to permanent url */
+/* make sure it comes out on top, centered on the screen */
+div#exliWhiteContent {
+  z-index: 100 !important;
+  border: none;
+  background-color: transparent;
+  overflow: auto; }
+
+#exlidPopupPermalinkContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid gray;
+  box-shadow: 0 0 2em gray; }
+
+.EXLPopupPermalinkContainer, .EXLPopupPermalink {
+  max-width: 100%; }
+
+.EXLPermalinkURL {
+  display: block;
+  width: auto;
+  margin-right: 1.6em;
+  position: relative;
+  left: -.3em; }
+
+.EXLPermalinkURL input {
+  display: block !important;
+  width: 100%;
+  padding: .1em; }
+
+#exlidPopupPermalink .EXLPermalinkHeaderButtonCloseLabel {
+  display: inline-block;
+  position: relative;
+  left: -1em; }
+
+#exlidPopupPermalink .EXLPermalinkHeaderButtonCloseLabel:hover {
+  text-decoration: underline; }
+
+/* END FIX popup - send to permanent url */
+/* BEGIN FIX bg fill Send til > Lenker Strekk background image til fill height */
+.EXLDetailsTabContent div.EXLDetailsLinks {
+  background-size: auto 100%; }
+
+/* END FIX bg fill Send til > Lenker */
+/* Ta høyde for å gi plass til: 'Plasseringen har endret seg' */
+.EXLTabContent {
+  padding-bottom: 2.5em; }
+
 /* SLUTT Treffliste*/
 /* --- RESULTSPAGE END --- */
 /* --- HOMEPAGE START --- */
