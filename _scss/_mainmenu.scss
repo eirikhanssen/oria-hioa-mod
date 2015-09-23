@@ -1,0 +1,65 @@
+@import 'vars';
+/* --- MAINMENU START --- */
+
+/* START hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
+
+/* flytte lenker ned på sin egen linje, venstrestilt for å unngå layoutproblemer */
+
+#exlidMainMenuTile {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+/* samme som over */
+
+#exlidMainMenuTile div.EXLMainMenuContainer {
+    float: left;
+    width: auto;
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+#exlidMainMenuRibbon {
+    margin-right: 1em;
+    padding: 0;
+    float: left;
+    margin-bottom: 5px;
+	margin-left: 6em;
+}
+
+html:root #exlidMainMenuRibbon {
+	margin-right: 0;
+	font-size: 1.25em;
+}
+
+#exlidMainMenuRibbon li {
+    border-right: 1px solid white;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0;
+	font-weight: normal;
+}
+#exlidMainMenuRibbon li:last-child {
+    border-right: none;
+}
+#exlidMainMenuRibbon li span {
+    border: none;
+	padding: 0;
+}
+#exlidMainMenuRibbon li + li { margin-left: 1em;}
+#exlidMainMenuRibbon li a {
+	color: $link-color;
+}
+
+/* SLUTT hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
+
+@media screen and (max-width: $narrow-layout-breakpoint) {
+   html:root #exlidMainMenuTile div.EXLMainMenuContainer {display: none;}
+    html:root #exlidMainMenuTile {margin: 0;}
+    html:root #exlidUserAreaRibbon {height: auto;}
+}
+
+@media screen and (max-width: 20rem) {}
+
+/* --- MAINMENU END --- */

@@ -1,0 +1,30 @@
+/* --- DIAGNOSTIC START --- */
+
+a.logowrapper {
+	background-color: cyan !important;
+}
+span.logowrapper {background-color: yellow !important;}
+
+a.hioasearchstart {}
+a.hioasearchstart:link,
+a.hioasearchstart:visited,
+a.hioasearchstart:active {
+	background-color: red;
+}
+a.hioasearchstart:hover {
+background-color: magenta;
+/*	color: yellow;*/
+/*	color: #ea7126;*/ /* hioa orange - for mørk*/
+/*	color: #fffa61;*/ /* lysegul - vises best */
+/*	color: #00afff;*/ /* lyseblå */
+}
+
+div#exlidUserAreaTile {
+	background-color: rgba(255,0,0,0.5) !important;
+}
+
+ul#exlidUserAreaRibbon {
+	background-color: rgba(0,255,255,0.5) !important;
+}
+
+/* --- DIAGNOSTIC END --- */

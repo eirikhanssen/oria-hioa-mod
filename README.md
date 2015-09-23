@@ -5,9 +5,9 @@ Maintained by Eirik Hanssen, HiOA
 
 ## master branch
 This branch contains the files currently used in the production instance.
-At the moment it is in the same state as the 2014-legacy branch with the HiOA oria appearance modifications done in 2013/2014.
+It has been merged with 2015 restructuring, which is the current production instance
 
-## Oria instances
+The results page and facet menu has undergone a big facelift.
 
 ### Debug mode
 The oria server merges css rules from different sources, including institution modifications.
@@ -36,7 +36,32 @@ The different versions of the HiOA Oria customizations are located in separate b
 - ability to roll back to a different version.
 
 ### Branch descriptions
-- **2014-legacy** - 2013/2014 HiOA modifications to hioa.oria.no. Same as the current production instance.
-- **2015-restructuring** - Restructuring hioa.oria.no with new look. This is now on the test instance.
+- **2014-legacy** - 2013/2014 HiOA modifications to hioa.oria.no. The first round of layout customizations, that have been replaced now.
+- **2015-restructuring** - Restructuring hioa.oria.no with new look. This has been merged into master.
 - **default-files** - The original, un-altered files provided by BIBSYS.
 - **master** - The current production instance
+
+## CSS now generated with SASS
+This change was introduced May 19 2015 to simplify css management.
+
+SASS is a CSS compiler.
+HIOA.css and HIOA_Mobile.css here are not meant to be edited directly,
+they are generated from .scss files usin sass.
+
+First ruby needs to be installed, then install sass using ```gem install sass```
+
+After sass is installed, it can be set up to watch the _scss folder for changes and 
+automatically update HIOA.css and HIOA_Mobile.css using the following command (on your local
+development machine). 
+
+```sass --watch _scss:.```
+
+**Notice**: *You would upload only HIOA.css and HIOA_Mobile.css to the server, not 
+the .scss or .map files, nor the _scss folder used by sass.*
+
+### A few links to get you started with sass
+- http://sass-lang.com/install
+- http://sass-lang.com/guide
+- http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+    - See **Using Sass**: http://sass-lang.com/documentation/file.SASS_REFERENCE.html#using_sass
+- http://alistapart.com/article/getting-started-with-sass

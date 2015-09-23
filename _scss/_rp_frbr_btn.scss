@@ -1,0 +1,45 @@
+@import 'vars';
+/* --- FRBR START --- */
+/* (Vis flere treff) */
+
+.EXLResultsList div.EXLSummaryContainer {
+	margin-top: .25em;
+}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
+	top: 1px;
+	right: 0;
+	position: absolute;
+}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a {
+	width: auto;
+	padding: $button-padding-half;
+	color: $button-fg;
+	background: $button-bg;
+	text-decoration: none;
+}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a:hover {
+	color: $button-hover-fg;
+	background: $button-hover-bg;
+}
+
+/*Fjerner skrå felt som bare er til for presentasjonens skyld*/
+#contentEXL span.EXLResultBgFRBR {display: none;}
+
+/* Tilpasninger ved smal bredde for å unngå kollison mellom 'vis flere versjoner' og tittel i treffet */
+@media screen and (max-width: 41rem) {
+}
+
+/* sørg for at EXLResultTitle ikke havner under EXLResultFRBR, dvs 'vis flere versjoner'  */
+#contentEXL .EXLResultTitle {
+	/*margin-right: 1rem;*/
+}
+
+/*.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {background-color: #ffc;  border: 1px solid #ccc; border-top: none; border-right: none; border-bottom-left-radius: 3em;}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}*/
+
+
+/* --- FRBR END --- */

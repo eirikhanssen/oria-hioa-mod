@@ -1,63 +1,52 @@
-@charset "UTF-8";
 /* --- HIDE START --- */
-#showhidediv,
-.EXLFacebookIframe,
-li#exlidMainMenuItem3,
-.EXLLanguageLink a.EXLLanguageOptionLANGse_NO,
-.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO,
-.EXLSearchFieldRibbonBrowseSearchLink {
+/* line 10, /home/hanson/projects/oria-hioa-mod/_scss/hide */
+#showhidediv, .EXLFacebookIframe, li#exlidMainMenuItem3, .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, .EXLLanguageLink a.EXLLanguageOptionLANGnn_NO, .EXLSearchFieldRibbonBrowseSearchLink {
   display: none; }
 
 /* hide unwanted facets */
-.EXLFacetContainer.facet_series,
-.EXLFacetContainer.facet_jtitle,
-.EXLFacetContainer.facet_collection,
-.EXLFacetContainer.facet_bibliography,
-.EXLFacetContainer.facet_tek_words,
-.EXLFacetContainer.facet_humord,
-.EXLFacetContainer.facet_geographical_subject_headings,
-.EXLFacetContainer.facet_agrovoc,
-.EXLFacetContainer.facet_udc,
-.EXLFacetContainer.facet_nlm,
-.EXLFacetContainer.facet_uio_class,
-#slider-range,
-#exlidFacetSublist2,
-.EXLTabsRibbon .EXLReviewsTab {
+/* line 29, /home/hanson/projects/oria-hioa-mod/_scss/hide */
+.EXLFacetContainer.facet_series, .EXLFacetContainer.facet_jtitle, .EXLFacetContainer.facet_collection, .EXLFacetContainer.facet_bibliography, .EXLFacetContainer.facet_tek_words, .EXLFacetContainer.facet_humord, .EXLFacetContainer.facet_geographical_subject_headings, .EXLFacetContainer.facet_agrovoc, .EXLFacetContainer.facet_udc, .EXLFacetContainer.facet_nlm, .EXLFacetContainer.facet_uio_class, #slider-range, #exlidFacetSublist2, .EXLTabsRibbon .EXLReviewsTab {
   display: none; }
 
 /* Need to adjust margins since the slider and year-list is not rendered. */
+/* line 34, /home/hanson/projects/oria-hioa-mod/_scss/hide */
 .EXLDateRangeLine {
-  margin-bottom: .5em;
-  margin-top: .5em; }
+  margin-bottom: 0.5em;
+  margin-top: 0.5em; }
 
+/* line 35, /home/hanson/projects/oria-hioa-mod/_scss/hide */
 .EXLDateRangeText {
   margin-bottom: 0; }
 
 /* --- HIDE END --- */
 /* --- HEADER START --- */
+/* line 4, /home/hanson/projects/oria-hioa-mod/_scss/header */
 div#exlidHeaderContainer {
   background-color: transparent; }
 
 /* denne må være relative slik at langmenu kan posisjoneres i forhold til denne */
+/* line 9, /home/hanson/projects/oria-hioa-mod/_scss/header */
 html:root div#exlidHeaderContainer {
   position: relative; }
 
 /* Denne borderen er nødvendig for at språkmenyen skal holdes innenfor den sorte bakgrunnen i headeren */
+/* line 14, /home/hanson/projects/oria-hioa-mod/_scss/header */
 #exlidMainMenuTile {
   /*border-bottom: 2px solid black;*/ }
 
 /* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
 /* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
+/* line 20, /home/hanson/projects/oria-hioa-mod/_scss/header */
 html:root #exlidHeaderTile {
-  padding: .25em;
-  padding-top: 0;
-  padding-bottom: 0; }
+  padding: 0.25em; }
 
 /* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
+/* line 25, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .hioalsblink {
   display: none; }
 
 /*pre-loading background image for a.logowrapper */
+/* line 30, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .headerwrapper {
   position: relative;
   width: 100px;
@@ -65,126 +54,134 @@ html:root #exlidHeaderTile {
   background-color: transparent;
   background-repeat: no-repeat; }
 
+/* line 38, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .headerwrapper.en {
   width: 100px;
   min-height: 100px;
-  background-image: url("hioalogo-en-100px.svg"); }
+  background-image: url('hioalogo-en-100px.svg'); }
 
+/* line 44, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .headerwrapper a {
   float: left; }
 
+/* line 48, /home/hanson/projects/oria-hioa-mod/_scss/header */
 a.hioalogo {
-  background-image: url("hioalogo-no-100px.svg");
+  background-image: url('hioalogo-no-100px.svg');
   width: 100px;
   min-height: 100px;
   background-repeat: no-repeat; }
 
+/* line 55, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .en a.hioalogo {
-  background-image: url("hioalogo-en-100px.svg"); }
+  background-image: url('hioalogo-en-100px.svg'); }
 
-/*a.hioalogo:hover {
-	background-image: url('hioalogo-hover-no-100px.svg');
-}*/
-/*.en a.hioalogo:hover {
-	background-image: url('hioalogo-hover-en-100px.svg');
-}*/
-/*a.hioalogo:focus, a.hioalogo:active {
-	background-image: url('hioalogo-focus-no-100px.svg');
-}*/
-/*.en a.hioalogo:focus, .en a.hioalogo:active {
-	background-image: url('hioalogo-focus-en-100px.svg');
-}*/
+/* line 59, /home/hanson/projects/oria-hioa-mod/_scss/header */
+a.hioalogo:hover {
+  background-image: url('hioalogo-hover-no-100px.svg'); }
+
+/* line 63, /home/hanson/projects/oria-hioa-mod/_scss/header */
+.en a.hioalogo:hover {
+  background-image: url('hioalogo-hover-en-100px.svg'); }
+
+/* line 67, /home/hanson/projects/oria-hioa-mod/_scss/header */
+a.hioalogo:focus, a.hioalogo:active {
+  background-image: url('hioalogo-focus-no-100px.svg'); }
+
+/* line 71, /home/hanson/projects/oria-hioa-mod/_scss/header */
+.en a.hioalogo:focus, .en a.hioalogo:active {
+  background-image: url('hioalogo-focus-en-100px.svg'); }
+
+/* line 75, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .hioasearchwrapper {
   position: absolute;
   left: 100%;
-  top: 1.5em;
-  margin-left: 1em; }
+  top: 0.2em;
+  margin-left: 1em;
+  /*padding-left: 1em;*/
+  /*border-left: 1px solid white;*/
+  width: 15rem; }
 
-@media screen and (max-width: 40em) {
-  .hioasearchwrapper {
-    top: 1em; } }
+/* line 85, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .en a.hioalogo {
   width: 100px; }
 
-a.hioasearchtitle:link,
-a.hioasearchtitle:visited {
+/* line 90, /home/hanson/projects/oria-hioa-mod/_scss/header */
+a.hioasearchtitle:link, a.hioasearchtitle:visited {
   /*color: white;*/
   text-decoration: none; }
 
-a.hioasearchtitle {
-  color: black; }
-
-a.hioasearchtitle:hover,
-a.hioasearchtitle:focus {
+/* line 97, /home/hanson/projects/oria-hioa-mod/_scss/header */
+a.hioasearchtitle:hover, a.hioasearchtitle:active {
+  color: #fffa61;
+  /* lysegul - vises best */
   color: #00afff;
   /* lyseblå - samme som lenker over sort bakgrunn */ }
 
+/* line 104, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .tjenestetittel {
-  font-family: arial, sans-serif;
-  font-size: 1.5em;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "Garamond", "Times New Roman", serif;
+  font-size: 4em;
+  font-size: 4rem;
+  font-weight: 700;
   display: block; }
 
-@media screen and (min-width: 40em) {
-  .tjenestetittel {
-    width: 30em;
-    width: 30rem; } }
-/*legg til media query for smal bredde */
+/* line 112, /home/hanson/projects/oria-hioa-mod/_scss/header */
 .tjenestebeskrivelse {
   font-family: "Arial", sans-serif;
-  font-size: 1.5em;
-  font-weight: normal; }
+  font-size: 0.8em;
+  font-weight: normal;
+  white-space: pre; }
 
-#exlidMainMenuContainer a:link,
-#exlidMainMenuContainer a:visited,
-#footerEXL a:link,
-.EXLFooterTile a:link,
-#footerEXL a:visited,
-.EXLFooterTile a:visited {
+/* line 130, /home/hanson/projects/oria-hioa-mod/_scss/header */
+#exlidMainMenuContainer a:link, #exlidMainMenuContainer a:visited, #footerEXL a:link, .EXLFooterTile a:link, #footerEXL a:visited, .EXLFooterTile a:visited {
   /*color: white;*/ }
 
-#exlidMainMenuContainer a:hover,
-#exlidMainMenuContainer a:active,
-#footerEXL a:hover,
-.EXLFooterTile a:hover,
-#footerEXL a:active,
-.EXLFooterTile a:active {
+/* line 143, /home/hanson/projects/oria-hioa-mod/_scss/header */
+#exlidMainMenuContainer a:hover, #exlidMainMenuContainer a:active, #footerEXL a:hover, .EXLFooterTile a:hover, #footerEXL a:active, .EXLFooterTile a:active {
   color: #00afff; }
 
 /* fjern litt marg over hovedmenyen for bred layout */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 35rem) {
+  /* line 150, /home/hanson/projects/oria-hioa-mod/_scss/header */
   #exlidMainMenuTile {
-    margin-top: -0.75em; } }
+    margin-top: 0; }
+ }
+
 /* --- HEADER END --- */
 /* --- FOOTER START --- */
-#footerEXL,
-.EXLFooterTile
- {
+/* line 5, /home/hanson/projects/oria-hioa-mod/_scss/footer */
+#footerEXL, .EXLFooterTile {
   background-color: transparent;
   background-image: none; }
 
-#footerEXL *,
-.EXLFooterTile * {
+/* line 13, /home/hanson/projects/oria-hioa-mod/_scss/footer */
+#footerEXL *, .EXLFooterTile * {
   /*color: white;*/ }
 
+/* line 17, /home/hanson/projects/oria-hioa-mod/_scss/footer */
 .EXLFooterTile div.EXLFooterUpdateContainer, .EXLFooterTile li {
   box-sizing: border-box; }
 
 /* footer link colors specified in hioa-header.css (uses the same colors) */
 @media screen and (max-width: 35rem) {
+  /* line 24, /home/hanson/projects/oria-hioa-mod/_scss/footer */
   html:root .EXLFooterTile {
-    display: inline-block; } }
+    display: inline-block; }
+ }
+
 @media screen and (max-width: 35rem) {
+  /* line 29, /home/hanson/projects/oria-hioa-mod/_scss/footer */
   .EXLFooterTile div.EXLFooterLinksContainer {
     width: 100%; }
 
+  /* line 32, /home/hanson/projects/oria-hioa-mod/_scss/footer */
   ul.EXLFooterLinksList1 {
     width: 100%;
     margin: 0;
     margin-top: 1px;
     padding: 0; }
 
+  /* line 38, /home/hanson/projects/oria-hioa-mod/_scss/footer */
   ul.EXLFooterLinksList1 li {
     text-align: center;
     display: block;
@@ -196,72 +193,89 @@ a.hioasearchtitle:focus {
     border: none;
     position: relative; }
 
+
+  /* line 52, /home/hanson/projects/oria-hioa-mod/_scss/footer */
   ul.EXLFooterLinksList1 li a {
     position: absolute;
     display: block;
-    padding-top: .25rem;
+    padding-top: 0.25rem;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     text-align: center; }
 
+  /* line 62, /home/hanson/projects/oria-hioa-mod/_scss/footer */
   .EXLFooterTile div.EXLFooterUpdateContainer {
     float: left;
     width: 100%;
     text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem; } }
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+ }
+
 /* --- FOOTER END --- */
 /* --- USERMENU START --- */
+/* line 4, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
 #exlidUserAreaRibbon li span.EXLUserAreaStart {
   display: none; }
 
+/* line 8, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
 #exlidUserAreaTile {
   position: relative;
   top: 1em; }
 
-@media screen and (min-width: 40em) {
-  #exlidUserAreaRibbon {
-    margin-top: -.75em; } }
-@media screen and (max-width: 500px), (max-width: 40em) {
+@media screen and (max-width: 40em) {
+  /* line 14, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaTile {
     position: static;
-    margin-top: 1px;
-    top: 0; } }
+    margin-top: 1px; }
+ }
+
+/* line 20, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
 #exlidUserAreaRibbon li {
   background-image: none;
   padding: 0;
   font-size: 1em; }
 
+/* line 26, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
 html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
   font-size: 1em !important; }
 
+/* line 30, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
 #exlidUserAreaRibbon li + li {
   margin-left: 1.25em; }
 
+/* line 34, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
 #exlidUserAreaRibbon li a {
   color: #0075B0; }
 
 @media screen and (min-width: 50em) {
+  /* line 37, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaTile {
-    margin-right: 0.75em; } }
+    margin-right: 0.75em; }
+ }
+
 @media screen and (max-width: 40em) {
+  /* line 43, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaRibbon li {
     background-image: none; }
 
-  #exlidUserAreaRibbon li span.EXLUserAreaStart,
-  #exlidUserAreaRibbon li#exlidMyShelf {
+  /* line 47, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
+  #exlidUserAreaRibbon li span.EXLUserAreaStart, #exlidUserAreaRibbon li#exlidMyShelf {
     display: none; }
 
+  /* line 50, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaTile {
     width: 100%; }
 
+  /* line 53, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaTile ul {
     width: 100%;
     position: relative;
     right: 0; }
 
+  /* line 58, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaTile ul li {
     position: relative;
     border: none;
@@ -271,17 +285,19 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
     height: 2rem;
     padding: 0 !important; }
 
+  /* line 67, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   ul#exlidUserAreaRibbon li#exlidUserName {
     background-color: transparent;
     margin-left: -1px; }
 
+  /* line 71, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   ul#exlidUserAreaRibbon li#exlidMyAccount {
     margin-right: 1px; }
 
-  #exlidUserAreaTile ul li a,
-  #exlidUserAreaTile span.EXLUserNameDisplay {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+  /* line 75, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
+  #exlidUserAreaTile ul li a, #exlidUserAreaTile span.EXLUserNameDisplay {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     /*color: white;*/
     font-weight: bold;
     text-decoration: none;
@@ -294,13 +310,17 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
     bottom: 0;
     left: 0; }
 
+  /* line 91, /home/hanson/projects/oria-hioa-mod/_scss/usermenu */
   #exlidUserAreaTile ul li + li {
     margin-top: 1px;
-    margin-left: 0; } }
+    margin-left: 0; }
+ }
+
 /* --- USERMENU END --- */
 /* --- MAINMENU START --- */
 /* START hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
 /* flytte lenker ned på sin egen linje, venstrestilt for å unngå layoutproblemer */
+/* line 8, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuTile {
   clear: left;
   float: left;
@@ -308,87 +328,111 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
   margin-bottom: 0; }
 
 /* samme som over */
+/* line 16, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuTile div.EXLMainMenuContainer {
   float: left;
   width: auto;
   height: 1.5rem;
   line-height: 1.5rem; }
 
+/* line 23, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuRibbon {
   margin-right: 1em;
   padding: 0;
   float: left;
-  margin-bottom: 5px;
-  margin-left: 6em; }
+  margin-bottom: 5px; }
 
+/* line 30, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 html:root #exlidMainMenuRibbon {
   margin-right: 0;
-  font-size: 1.25em; }
+  font-size: 1.25em;
+  margin-left: 0.75em; }
 
+/* line 36, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuRibbon li {
   border-right: 1px solid white;
   height: 1.5rem;
   line-height: 1.5rem;
   margin: 0;
-  font-weight: normal; }
+  font-weight: bold; }
 
+/* line 43, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuRibbon li:last-child {
   border-right: none; }
 
+/* line 46, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuRibbon li span {
   border: none;
   padding: 0; }
 
+/* line 50, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuRibbon li + li {
   margin-left: 1em; }
 
+/* line 51, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
 #exlidMainMenuRibbon li a {
   color: #0075B0; }
 
 /* SLUTT hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 35rem) {
+  /* line 58, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
   html:root #exlidMainMenuTile div.EXLMainMenuContainer {
     display: none; }
 
+  /* line 59, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
   html:root #exlidMainMenuTile {
     margin: 0; }
 
+  /* line 60, /home/hanson/projects/oria-hioa-mod/_scss/mainmenu */
   html:root #exlidUserAreaRibbon {
-    height: auto; } }
+    height: auto; }
+ }
+
 /* --- MAINMENU END --- */
 /* --- SEARCHFIELD START --- */
+/* line 4, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 div#exlidSearchRibbon {
   max-width: 70em;
   float: none;
   margin: auto; }
 
 @media screen and (min-width: 501px) {
+  /* line 11, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   div#exlidSearchRibbon {
-    left: .5em; } }
+    left: 0.5em; }
+ }
+
 @media screen and (min-width: 85em) {
+  /* line 17, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   div#exlidSearchRibbon {
     left: -3em; }
 
+  /* line 20, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   .EXLSearchFieldRibbonAdvancedSearchLink {
     position: absolute;
     top: 2.5em;
-    left: 100%; } }
+    left: 100%; }
+ }
+
+/* line 27, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon div.EXLSearchFieldRibbon {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
 
+/* line 34, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchTabs {
   margin-bottom: 1.3em;
   position: static;
   /*padding-top: 2px;*/ }
 
+/* line 40, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon #exlidSearchTabs li {
   background: none;
   border: none;
   margin: 0;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   height: 1.75em;
   font-size: 1em;
   position: relative;
@@ -398,20 +442,23 @@ div#exlidSearchRibbon {
   border-bottom-color: transparent;
   top: 10px; }
 
+/* line 55, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon #exlidSearchTabs li span {
   line-height: 1.75em; }
 
+/* line 59, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected {
   background-color: white;
   border: 1px solid #0075B0;
   padding-bottom: 1px;
   color: black;
   font-weight: bold;
-  border-top-left-radius: .25em;
-  border-top-right-radius: .25em;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
   border-bottom: 1px solid white;
   z-index: 51; }
 
+/* line 71, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::before {
   content: "";
   border-left: 1px solid #0075B0;
@@ -426,15 +473,18 @@ div#exlidSearchRibbon {
   bottom: -1px;
   box-sizing: border-box; }
 
+/* line 86, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon #exlidSearchTabs li + li {
   margin-left: 1em; }
 
+/* line 90, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon div.EXLSearchFieldRibbon {
   border: 1px solid #0075B0;
   position: relative;
   z-index: 50; }
 
-html #exlidSearchTile {
+/* line 96, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
+#exlidSearchTile {
   padding: 1em;
   font-size: 1em;
   height: auto;
@@ -446,6 +496,7 @@ html #exlidSearchTile {
   background-color: #eee;
   position: relative; }
 
+/* line 109, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchTile::before {
   position: absolute;
   content: "";
@@ -456,15 +507,18 @@ html #exlidSearchTile {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray; }
 
+/* line 121, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchTile::after {
   content: "";
   display: table;
   clear: both; }
 
+/* line 127, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 div.EXLSearchFieldRibbonFormLinks {
   margin-left: 1em; }
 
 /* Opera 12.6 browser styles bruker en sort border her som ikke tar seg fint ut */
+/* line 132, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchRibbon input#goButton.submit {
   border: none;
   border-radius: 0;
@@ -473,11 +527,13 @@ div.EXLSearchFieldRibbonFormLinks {
   background-image: none; }
 
 /* Utnytte hele bredden til søkefeltet */
+/* line 141, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidSearchRibbon {
   width: 100%;
   padding-left: 0; }
 
 /* Sette bredde på søk-knappen */
+/* line 147, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidSearchRibbon input#goButton {
   width: 100%;
   height: 100%;
@@ -486,29 +542,29 @@ html:root #exlidSearchRibbon input#goButton {
   padding: 0; }
 
 /* gjør søkefeltet tykkere vertikalt */
-html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
-html:root .EXLSearchFieldRibbonFormFields,
-html:root .EXLClearSimpleSearchBoxButtonClose,
-html:root .EXLSearchFieldRibbonFormSubmitSearch {
+/* line 159, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
+html:root #exlidSearchRibbon div.EXLSearchFieldRibbon, html:root .EXLSearchFieldRibbonFormFields, html:root .EXLClearSimpleSearchBoxButtonClose, html:root .EXLSearchFieldRibbonFormSubmitSearch {
   height: 2.5rem; }
 
 /* søkefeltet */
-html:root .EXLSearchFieldRibbonFormFields,
-html:root .EXLSearchFieldRibbonFormSearchForMaximized .EXLSearchFieldRibbonFormSearchFor {
+/* line 165, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
+html:root .EXLSearchFieldRibbonFormFields, html:root .EXLSearchFieldRibbonFormSearchForMaximized .EXLSearchFieldRibbonFormSearchFor {
   width: 100% !important;
   padding-left: 0; }
 
 /* Selve input som man søker i */
 /* box-sizing: border-box er helt nødvendig for å beregne plass riktig. Må sjekke kompatibilitet. */
 /* padding for å gi plass til søk og tøm-søk knappene */
+/* line 173, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
   box-sizing: border-box;
   width: 100%;
   padding-right: 6.5rem;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   height: 2.5rem; }
 
 /* søkeknapp */
+/* line 182, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root .EXLSearchFieldRibbonFormSubmitSearch {
   width: 6rem;
   margin-left: -6rem;
@@ -516,43 +572,51 @@ html:root .EXLSearchFieldRibbonFormSubmitSearch {
   padding: 1px; }
 
 /* Søkeknappen i avansert søk - da må den ikke ha negativ marg  */
+/* line 190, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidAdvancedSearchTile .EXLSearchFieldRibbonFormSubmitSearch {
   margin: 0; }
 
 /* Trekke clear-søk knappen til plassen sin */
+/* line 195, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root .EXLSearchFieldRibbonFormSearchClear {
   width: 2rem;
   margin-left: -8.75rem; }
 
 /* Setter bredden på nullstill-knappen litt utenfor ikonet */
 /* Det blir da .5rem luft til søkeknappen for å unngå feiltrykk */
+/* line 202, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root .EXLClearSimpleSearchBoxButtonClose {
   width: 2.5rem; }
 
-.EXLSearchFieldRibbonAdvancedSearchLink,
-.EXLSearchFieldRibbonBrowseSearchLink {
+/* line 207, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
+.EXLSearchFieldRibbonAdvancedSearchLink, .EXLSearchFieldRibbonBrowseSearchLink {
   width: auto; }
 
+/* line 211, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 .EXLSearchFieldRibbonAdvancedSearchLink {
   margin: 0;
   margin-right: 2%; }
 
+/* line 216, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 .EXLSearchFieldRibbonBrowseSearchLink {
   margin-right: 2em; }
 
+/* line 220, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 #exlidSearchTile a.EXLSearchFieldRibbonAdvancedTwoLinks {
   font-size: 1.25em;
   margin: 0;
   padding: 0;
   float: right;
-  margin: .25em 0 0 0; }
+  margin: 0.25em 0 0 0; }
 
 /* Flytte søkefeltet ++ litt til høyre */
+/* line 229, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidSearchRibbon fieldset {
   overflow: hidden; }
 
 /* Luft mellom Avansert Søk og Bla i innhold lenkene til søkeknappen */
 /* Øker skriftstørrelsen i søkefeltet litt for bedre lesbarhet */
+/* line 237, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root input#search_field {
   font-size: 1.125rem;
   line-height: 1rem;
@@ -561,14 +625,19 @@ html:root input#search_field {
 /* Optimalisert layout for moderne nettlesere (de støtter element:root selectoren) */
 /* Unngår at reglene treffer msie<=8 som kan skape problemer  */
 /* search */
+/* line 248, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidSearchRibbon {
   position: relative; }
 
 @media screen and (max-width: 40em) {
+  /* line 253, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   html:root #exlidSearchRibbon {
     margin: 0;
-    top: .25rem; } }
+    top: 0.5rem; }
+ }
+
 /* lenkene avansert søk og browse søk plasseres til høyre for søkeknapp */
+/* line 265, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
 html:root #exlidSearchRibbon fieldset {
   display: block;
   margin: 0px;
@@ -576,119 +645,96 @@ html:root #exlidSearchRibbon fieldset {
   width: 100%;
   float: left; }
 
-@media screen and (min-width: 501px) {
-  html:root #exlidSearchRibbon fieldset {
-    /*padding-right: 8rem;*/ } }
+/* line 274, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
+html:root #exlidSearchRibbon fieldset {
+  /*padding-right: 8rem;*/ }
+
 /* TODO: Må gå gjennom mobiltilpasset css */
 @media screen and (max-width: 40em) {
-  html:root .EXLSearchFieldRibbonAdvancedSearchLink,
-  html:root .EXLSearchFieldRibbonBrowseSearchLink,
-  html:root div#exlidSearchRibbon div.EXLSearchTabsContainer {
+  /* line 283, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
+  html:root .EXLSearchFieldRibbonAdvancedSearchLink, html:root .EXLSearchFieldRibbonBrowseSearchLink, html:root div#exlidSearchRibbon div.EXLSearchTabsContainer {
     display: none; }
 
   /* fyll hele bredden */
+  /* line 288, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   html:root #exlidSearchRibbon fieldset {
     right: 0;
     left: 0; }
 
+  /* line 292, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   html:root #exlidSearchTile {
     height: 3rem;
     /* denne overskriver regel fra mobile.css */
-    padding: .5em 0;
+    padding: 0.5em 0;
     box-sizing: content-box;
     top: 1em; }
 
+  /* line 300, /home/hanson/projects/oria-hioa-mod/_scss/searchfield */
   html:root form[name="searchForm"] {
-    margin-bottom: 2em; } }
+    margin-bottom: 2em; }
+ }
+
 /* søkefelt får hele bredden, søk-knapp kommer under */
-@media screen and (max-width: 25em) {
-  html:root #exlidSearchRibbon input#goButton {
-    position: absolute;
-    bottom: 0.75em;
-    left: 0;
-    height: 2em;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666; }
-
-  html:root #exlidSearchRibbon div.EXLSearchFieldRibbonFormFields {
-    position: absolute;
-    height: 2em;
-    top: .75em;
-    bottom: auto;
-    left: 0; }
-
-  html:root .EXLSearchFieldRibbonFormSubmitSearch,
-  html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
-  html:root #exlidSearchRibbon {
-    position: static; }
-
-  html:root #exlidSearchTile {
-    padding: 2.25em 0; }
-
-  html:root .EXLSearchFieldRibbonFormSearchClear,
-  html:root .EXLClearSimpleSearchBoxButtonClose {
-    display: none; }
-
-  html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
-    padding-right: .5em;
-    border: 1px solid #666; }
-
-  /*
-  html:root .EXLSearchFieldRibbonFormSubmitSearch {
-  	position: static;
-  }
-  html:root #exlidSearchRibbon fieldset {
-  	height: 5rem;
-  	
-  }
-  div#exlidSearchTile.EXLSearch {
-  	padding-bottom: 3rem;
-  }
-  #exlidSearchRibbon div.EXLSearchFieldRibbon {
-  	z-index: 1;
-  }
-  html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
-  	padding: 0;
-  	padding-left: .25rem;
-  	padding-right: .25rem;
-  }
-  html:root .EXLSearchFieldRibbonFormSearchClear,
-  html:root .EXLClearSimpleSearchBoxButtonClose {
-  	display: none;
-  }
-  html:root #exlidSearchRibbon input#goButton {
-  	position: absolute;
-  	bottom: -2.5rem;
-  	z-index: 200;
-  	left: 0;
-  	right: 0;
-  	margin: auto;
-  	border-top: 1px solid #a3420a;
-  	border-bottom: 1px solid #a3420a;
-  	border-left: none;
-  	border-right: none;
-  	box-shadow: 0 .125rem .25rem rgba(136, 136, 136, 0.69);
-  	margin-bottom: .25rem;
-  }
-  html:root #exlidSearchRibbon fieldset {
-  	margin-top: -.25rem;
-  }
-  html:root div.EXLSearchFieldRibbon {
-  	top: .25rem;
-  	box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
-  }*/ }
+/*@media screen and (max-width: 20rem) {
+	html:root .EXLSearchFieldRibbonFormSubmitSearch {
+		position: static;
+	}
+	html:root #exlidSearchRibbon fieldset {
+		height: 5rem;
+		
+	}
+	div#exlidSearchTile.EXLSearch {
+		padding-bottom: 3rem;
+	}
+	#exlidSearchRibbon div.EXLSearchFieldRibbon {
+		z-index: 1;
+	}
+	html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+		padding: 0;
+		padding-left: .25rem;
+		padding-right: .25rem;
+	}
+	html:root .EXLSearchFieldRibbonFormSearchClear,
+	html:root .EXLClearSimpleSearchBoxButtonClose {
+		display: none;
+	}
+	html:root #exlidSearchRibbon input#goButton {
+		position: absolute;
+		bottom: -2.5rem;
+		z-index: 200;
+		left: 0;
+		right: 0;
+		margin: auto;
+		border-top: 1px solid #a3420a;
+		border-bottom: 1px solid #a3420a;
+		border-left: none;
+		border-right: none;
+		box-shadow: 0 .125rem .25rem rgba(136, 136, 136, 0.69);
+		margin-bottom: .25rem;
+	}
+	html:root #exlidSearchRibbon fieldset {
+		margin-top: -.25rem;
+	}
+	html:root div.EXLSearchFieldRibbon {
+		top: .25rem;
+		box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
+	}
+}*/
 /* --- SEARCHFIELD END --- */
 /*@import '_rp_frbr';*/
 /* --- FRBR START --- */
 /* (Vis flere treff) */
+/* line 5, /home/hanson/projects/oria-hioa-mod/_scss/rp_frbr_btn */
 .EXLResultsList div.EXLSummaryContainer {
-  margin-top: .25em; }
+  margin-top: 0.25em; }
 
+/* line 9, /home/hanson/projects/oria-hioa-mod/_scss/rp_frbr_btn */
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
   top: 1px;
   right: 0;
   position: absolute; }
 
+/* line 15, /home/hanson/projects/oria-hioa-mod/_scss/rp_frbr_btn */
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a {
   width: auto;
   padding: 0.25em 0.4em;
@@ -696,16 +742,19 @@ html:root #exlidSearchRibbon fieldset {
   background: #0075B0;
   text-decoration: none; }
 
+/* line 23, /home/hanson/projects/oria-hioa-mod/_scss/rp_frbr_btn */
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a:hover {
   color: white;
   background: #e67300; }
 
 /*Fjerner skrå felt som bare er til for presentasjonens skyld*/
+/* line 29, /home/hanson/projects/oria-hioa-mod/_scss/rp_frbr_btn */
 #contentEXL span.EXLResultBgFRBR {
   display: none; }
 
 /* Tilpasninger ved smal bredde for å unngå kollison mellom 'vis flere versjoner' og tittel i treffet */
 /* sørg for at EXLResultTitle ikke havner under EXLResultFRBR, dvs 'vis flere versjoner'  */
+/* line 36, /home/hanson/projects/oria-hioa-mod/_scss/rp_frbr_btn */
 #contentEXL .EXLResultTitle {
   /*margin-right: 1rem;*/ }
 
@@ -713,17 +762,20 @@ html:root #exlidSearchRibbon fieldset {
 
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}*/
 /* --- FRBR END --- */
-.EXLResultsTile,
-.EXLFacetTile {
+/* line 3, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
+.EXLResultsTile, .EXLFacetTile {
   box-sizing: border-box; }
 
 /* make sure send to reference will come out on top*/
+/* line 8, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
 #exliWhiteContent {
   z-index: 50; }
 
+/* line 11, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
 .EXLResultsList td.EXLThumbnail span.EXLThumbnailCaption {
   border: none; }
 
+/* line 14, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
 .EXLResultsContainer div.EXLResultsTile {
   display: block;
   width: 100%;
@@ -733,35 +785,47 @@ html:root #exlidSearchRibbon fieldset {
   border-left: none; }
 
 @media screen and (max-width: 40em), (max-width: 500px) {
+  /* line 23, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
   .EXLResultsContainer div.EXLResultsTile {
     margin-left: 0;
-    padding-left: 0; } }
+    padding-left: 0; }
+ }
+
 @media screen and (min-width: 70em) {
+  /* line 30, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
   .EXLResultsContainer div.EXLResultsTile {
     margin-left: -20em;
-    padding-left: 21em; } }
+    padding-left: 21em; }
+ }
+
+/* line 35, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
 .EXLFacetTile {
   float: left;
   display: inline-block;
   width: 16em;
-  padding-right: .5em; }
+  padding-right: 0.5em; }
 
 @media screen and (min-width: 70em) {
+  /* line 43, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
   .EXLFacetTile {
     width: 20em;
-    padding-right: 1em; } }
-#exlidFacetTile,
-#exlidResultsContainer {
+    padding-right: 1em; }
+ }
+
+/* line 50, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
+#exlidFacetTile, #exlidResultsContainer {
   position: relative;
   z-index: 1; }
 
+/* line 55, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
 #exlidResultsContainer {
   /* clearfix */
   float: left;
   width: 100%;
   box-sizing: border-box;
-  padding: .5em; }
+  padding: 0.5em; }
 
+/* line 63, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
 #exlidResultsContainer::after {
   /*clearfix*/
   content: "";
@@ -770,16 +834,17 @@ html:root #exlidSearchRibbon fieldset {
 
 @media screen and (min-width: 501px) and (min-width: 40em) {
   /* border between #exlidFacetTile and .EXLResultsContainer
-   when screen layout is bigger than 500px */
+	 when screen layout is bigger than 500px */
   /*#exlidResultsContainer::after {
-  	position: absolute;
-  	top: .5em;
-  	bottom: .5em;
-  	content: "";
-  	z-index: 2;
-  	left: $leftmenuwidth + .5em;
-  	border-left: 1px solid $results-border-color;
-  }*/
+		position: absolute;
+		top: .5em;
+		bottom: .5em;
+		content: "";
+		z-index: 2;
+		left: $leftmenuwidth + .5em;
+		border-left: 1px solid $results-border-color;
+	}*/
+  /* line 82, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
   #exlidFacetTile::after {
     position: absolute;
     content: "";
@@ -791,39 +856,47 @@ html:root #exlidSearchRibbon fieldset {
 
   /*adjust the border placement when the left-menu is wide */
   /*@media screen and (min-width: $leftmenu-wide-breakpoint) {
-  	#exlidResultsContainer::after {
-  		left: $leftmenu-wide-width + .5em;
-  	}
-  }*/ }
+		#exlidResultsContainer::after {
+			left: $leftmenu-wide-width + .5em;
+		}
+	}*/ }
+
 @media screen and (max-width: 500px), (max-width: 40em) {
+  /* line 100, /home/hanson/projects/oria-hioa-mod/_scss/rp_resultscontainer_layout */
   #exlidFacetTile {
     margin-top: 4em;
     display: block;
-    width: 100%; } }
+    width: 100%; }
+ }
+
 @media screen and (max-width: 500px) {
   /* enable "narrow down the results" in mobile layout */
+  /* line 4, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   body #exliWhiteContent {
     position: fixed;
     width: auto;
     height: auto;
-    top: .5em;
-    right: .5em;
-    left: .5em;
+    top: 0.5em;
+    right: 0.5em;
+    left: 0.5em;
     bottom: 3.5em;
     overflow-y: scroll;
     overflow-x: hidden;
     border: 1px solid #666;
     background: white; }
 
+  /* line 17, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxListWrapper {
     padding-bottom: 3em; }
 
+  /* line 20, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile {
     height: auto;
     width: 100%;
-    padding: .25em;
+    padding: 0.25em;
     border: none; }
 
+  /* line 26, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxListContainer {
     padding: 0;
     height: auto;
@@ -831,33 +904,40 @@ html:root #exlidSearchRibbon fieldset {
     height: auto;
     margin-bottom: 1em; }
 
+  /* line 33, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxContainer {
     height: auto;
     width: 100%;
     padding: 0;
     background: red; }
 
+  /* line 39, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   .EXLFacetsLightboxTabsRibbon {
-    padding-left: .5em; }
+    padding-left: 0.5em; }
 
+  /* line 42, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   .EXLFacetsLightboxTabsRibbon span {
     margin-right: auto;
     min-width: auto; }
 
+  /* line 46, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
     padding: 0; }
 
+  /* line 49, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
     margin-left: 1em;
     margin-top: 0; }
 
   /* position buttons fixed */
+  /* line 55, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
     position: fixed;
-    bottom: .5em;
+    bottom: 0.5em;
     left: 4%;
     width: 44%; }
 
+  /* line 61, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxContainer a.EXLSubmit {
     height: 3em;
     box-sizing: border-box;
@@ -866,40 +946,49 @@ html:root #exlidSearchRibbon fieldset {
     line-height: 3em;
     padding: 0; }
 
+  /* line 69, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {
     position: fixed;
-    bottom: .5em;
+    bottom: 0.5em;
     right: 4%;
     width: 44%; }
 
+  /* line 75, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxContainer input.EXLReset {
     height: 3em;
     width: 100%;
     box-sizing: border-box; }
 
   /* style the rows with narrow down entries */
+  /* line 82, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
     font-size: 1.25em;
     position: relative;
     background-color: #f0f0f0; }
 
+  /* line 87, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow + .EXLFacetsLightboxListRow {
-    margin-top: .5em; }
+    margin-top: 0.5em; }
 
+  /* line 90, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow input[type="checkbox"].EXLChkInclude {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: .25em;
+    left: 0.25em;
     margin: auto; }
 
+  /* line 97, /home/hanson/projects/oria-hioa-mod/_scss/rp_narrow_results_mobile_popup */
   #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
     margin-left: 0;
-    padding: .25em 0;
-    padding-left: 1.75em; } }
+    padding: 0.25em 0;
+    padding-left: 1.75em; }
+ }
+
 /* --- RESULTSPAGE START --- */
 /* START treffliste */
 /* Søkeresultatene - annenhver trefflinje får lysegrå bakgrunn */
+/* line 11, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 tr.EXLResult:nth-child(2n) {
   background-color: #f5f5f5; }
 
@@ -909,74 +998,83 @@ tr.EXLResult:nth-child(2n) {
  * Har også gjort tekten en anelse mørkere enn standard for å ha nok kontrast med 
  * den lyseblå bakgrunnen som kommer annenhver treff.
  */
+/* line 21, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList p.EXLResultSnippet {
   color: #555;
-  margin: .75em 0;
+  margin: 0.75em 0;
   font-style: italic; }
 
 /* Results navigation */
+/* line 28, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabsRibbon div li.EXLResultTab {
   margin: 0;
-  padding: .25em .2em;
+  padding: 0.25em 0.2em;
   height: 2em; }
 
+/* line 34, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #exlidResultsTable .EXLResultTab a {
   background-color: #0075B0;
   color: white;
   padding: 0.5em 0.8em; }
 
+/* line 40, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #exlidResultsTable .EXLResultTab a:hover {
   background-color: #e67300;
   color: white;
   padding: 0.5em 0.8em;
   text-decoration: none; }
 
+/* line 47, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
   left: auto;
   right: 0;
   margin: 0;
   top: 2.75em;
-  padding: .25em 0;
+  padding: 0.25em 0;
   width: auto;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
   box-sizing: border-box;
   border: 1px solid #0075B0;
   background-color: white; }
 
+/* line 60, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers li.EXLSortByLink {
   background: white; }
 
+/* line 64, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
-  bottom: .5em;
+  bottom: 0.5em;
   top: auto; }
 
+/* line 69, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile .EXLSortByLink a:hover {
   text-decoration: underline; }
 
+/* line 73, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
   float: none;
   clear: both;
   font-size: 0.8em;
   /*margin: .5em auto .5em 1em;*/
-  margin: .5em 0 .5em auto;
+  margin: 0.5em 0 0.5em auto;
   /* margin shorthand: top right bottom left*/
-  padding: .25em;
+  padding: 0.25em;
   /*width: auto;*/
   width: 17em;
   /*	top: 2.75em;*/
   /*width: $EXLResultsSortBy-width;*/ }
 
-#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel,
-#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel {
+/* line 91, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel {
   position: relative;
   display: inline;
   font-weight: bold;
   /*font-size: 1.25em;*/
   line-height: 1.5em;
-  padding: .25em 1em .25em 0; }
+  padding: 0.25em 1em 0.25em 0; }
 
-#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a,
-#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
+/* line 102, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
   margin: 0;
   padding: 0.5em 0.8em;
   color: white;
@@ -985,52 +1083,61 @@ tr.EXLResult:nth-child(2n) {
   width: auto;
   float: right;
   position: relative;
-  left: -.25em;
+  left: -0.25em;
   clear: none;
   /*min-width: 10em;*/
   width: 8em; }
 
-#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:hover,
-#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:hover {
+/* line 119, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:hover, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:hover {
   background: #e67300; }
 
+/* line 123, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink {
   padding: 0;
   line-height: 2.5em; }
 
+/* line 128, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
   display: block;
   color: white;
   background: #0075B0;
-  margin: 0.25em .5em; }
+  margin: 0.25em 0.5em; }
 
+/* line 135, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
   color: white;
   background: #e67300; }
 
+/* line 140, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
   color: black;
-  padding: .25em 0; }
+  padding: 0.25em 0; }
 
+/* line 145, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsSortBy .EXLSortByLink a {
   padding: 0.5em 0.8em;
   line-height: 1.5em; }
 
-#resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover,
-#resultsNumbersTileBottom div.EXLResultsSortBy .EXLSortByLink a:hover {
+/* line 151, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+#resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover, #resultsNumbersTileBottom div.EXLResultsSortBy .EXLSortByLink a:hover {
   text-decoration: underline; }
 
+/* line 155, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
   content: " … ↳"; }
 
+/* line 159, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
   content: " … ↱"; }
 
+/* line 163, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 li.EXLSortByLinkSelected {
   position: relative;
   z-index: 1;
   color: black; }
 
+/* line 169, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 li.EXLSortByLinkSelected::after {
   position: absolute;
   content: "";
@@ -1039,36 +1146,42 @@ li.EXLSortByLinkSelected::after {
   bottom: 0;
   right: 0;
   left: 0;
-  margin: .25em .5em;
+  margin: 0.25em 0.5em;
   background-color: #eee;
   box-sizing: border-box;
   border: 1px solid #0075b0; }
 
+/* line 183, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader {
   text-align: center; }
 
+/* line 187, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader h1 {
   text-align: left;
   width: 100%;
   box-sizing: border-box; }
 
+/* line 193, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsHeader div.EXLResultsNumbers {
   width: auto;
   float: none; }
 
+/* line 198, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsContainer .EXLResultsHeader div.EXLResultsNavigation {
   width: auto;
   float: none;
   display: block;
-  margin: .5em;
+  margin: 0.5em;
   float: left;
   clear: left;
   padding: 0;
   font-size: 1em; }
 
+/* line 209, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 #exlidResultsContainer {
   padding-bottom: 1em; }
 
+/* line 213, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation .EXLDisplayedCount {
   font-size: 1em;
   padding: 0;
@@ -1085,6 +1198,7 @@ div.EXLResultsNavigation .EXLDisplayedCount {
   margin: 0.3em;
   border: 1px solid #0075B0; }
 
+/* line 230, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
   font-size: 1em;
   font-weight: bold;
@@ -1099,6 +1213,7 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination {
   float: left;
   text-align: center; }
 
+/* line 245, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 div.EXLResultsNavigation a.EXLBriefResultsPagination a {
   padding: 0;
   background-color: #eee;
@@ -1111,20 +1226,22 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination a {
   display: inline-block;
   box-sizing: border-box; }
 
-div.EXLResultsNavigation a.EXLBriefResultsPagination:hover,
-div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
+/* line 259, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+div.EXLResultsNavigation a.EXLBriefResultsPagination:hover, div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
   background: #e67300;
   color: white;
   text-decoration: none; }
 
+/* line 265, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious {
   position: relative; }
 
+/* line 269, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkNext {
   position: relative; }
 
-a.EXLBriefResultsPaginationLinkPrevious:first-child::after,
-a.EXLBriefResultsPaginationLinkNext:last-child::after {
+/* line 274, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after, a.EXLBriefResultsPaginationLinkNext:last-child::after {
   position: absolute;
   text-align: center;
   font-weight: bold;
@@ -1134,168 +1251,139 @@ a.EXLBriefResultsPaginationLinkNext:last-child::after {
   left: 0;
   right: 0; }
 
+/* line 285, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkPrevious:first-child::after {
   content: "<"; }
 
+/* line 289, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 a.EXLBriefResultsPaginationLinkNext:last-child::after {
   content: ">"; }
 
-a.EXLBriefResultsPaginationLinkPrevious img,
-a.EXLBriefResultsPaginationLinkNext img {
+/* line 294, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+a.EXLBriefResultsPaginationLinkPrevious img, a.EXLBriefResultsPaginationLinkNext img {
   display: none; }
 
-a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after,
-a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
+/* line 299, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after, a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
   background: #e67300;
   color: white; }
 
+/* line 304, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList td.EXLSummary {
   padding: 1.5em 0 1em 0;
   position: relative; }
 
-.EXLResultsList,
-.EXLResultsList td {
+/* line 310, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+.EXLResultsList, .EXLResultsList td {
   border-color: #666; }
 
+/* line 314, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
   width: auto; }
 
+/* line 318, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList div.EXLSummaryContainer {
   box-sizing: border-box;
-  padding-right: .25em; }
+  padding-right: 0.25em; }
 
+/* line 323, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 h2.EXLResultTitle {
   font-size: 1.25em; }
 
+/* line 327, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList h3.EXLResultAuthor {
   font-weight: bold;
-  margin-bottom: .75em; }
+  margin-bottom: 0.75em; }
 
+/* line 332, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultsList h2 {
-  margin-bottom: .5em; }
+  margin-bottom: 0.5em; }
 
 /* Ikon for bok og stjerne for lagre treff, dette posisjonerer dem like høyt som toppen av tittel i søketreffet */
-.EXLResultsList td.EXLMyShelfStar,
-.EXLResultsList td.EXLThumbnail {
+/* line 338, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
+.EXLResultsList td.EXLMyShelfStar, .EXLResultsList td.EXLThumbnail {
   padding-top: 2.5em; }
 
+/* line 342, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLDetailsTabContent div.EXLDetailsLinks {
   line-height: 1.75em; }
 
+/* line 346, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
   background-color: white; }
 
+/* line 350, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li {
   height: auto; }
 
+/* line 353, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabsRibbon div li.EXLResultSelectedTab {
   border: none;
   background-image: none; }
 
+/* line 358, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLResultTabContainer div.EXLTabHeader {
   border: 1px solid #8fb9d0; }
 
+/* line 361, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabHeader div.EXLTabHeaderContent {
   padding: 0; }
 
+/* line 365, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabsRibbon {
   border: none; }
 
+/* line 366, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:link {
   width: 100%;
   height: 100%;
   display: block;
   box-sizing: border-box;
-  padding: .25em 0;
-  margin: .25em 0;
+  padding: 0.25em 0;
+  margin: 0.25em 0;
   height: 2em;
   line-height: 1.5em; }
 
+/* line 377, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabHeaderButtonSendTo img {
-  margin-left: .5em; }
+  margin-left: 0.5em; }
 
+/* line 381, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabHeader div.EXLTabHeaderButtons li.EXLTabHeaderButtonSendTo > a {
   padding-left: 1em;
   padding-right: 1em; }
 
+/* line 386, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabHeader div.EXLTabHeaderButtons li {
   background-position: center right; }
 
+/* line 390, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
   background-color: #abd3fa;
   text-decoration: underline !important; }
 
+/* line 395, /home/hanson/projects/oria-hioa-mod/_scss/resultspage */
 .EXLTabsRibbon div li.EXLResultTabIconPopout {
   background-image: none; }
-
-/* BEGIN FIX popup - send to permanent url */
-/* make sure it comes out on top, centered on the screen */
-div#exliWhiteContent {
-  z-index: 100 !important;
-  border: none;
-  background-color: transparent;
-  overflow: auto; }
-
-#exlidPopupPermalinkContainer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  border: 1px solid gray;
-  box-shadow: 0 0 2em gray; }
-
-.EXLPopupPermalinkContainer, .EXLPopupPermalink {
-  max-width: 100%; }
-
-.EXLPermalinkURL {
-  display: block;
-  width: auto;
-  margin-right: 1.6em;
-  position: relative;
-  left: -.3em; }
-
-.EXLPermalinkURL input {
-  display: block !important;
-  width: 100%;
-  padding: .1em; }
-
-#exlidPopupPermalink .EXLPermalinkHeaderButtonCloseLabel {
-  display: inline-block;
-  position: relative;
-  left: -1em; }
-
-#exlidPopupPermalink .EXLPermalinkHeaderButtonCloseLabel:hover {
-  text-decoration: underline; }
-
-/* END FIX popup - send to permanent url */
-/* BEGIN FIX bg fill Send til > Lenker Strekk background image til fill height */
-.EXLDetailsTabContent div.EXLDetailsLinks {
-  background-size: auto 100%; }
-
-/* END FIX bg fill Send til > Lenker */
-/* Ta høyde for å gi plass til: 'Plasseringen har endret seg' */
-.EXLTabContent {
-  padding-bottom: 2.5em; }
 
 /* SLUTT Treffliste*/
 /* --- RESULTSPAGE END --- */
 /* --- HOMEPAGE START --- */
 /*START forside - info */
 /* mer luft */
+/* line 5, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
 .EXLContentBlock1 li + li {
   margin-top: 1em; }
 
-.EXLContentBlock1 h1,
-.EXLContentBlock1 ul,
-.EXLContentBlock1 ol,
-.EXLContentBlock1 p {
+/* line 9, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
+.EXLContentBlock1 h1, .EXLContentBlock1 ul, .EXLContentBlock1 ol, .EXLContentBlock1 p {
   margin-top: 1em; }
 
+/* line 11, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
 #hioaOriaSearchTips {
   position: relative; }
 
+/* line 15, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
 #hioaOriaPromoImageContainer {
   position: absolute;
   left: 100%;
@@ -1306,6 +1394,7 @@ div#exliWhiteContent {
   padding: 0;
   background-color: white; }
 
+/* line 26, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
 #hioaOriaPromoImage {
   max-width: 90%;
   margin: 0; }
@@ -1313,19 +1402,25 @@ div#exliWhiteContent {
 /*SLUTT forside - info */
 @media screen and (max-width: 35rem) {
   /* Fjerner marg på startsiden (hioa.oria.no) */
+  /* line 35, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
   div#exlidHomeContainer.EXLCustomLayoutContainer {
     margin-left: 0; }
 
+  /* line 36, /home/hanson/projects/oria-hioa-mod/_scss/homepage */
   .EXLContentBlock1 li {
-    margin-left: 1.5em; } }
+    margin-left: 1.5em; }
+ }
+
 /* --- HOMEPAGE END --- */
 /* --- MESSAGEBOX START --- */
+/* line 3, /home/hanson/projects/oria-hioa-mod/_scss/messagebox */
 div#notifierDiv {
   margin: 1em;
-  border: 3px solid #e67300;
+  border: 5px solid #e67300;
   line-height: 1.5em;
   position: relative; }
 
+/* line 10, /home/hanson/projects/oria-hioa-mod/_scss/messagebox */
 div#notifierDiv::before {
   content: ".: System notice :.";
   font-weight: bold;
@@ -1334,21 +1429,23 @@ div#notifierDiv::before {
   font-size: 1.25em;
   margin-bottom: 1em;
   border: orange;
-  padding: .5em;
-  padding-bottom: .25em;
+  padding: 0.5em;
+  padding-bottom: 0.25em;
   border-bottom: 1px solid black; }
 
+/* line 23, /home/hanson/projects/oria-hioa-mod/_scss/messagebox */
 div#notifierDiv p + p {
   margin-top: 1em; }
 
 /* --- MESSAGEBOX END --- */
 /* --- LANGMENU START --- */
 /* wrapperen rundt språkvalg og språkvalgslabel */
-#exlidMainMenuTile div.EXLLanguagesContainer,
-html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+/* line 6, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
+#exlidMainMenuTile div.EXLLanguagesContainer, html:root #exlidMainMenuTile div.EXLLanguagesContainer {
   margin: auto;
   height: 1.5rem; }
 
+/* line 11, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 html:root #exlidMainMenuTile div.EXLLanguagesContainer {
   position: relative;
   top: -2.5em;
@@ -1361,45 +1458,53 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
   height: 2em; }
 
 @media screen and (max-width: 40em) {
+  /* line 26, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
   html:root #exlidMainMenuTile div.EXLLanguagesContainer {
-    top: .5rem;
-    margin: 0; } }
+    top: 0.5rem;
+    margin: 0; }
+ }
+
 /* listen med språkvalgene */
+/* line 33, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile ul#exlidLanguages {
   float: left; }
 
 /* et språkvalg */
+/* line 38, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink {
   width: 100%; }
 
 /* wrapperen rundt listen med språkvalgene */
+/* line 43, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
   float: left;
-  width: 100%;
-  position: absolute; }
+  width: 100%; }
 
 /* Styling av språkvalg som ikke er aktiv */
+/* line 51, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidHeaderContainer #exlidMainMenuTile #exlidLanguages a {
   color: #0075B0;
   font-weight: normal; }
 
 /* Styling av språkvalg som er aktiv */
+/* line 57, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidHeaderContainer #exlidMainMenuTile #exlidSelectedLanguage.EXLLanguageLink a {
   color: black;
   font-weight: bold; }
 
 /* ikke border når språkmenyen ikke vises*/
+/* line 63, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile li#exlidSelectedLanguage {
   border: none; }
 
 /* border top når språkmenyen vises for at man skal skille valgene bedre */
+/* line 68, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile .EXLLanguageMenuShow li#exlidSelectedLanguage {
   border: none; }
 
 /* Ekstra vertikal luft rundt språkvalgene gjør det lettere å trykke riktig */
-.EXLLanguageMenuHide a,
-.EXLLanguageMenuHide.EXLLanguageMenuShow a,
-.EXLLanguageMenuShow a {
+/* line 75, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
+.EXLLanguageMenuHide a, .EXLLanguageMenuHide.EXLLanguageMenuShow a, .EXLLanguageMenuShow a {
   height: 1.75rem;
   line-height: 1.5rem; }
 
@@ -1408,15 +1513,18 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 	display: block;
 	padding: 0;
 }*/
+/* line 85, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 .EXLLanguageMenuShow.EXLLanguageMenuHide a {
   font-size: 1em;
   display: inline;
   padding: 0; }
 
 /*tynn grå strek mellom språkvalgene */
+/* line 92, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {
   padding: 0; }
 
+/* line 96, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {
   border: none; }
 
@@ -1425,9 +1533,11 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 }*/
 /*bedre plassering av drop-down-pil*/
 /*li.EXLLanguageLink {padding-right: 1.5em;}*/
+/* line 105, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 li.EXLLanguageLink {
   position: relative; }
 
+/* line 109, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 li.EXLLanguageLink a {
   padding: 0;
   height: 2.25em;
@@ -1438,26 +1548,32 @@ li.EXLLanguageLink a {
   border: 1px solid gray;
   margin: 0; }
 
+/* line 120, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 li.EXLLanguageLink + li a {
   margin-top: -1px; }
 
+/* line 124, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 li.EXLLanguageLink img:first-child {
   position: static;
   vertical-align: middle;
   margin-left: 5px; }
 
+/* line 130, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 ul#exlidLanguages.EXLLanguageMenuShow {
   width: 100%;
   box-shadow: 0 0 5px black; }
 
+/* line 135, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 ul#exlidLanguages.EXLLanguageMenuHide {
   box-shadow: none; }
 
 /* Fremhev språklabel (Language:) bedre mot sort bakgrunn */
+/* line 140, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 div#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
   display: none; }
 
 /* Narrow langmenu */
+/* line 145, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink img[src$="arrow_sendTo.png"] {
   position: absolute;
   margin: auto;
@@ -1466,137 +1582,164 @@ div#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
   left: auto;
   right: 5px; }
 
+/* line 154, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
 #exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink img {
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
-  left: .4em;
+  left: 0.4em;
   right: auto; }
 
 @media screen and (min-width: 500px), (min-width: 40em) {
+  /* line 165, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
   #exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
     float: none;
     position: absolute;
     z-index: 2;
-    border: none; } }
+    border: none; }
+ }
+
 @media screen and (min-width: 50em) {
+  /* line 174, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
   html:root #exlidMainMenuTile div.EXLLanguagesContainer {
-    margin-right: 0.75em; } }
+    margin-right: 0.75em; }
+ }
+
 @media screen and (max-width: 500px), (max-width: 40em) {
+  /* line 181, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
   #exlidMainMenuTile div.EXLLanguagesContainer {
     display: block !important; }
 
+  /* line 184, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
   #exlidUserAreaRibbon li:not([id]) {
     display: none; }
 
+  /* line 187, /home/hanson/projects/oria-hioa-mod/_scss/langmenu */
   html:root #exlidMainMenuTile div.EXLLanguagesContainer {
     display: block;
     width: auto;
-    margin: .5em auto; } }
+    position: static;
+    margin: 1px auto; }
+ }
+
 /* --- LANGMENU END --- */
 /* --- PROMO START --- */
+/* line 3, /home/hanson/projects/oria-hioa-mod/_scss/promo */
 body #exlidHomeContainer {
   color: black; }
 
+/* line 6, /home/hanson/projects/oria-hioa-mod/_scss/promo */
 #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
   width: auto;
   padding-left: 0;
   float: none; }
 
+/* line 11, /home/hanson/projects/oria-hioa-mod/_scss/promo */
 #exlidHomeContainer {
-  background: url("http://www.bibsys.no/files/out/discovery/Primo_UI_files/HIOA/oria-mouse-book.jpg");
+  background: url('http://www.bibsys.no/files/out/discovery/Primo_UI_files/HIOA/oria-mouse-book.jpg');
   background-position: 80% 50%;
   background-repeat: no-repeat;
   background-size: 20rem, 20rem;
   width: 100%; }
 
 /*#exlidHomeContainer*/
-div.EXLContentBlock1,
-div.EXLContentBlock2,
-div.EXLContentBlock3 {
+/* line 22, /home/hanson/projects/oria-hioa-mod/_scss/promo */
+div.EXLContentBlock1, div.EXLContentBlock2, div.EXLContentBlock3 {
   margin-left: 3rem; }
 
+/* line 25, /home/hanson/projects/oria-hioa-mod/_scss/promo */
 div#exlidHomeContainer.EXLCustomLayoutContainer {
   margin-left: 0; }
 
+/* line 28, /home/hanson/projects/oria-hioa-mod/_scss/promo */
 #hioaOriaSearchTips {
   width: 50%; }
 
 @media screen and (max-width: 35rem) {
-  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1,
-  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2,
-  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock3 {
+  /* line 34, /home/hanson/projects/oria-hioa-mod/_scss/promo */
+  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1, body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2, body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock3 {
     margin-left: 0;
     padding-left: 0.5rem;
     margin-right: 0.5rem;
     padding-right: 0; }
 
+  /* line 40, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   #exlidHomeContainer {
     background: none; }
 
+  /* line 41, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   #hioaOriaSearchTips {
     width: 100%; }
 
   /*MyPage servicebox*/
+  /* line 44, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   div.EXLCustomLayoutTile.EXLHomeBlockContainer2 {
     position: relative;
     width: 100%; }
 
+  /* line 48, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   body #exlidHomeContainer div.EXLHomeBlockContainer2 div.EXLContentBlock3 {
     float: none; }
 
+  /* line 51, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   body #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannersContainer {
     display: block;
     float: none; }
 
+  /* line 55, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   body #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1 {
     float: none;
     margin: 0 auto; }
 
+  /* line 60, /home/hanson/projects/oria-hioa-mod/_scss/promo */
   #exlidHomeContainer div.EXLContentBlock3 h4 {
-    margin-bottom: .25rem; } }
+    margin-bottom: 0.25rem; }
+ }
+
 /* --- PROMO END --- */
 /* --- MOBILE500PXFIX START --- */
 /* Denne lastes inn av primo ved max-width 500px */
 @media screen and (max-width: 500px) {
+  /* line 7, /home/hanson/projects/oria-hioa-mod/_scss/mobile500pxfix */
   html:root .EXLLanguagesContainer {
     display: block !important; }
 
+  /* line 10, /home/hanson/projects/oria-hioa-mod/_scss/mobile500pxfix */
   html:root #exlidUserAreaTile ul {
     margin-top: 0; }
 
   /* Skjuler labelen som er glemt skjult av mobile.css */
   /* Hent frem denne med sorterings drop down senere når css er klar. */
-  html:root .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel,
-  #exlidResultsContainer div.EXLResultsSortBy {
+  /* line 17, /home/hanson/projects/oria-hioa-mod/_scss/mobile500pxfix */
+  html:root .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel, #exlidResultsContainer div.EXLResultsSortBy {
     display: none; }
 
+  /* line 21, /home/hanson/projects/oria-hioa-mod/_scss/mobile500pxfix */
   html .EXLResultsHeader {
-    margin-bottom: .5em; } }
+    margin-bottom: 0.5em; }
+ }
+
 /* --- MOBILE500PXFIX END --- */
 /* --- FACETS START --- */
 /* Decide how many facets are visible.
  * Here we show 3 facets - hide number 4 and up
  */
+/* line 7, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li:nth-child(1n+4) {
   display: none; }
 
 /* Make visible the last element in the list the "More options"-button */
+/* line 11, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li:last-of-type {
   display: inline-block; }
 
-/* Show the 'More Options' button only if there are atleast 4 items in the list */
+/* line 15, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li.EXLFacetsDisplayMore {
-  display: none; }
-
-li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore {
-  display: block; }
-
-.EXLFacetContainer ol li.EXLFacetsDisplayMore {
-  margin-top: .75em; }
+  margin-top: 0.75em; }
 
 /* Style the "More options" button */
+/* line 20, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a {
   background-color: #0075B0;
   color: white;
@@ -1605,71 +1748,84 @@ li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore 
   text-decoration: none; }
 
 /*Add ellipsis in "More options" button */
+/* line 29, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a::after {
   content: " …"; }
 
 /* Hide the downarrow image in the "More options" button */
+/* line 34, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a img {
   display: none; }
 
 /* Add hover state to "More options" button - dark orange background-color */
+/* line 39, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a:hover {
   background-color: #e67300; }
 
+/* line 43, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLDateRangeLine input {
-  margin-right: .75em; }
+  margin-right: 0.75em; }
 
+/* line 44, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLSliderRefine {
   display: inline-block;
-  padding: .75em 0; }
+  padding: 0.75em 0; }
 
+/* line 49, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLDateRangeLine .EXLSliderRefine a {
   padding: 0.5em 0.8em;
   background-color: #0075B0;
   margin-left: 0em;
-  margin-top: .5em;
+  margin-top: 0.5em;
   border: none; }
 
-.EXLDateRangeLine .EXLSliderRefine a:hover,
-.EXLDateRangeLine .EXLSliderRefine a:focus {
+/* line 58, /home/hanson/projects/oria-hioa-mod/_scss/facets */
+.EXLDateRangeLine .EXLSliderRefine a:hover, .EXLDateRangeLine .EXLSliderRefine a:focus {
   background-color: #e67300; }
 
+/* line 62, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer ol li {
   line-height: 1.5em; }
 
 /* Style the facet headers */
+/* line 67, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer {
   margin: 0;
   padding: 0; }
 
-.EXLFacetContainer h3,
-.EXLFacetContainer h1 {
+/* line 70, /home/hanson/projects/oria-hioa-mod/_scss/facets */
+.EXLFacetContainer h3, .EXLFacetContainer h1 {
   font-size: 1.5em;
   color: black;
   border: none;
   background-color: transparent;
   margin: 0;
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   padding: 0;
   margin-left: 0.3333em;
   border-bottom: 1px solid #666; }
 
+/* line 82, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer h4 {
   font-size: 1em;
   margin-top: 1.5em;
-  margin-bottom: .25em;
+  margin-bottom: 0.25em;
   color: #036; }
 
+/* line 88, /home/hanson/projects/oria-hioa-mod/_scss/facets */
 .EXLFacetContainer h1 + h4, .EXLFacetContainer h3 + span + h4 {
   margin-top: 0; }
 
 /* --- FACETS END --- */
+/* line 15, /home/hanson/projects/oria-hioa-mod/_scss/HIOA.scss */
 body {
   min-width: 5em; }
 
 @media screen and (min-width: 500px) {
+  /* line 17, /home/hanson/projects/oria-hioa-mod/_scss/HIOA.scss */
   html {
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+ }
 
 /*# sourceMappingURL=HIOA.css.map */

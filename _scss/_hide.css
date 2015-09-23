@@ -1,0 +1,23 @@
+/* --- HIDE START --- */
+/* line 9, /home/hanson/projects/oria-hioa-mod/_scss/_hide.scss */
+#showhidediv, .EXLFacebookIframe, .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, .EXLLanguageLink a.EXLLanguageOptionLANGnn_NO {
+  display: none; }
+
+/* hide unwanted facets */
+/* line 27, /home/hanson/projects/oria-hioa-mod/_scss/_hide.scss */
+.EXLFacetContainer.facet_series, .EXLFacetContainer.facet_jtitle, .EXLFacetContainer.facet_collection, .EXLFacetContainer.facet_bibliography, .EXLFacetContainer.facet_tek_words, .EXLFacetContainer.facet_humord, .EXLFacetContainer.facet_geographical_subject_headings, .EXLFacetContainer.facet_agrovoc, .EXLFacetContainer.facet_udc, .EXLFacetContainer.facet_nlm, .EXLFacetContainer.facet_uio_class, #slider-range, #exlidFacetSublist2 {
+  /*Liste med årstall*/
+  display: none; }
+
+/* Need to adjust margins since the slider and year-list is not rendered. */
+/* line 31, /home/hanson/projects/oria-hioa-mod/_scss/_hide.scss */
+.EXLDateRangeLine {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em; }
+
+/* line 32, /home/hanson/projects/oria-hioa-mod/_scss/_hide.scss */
+.EXLDateRangeText {
+  margin-bottom: 0; }
+
+/* --- HIDE END --- */
+/*# sourceMappingURL=_hide.css.map */

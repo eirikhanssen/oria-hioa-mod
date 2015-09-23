@@ -1,0 +1,49 @@
+/* --- GENERAL START --- */
+
+html {
+    background-color: white;
+}
+body {
+    background-color: white;
+    max-width: 85rem;
+    margin: auto;
+}
+
+/* BEGIN - shadow around page */
+/* Legger skygge-definisjonen inn i media query for å unngå horisontal scrollbar. 
+Det er bare aktuelt med skygge når siden er over maxbredden uansett. */
+/*Det oppstår nå horisontal scrollbar mellom 85 og 87 rem, men det er kanskje ikke noe problem.*/
+@media screen and (min-width: 85rem) {
+    html:root #contentEXL {
+        position: relative;
+    }
+    html:root #contentEXL:before {
+        position: absolute;
+        content: "";
+        width: 1rem;
+        height: 100%;
+        top: 0;
+        left: -1rem;
+        box-shadow: inset -1rem 0 1rem -1rem #999;
+    }
+    html:root #contentEXL:after {
+        position: absolute;
+        content: "";
+        width: 1rem;
+        height: 100%;
+        top: 0;
+        right: -1rem;
+        box-shadow: inset 1rem 0 1rem -1rem #999;
+    }
+}
+/* END - shadow around page */
+
+@media screen and (min-width: 35rem) {
+    html:root body {
+        min-width: 35rem;
+	}
+}
+
+/* --- GENERAL END --- */
+		
+		

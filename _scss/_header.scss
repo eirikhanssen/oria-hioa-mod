@@ -1,0 +1,170 @@
+@import 'vars';
+/* --- HEADER START --- */
+
+div#exlidHeaderContainer {
+	background-color: $header-bg;
+}
+/* denne må være relative slik at langmenu kan posisjoneres i forhold til denne */
+
+html:root div#exlidHeaderContainer {
+	position: relative;
+}
+/* Denne borderen er nødvendig for at språkmenyen skal holdes innenfor den sorte bakgrunnen i headeren */
+
+#exlidMainMenuTile {
+	/*border-bottom: 2px solid black;*/
+}
+/* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
+/* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
+
+html:root #exlidHeaderTile {
+	padding: .25em;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
+
+.hioalsblink {
+	display: none;
+}
+/*pre-loading background image for a.logowrapper */
+
+.headerwrapper {
+	position: relative;
+	width: 100px;
+	min-height: 100px;
+	background-color: $header-bg;
+	background-repeat: no-repeat;
+}
+
+.headerwrapper.en {
+	width: 100px;
+	min-height: 100px;
+	background-image: url('hioalogo-en-100px.svg');
+}
+
+.headerwrapper a {
+	float: left;
+}
+
+a.hioalogo {
+	background-image: url('hioalogo-no-100px.svg');
+	width: 100px;
+	min-height: 100px;
+	background-repeat: no-repeat;
+}
+
+.en a.hioalogo {
+	background-image: url('hioalogo-en-100px.svg');
+}
+
+/*a.hioalogo:hover {
+	background-image: url('hioalogo-hover-no-100px.svg');
+}*/
+
+/*.en a.hioalogo:hover {
+	background-image: url('hioalogo-hover-en-100px.svg');
+}*/
+
+/*a.hioalogo:focus, a.hioalogo:active {
+	background-image: url('hioalogo-focus-no-100px.svg');
+}*/
+
+/*.en a.hioalogo:focus, .en a.hioalogo:active {
+	background-image: url('hioalogo-focus-en-100px.svg');
+}*/
+
+.hioasearchwrapper {
+	position: absolute;
+	left: 100%;
+	top: 1.5em;
+	margin-left: 1em;
+}
+
+@media screen and (max-width: $narrow-layout-breakpoint) {
+	.hioasearchwrapper {
+		top: 1em;
+	}
+}
+
+.en a.hioalogo {
+	width: 100px;
+}
+
+a.hioasearchtitle:link,
+a.hioasearchtitle:visited {
+	/*color: white;*/
+	text-decoration: none;
+}
+a.hioasearchtitle {
+	color: black;
+}
+a.hioasearchtitle:hover,
+a.hioasearchtitle:focus {
+	color: #00afff;
+	/* lyseblå - samme som lenker over sort bakgrunn */
+}
+
+.tjenestetittel {
+	font-family: arial, sans-serif;
+	font-size: 1.5em;
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: block;
+}
+@media screen and (min-width: $narrow-layout-breakpoint) {
+	.tjenestetittel {
+		width: 30em;
+		width: 30rem;
+	}	
+	
+}
+
+/*legg til media query for smal bredde */
+
+.tjenestebeskrivelse {
+	font-family: "Arial", sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+.en .hioasearchtitle {}
+
+#exlidMainMenuContainer a:link,
+/*prøver å fjerne #contentEXL i starten av denne regelen */
+
+#exlidMainMenuContainer a:visited,
+/*prøver å fjerne #contentEXL i starten av denne regelen */
+
+#footerEXL a:link,
+.EXLFooterTile a:link,
+#footerEXL a:visited,
+.EXLFooterTile a:visited {
+	/*color: white;*/
+}
+
+#exlidMainMenuContainer a:hover,
+/*prøver å fjerne #contentEXL i starten av denne regelen */
+
+#exlidMainMenuContainer a:active,
+/*prøver å fjerne #contentEXL i starten av denne regelen */
+
+#footerEXL a:hover,
+.EXLFooterTile a:hover,
+#footerEXL a:active,
+.EXLFooterTile a:active {
+	color: #00afff;
+}
+
+/* fjern litt marg over hovedmenyen for bred layout */
+
+@media screen and (min-width: $narrow-layout-breakpoint) {
+	#exlidMainMenuTile {
+		margin-top: -0.75em;
+	}
+}
+
+@media screen and (max-width: 35rem) {}
+
+@media screen and (max-width: 20rem) {}
+/* --- HEADER END --- */

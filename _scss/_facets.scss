@@ -1,0 +1,96 @@
+@import 'vars';
+/* --- FACETS START --- */
+
+/* Decide how many facets are visible.
+ * Here we show 3 facets - hide number 4 and up
+ */
+.EXLFacetContainer ol li:nth-child(1n+4) {
+  display: none;
+}
+/* Make visible the last element in the list the "More options"-button */
+.EXLFacetContainer ol li:last-of-type {
+  display: inline-block;
+}
+
+/* Show the 'More Options' button only if there are atleast 4 items in the list */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {display:none;}
+li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore {display:block;}
+
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {
+		margin-top: .75em;
+}
+
+/* Style the "More options" button */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a {
+	background-color: $button-bg;
+	color: white;
+	padding: $button-padding;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*Add ellipsis in "More options" button */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a::after {
+	content: " …";
+}
+
+/* Hide the downarrow image in the "More options" button */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a img {
+	display: none;
+}
+
+/* Add hover state to "More options" button - dark orange background-color */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a:hover {
+	background-color: $button-hover-bg;
+}
+
+.EXLDateRangeLine input {margin-right: .75em;}
+.EXLSliderRefine {
+	display: inline-block;
+	padding: .75em 0;
+}
+
+.EXLDateRangeLine .EXLSliderRefine a {
+	padding: $button-padding;
+	background-color: $button-bg;
+	margin-left: 0em;
+	margin-top: .5em;
+	border: none;
+}
+
+.EXLDateRangeLine .EXLSliderRefine a:hover,
+.EXLDateRangeLine .EXLSliderRefine a:focus {
+	background-color: $button-hover-bg;
+}
+
+.EXLFacetContainer ol li {
+  line-height: 1.5em;
+}
+
+/* Style the facet headers */
+.EXLFacetContainer {margin:0; padding:0;}
+
+.EXLFacetContainer h3,
+.EXLFacetContainer h1 {
+	font-size: 1.5em;
+	color: black; border: none;
+	background-color: transparent;
+	margin: 0;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	padding: 0;
+	margin-left: 0.3333em;
+	border-bottom: 1px solid $results-border-color;
+}
+
+.EXLFacetContainer h4 {font-size: 1em; 
+	margin-top: 1.5em;
+	margin-bottom: .25em;
+	color: #036;
+}
+
+.EXLFacetContainer h1 + h4, .EXLFacetContainer h3 + span + h4 {
+	margin-top: 0;
+}
+
+/* --- FACETS END --- */

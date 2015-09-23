@@ -1,0 +1,26 @@
+/* --- MESSAGEBOX START --- */
+
+div#notifierDiv {
+	margin: 1em;
+	border: 3px solid #e67300;
+	line-height: 1.5em;
+	position: relative;
+}
+
+div#notifierDiv::before {
+	content: ".: System notice :.";
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	font-size: 1.25em;
+	margin-bottom: 1em;
+	border: orange;
+	padding: .5em;
+	padding-bottom: .25em;
+	border-bottom: 1px solid black;
+}
+
+div#notifierDiv p+p {
+	margin-top: 1em;
+}
+/* --- MESSAGEBOX END --- */

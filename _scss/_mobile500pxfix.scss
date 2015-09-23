@@ -1,0 +1,26 @@
+@import 'vars';
+/* --- MOBILE500PXFIX START --- */
+
+/* Denne lastes inn av primo ved max-width 500px */
+
+@media screen and (max-width: 500px) {
+	html:root .EXLLanguagesContainer {
+			display: block !important;
+	}
+	html:root #exlidUserAreaTile ul {
+		margin-top: 0;
+	}
+	/* Skjuler labelen som er glemt skjult av mobile.css */
+	/* Hent frem denne med sorterings drop down senere når css er klar. */
+
+	html:root .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel,
+	#exlidResultsContainer div.EXLResultsSortBy {
+		display: none;
+	}
+
+	html .EXLResultsHeader {
+		margin-bottom: .5em;
+	}
+}
+
+/* --- MOBILE500PXFIX END --- */

@@ -1,0 +1,105 @@
+@import 'vars';
+.EXLResultsTile,
+.EXLFacetTile {
+	box-sizing: border-box;
+}
+
+/* make sure send to reference will come out on top*/
+#exliWhiteContent {
+	z-index: 50;
+}
+.EXLResultsList td.EXLThumbnail span.EXLThumbnailCaption {
+	border: none;
+}
+.EXLResultsContainer div.EXLResultsTile {
+	display: block;
+	width: 100%;
+	float: right;
+	margin-left: -$leftmenuwidth;
+	padding-left: $leftmenuwidth+.5em;
+	border-left: none;
+}
+@media screen and (max-width: $narrow-layout-breakpoint), (max-width: 500px) {
+	.EXLResultsContainer div.EXLResultsTile {
+		margin-left:0;
+		padding-left: 0;
+	}
+}
+
+@media screen and (min-width: $leftmenu-wide-breakpoint) {
+	.EXLResultsContainer div.EXLResultsTile {
+		margin-left: -$leftmenu-wide-width;
+		padding-left: $leftmenu-wide-width +1em;}
+}
+
+.EXLFacetTile {
+	float: left;
+	display: inline-block;
+	width: $leftmenuwidth;
+	padding-right: .5em;
+}
+
+@media screen and (min-width: $leftmenu-wide-breakpoint) {
+	.EXLFacetTile {
+		width: $leftmenu-wide-width;
+		padding-right: 1em;
+	}
+}
+
+#exlidFacetTile,
+#exlidResultsContainer {
+	position: relative;
+	z-index: 1;
+}
+
+#exlidResultsContainer {
+	/* clearfix */
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	padding: .5em;
+}
+
+#exlidResultsContainer::after {
+	/*clearfix*/
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (min-width: 501px) and (min-width: $narrow-layout-breakpoint) {
+	/* border between #exlidFacetTile and .EXLResultsContainer
+	 when screen layout is bigger than 500px */
+	/*#exlidResultsContainer::after {
+		position: absolute;
+		top: .5em;
+		bottom: .5em;
+		content: "";
+		z-index: 2;
+		left: $leftmenuwidth + .5em;
+		border-left: 1px solid $results-border-color;
+	}*/
+	#exlidFacetTile::after {
+		position: absolute;
+		content: "";
+		z-index: -1;
+		left: 100%;
+		top: 0;
+		bottom: -1em;
+		border-right: 1px solid $results-border-color;
+		}
+	 /*adjust the border placement when the left-menu is wide */
+	/*@media screen and (min-width: $leftmenu-wide-breakpoint) {
+		#exlidResultsContainer::after {
+			left: $leftmenu-wide-width + .5em;
+		}
+	}*/
+}
+
+@media screen and (max-width: 500px), (max-width: $narrow-layout-breakpoint) {
+	#exlidFacetTile {
+		margin-top: 4em;
+		display: block;
+		width: 100%;
+	}
+}
