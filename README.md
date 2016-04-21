@@ -17,15 +17,15 @@ To quickly view changes while working on css rules, you have to enable "debug mo
 This is done by appending ```&wroDevMode=true``` to the end of the oria-url.
 
 ### Production instance
-- **Production instance**: http://hioa.oria.no
-- **Production instance in debug mode**: http://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=HIOA&wroDevMode=true
+- **Production instance**: https://hioa.oria.no
+- **Production instance in debug mode**: https://bibsys-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/search.do?vid=HIOA&wroDevMode=true
 
 ### Testing instances
-- **Test instance**: http://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?vid=HIOA
+- **Test instance**: https://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?vid=HIOA
 - **Test instance - welcome page in debug mode** 
-    - http://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?vid=HIOA&wroDevMode=true
+    - https://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?vid=HIOA&wroDevMode=true
 - **Test instance - search hits page in debug mode**
-    - http://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=HIOA&frbg=&tb=t&vl%28freeText0%29=xslt&scp.scps=scope%3A%28SC_OPEN_ACCESS%29%2Cscope%3A%28%22HIOA%22%29%2CHIOA1_EbscoLocal%2CHIOA2_EbscoLocal%2Cprimo_central_multiple_fe&wroDevMode=true
+    - https://bibsys-primostg.hosted.exlibrisgroup.com:1701/primo_library/libweb/action/search.do?fn=search&ct=search&initialSearch=true&mode=Basic&tab=default_tab&indx=1&dum=true&srt=rank&vid=HIOA&frbg=&tb=t&vl%28freeText0%29=xslt&scp.scps=scope%3A%28SC_OPEN_ACCESS%29%2Cscope%3A%28%22HIOA%22%29%2CHIOA1_EbscoLocal%2CHIOA2_EbscoLocal%2Cprimo_central_multiple_fe&wroDevMode=true
 
 ## Branches
 The different versions of the HiOA Oria customizations are located in separate branches facilitate hassle free:
