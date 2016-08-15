@@ -18,6 +18,7 @@ tr.EXLResult:nth-child(2n) {
  * den lyseblå bakgrunnen som kommer annenhver treff.
  */
 
+
 .EXLResultsList p.EXLResultSnippet {
 	color: #555;
 	margin: .75em 0;
@@ -27,7 +28,7 @@ tr.EXLResult:nth-child(2n) {
 
 .EXLTabsRibbon div li.EXLResultTab {
 	margin: 0;
-	padding: .25em .2em;
+	padding: .5em;
 	height: 2em;
 }
 
@@ -421,6 +422,10 @@ div#exliWhiteContent {z-index: 100 !important; border: none; background-color: t
 
 /* Ta høyde for å gi plass til: 'Plasseringen har endret seg' */
 .EXLTabContent {padding-bottom: 2.5em}
+
+/* siteringer og sitert av, satt inn vha js. trenger luft over */
+ cite.EXLCitationTrailsIndicationContainer {padding-top: 1em;}
+
 /* SLUTT Treffliste*/
 
 /* TEST NEW RULES*/

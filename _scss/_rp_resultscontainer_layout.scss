@@ -16,7 +16,7 @@
 	width: 100%;
 	float: right;
 	margin-left: -$leftmenuwidth;
-	padding-left: $leftmenuwidth+.5em;
+	padding-left: $leftmenuwidth+1.5em;
 	border-left: none;
 }
 @media screen and (max-width: $narrow-layout-breakpoint), (max-width: 500px) {
@@ -36,13 +36,13 @@
 	float: left;
 	display: inline-block;
 	width: $leftmenuwidth;
-	padding-right: 1em;
+	padding-right: 1.5em;
 }
 
 @media screen and (min-width: $leftmenu-wide-breakpoint) {
 	.EXLFacetTile {
 		width: $leftmenu-wide-width;
-		padding-right: 1em;
+		padding-right: 1.5em;
 	}
 }
 
@@ -57,7 +57,7 @@
 	float: left;
 	width: 100%;
 	box-sizing: border-box;
-	padding: .5em;
+	padding: 1em;
 }
 
 #exlidResultsContainer::after {
