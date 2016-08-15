@@ -15,13 +15,9 @@ div#exlidSearchRibbon {
 
 @media screen and (min-width: 85em) {
 	div#exlidSearchRibbon {
-		left: -3em;
+		/*left: -3em;*/
 	}
-	.EXLSearchFieldRibbonAdvancedSearchLink {
-		position: absolute;
-		top: 2.5em;
-		left: 100%;
-	}
+
 }
 
 #exlidSearchRibbon div.EXLSearchFieldRibbon {
@@ -220,7 +216,7 @@ html:root .EXLClearSimpleSearchBoxButtonClose {
 	font-size: 1.25em;
 	margin: 0;
 	padding: 0;
-	float: right;
+	float: left;
 	margin: .25em 0 0 0;
 }
 /* Flytte søkefeltet ++ litt til høyre */
@@ -252,12 +248,15 @@ html:root #exlidSearchRibbon {
 		top: .25rem;
 	}
 }
-/* lenkene avansert søk og browse søk plasseres til høyre for søkeknapp */
+/* Lenken Avansert søk plasseres under søkefelt til venstre*/
 
 html:root div.EXLSearchFieldRibbonAdvancedSearchLink,
 html:root div.EXLSearchFieldRibbonBrowseSearchLink {}
 
-html:root div.EXLSearchFieldRibbonAdvancedSearchLink {}
+html:root div.EXLSearchFieldRibbonAdvancedSearchLink {
+	padding-top: 0.5rem;
+	float:left;
+}
 
 html:root #exlidSearchRibbon fieldset {
 	display: block;

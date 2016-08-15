@@ -367,12 +367,7 @@ div#exlidSearchRibbon {
     left: .5em; } }
 @media screen and (min-width: 85em) {
   div#exlidSearchRibbon {
-    left: -3em; }
-
-  .EXLSearchFieldRibbonAdvancedSearchLink {
-    position: absolute;
-    top: 2.5em;
-    left: 100%; } }
+    /*left: -3em;*/ } }
 #exlidSearchRibbon div.EXLSearchFieldRibbon {
   width: 98%;
   margin-left: auto;
@@ -544,7 +539,7 @@ html:root .EXLClearSimpleSearchBoxButtonClose {
   font-size: 1.25em;
   margin: 0;
   padding: 0;
-  float: right;
+  float: left;
   margin: .25em 0 0 0; }
 
 /* Flytte søkefeltet ++ litt til høyre */
@@ -568,7 +563,11 @@ html:root #exlidSearchRibbon {
   html:root #exlidSearchRibbon {
     margin: 0;
     top: .25rem; } }
-/* lenkene avansert søk og browse søk plasseres til høyre for søkeknapp */
+/* Lenken Avansert søk plasseres under søkefelt til venstre*/
+html:root div.EXLSearchFieldRibbonAdvancedSearchLink {
+  padding-top: 0.5rem;
+  float: left; }
+
 html:root #exlidSearchRibbon fieldset {
   display: block;
   margin: 0px;
