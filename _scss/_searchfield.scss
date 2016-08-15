@@ -150,6 +150,12 @@ html:root .EXLSearchFieldRibbonFormSubmitSearch {
 	height: 2.5rem;
 }
 /* søkefeltet */
+/* ikke sett høyde på avansert søk! */
+#exlidAdvancedSearchRibbon .EXLClearSimpleSearchBoxButtonClose,
+#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSubmitSearch {
+	height: auto;
+}
+
 
 html:root .EXLSearchFieldRibbonFormFields,
 html:root .EXLSearchFieldRibbonFormSearchForMaximized .EXLSearchFieldRibbonFormSearchFor {
@@ -260,6 +266,44 @@ html:root #exlidSearchRibbon fieldset {
 	width: 100%;
 	float: left;
 }
+
+/* Søkeknapper for avanset søk */
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
+html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  margin-top: .5rem; }
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  position: relative;
+  left: 16rem;
+  height: 1.5rem;
+  width: 6rem;
+  padding: 0;
+  border: none; }
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch + div.EXLSearchFieldRibbonFormSubmitSearch {
+  left: 2rem; }
+
+  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormClearSearch input {
+  	background-color: #6A7175;
+  }
+
+#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
+  position: relative;
+  left: -12rem;
+  margin-left: -1rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.255rem; }
+
+#exlidAdvancedSearchRibbon input#goButton, #exlidAdvancedSearchRibbon input#exlidClearSelectedFieldsAdvancedSearch {
+  background-image: none;
+  height: 2rem; }
+
+/* mer luft under knappene */
+#exlidAdvancedSearchRibbon {
+  margin-bottom: 1rem; }
+
+/* slutt søkeknapper avansert søk*/
 
 @media screen and (min-width: 501px) {
 	html:root #exlidSearchRibbon fieldset {
