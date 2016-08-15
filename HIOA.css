@@ -2,10 +2,10 @@
 /* --- HIDE START --- */
 #showhidediv,
 .EXLFacebookIframe,
-li#exlidMainMenuItem3,
 .EXLLanguageLink a.EXLLanguageOptionLANGse_NO,
-.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO,
-.EXLSearchFieldRibbonBrowseSearchLink {
+.EXLSearchFieldRibbonBrowseSearchLink,
+.EXLEShelfTileGuest .EXLUserName,
+.EXLEShelfTileGuest .EXLMyAccount {
   display: none; }
 
 /* hide unwanted facets */
@@ -68,31 +68,31 @@ html:root #exlidHeaderTile {
 .headerwrapper.en {
   width: 100px;
   min-height: 100px;
-  background-image: url("hioalogo-en-100px.svg"); }
+  background-image: url("../uploaded_files/HIOA/hioalogo-en-100px.svg"); }
 
 .headerwrapper a {
   float: left; }
 
 a.hioalogo {
-  background-image: url("hioalogo-no-100px.svg");
+  background-image: url("../uploaded_files/HIOA/hioalogo-no-100px.svg");
   width: 100px;
   min-height: 100px;
   background-repeat: no-repeat; }
 
 .en a.hioalogo {
-  background-image: url("hioalogo-en-100px.svg"); }
+  background-image: url("../uploaded_files/HIOA/hioalogo-en-100px.svg"); }
 
 /*a.hioalogo:hover {
-	background-image: url('hioalogo-hover-no-100px.svg');
+	background-image: url('../uploaded_files/HIOA/hioalogo-hover-no-100px.svg');
 }*/
 /*.en a.hioalogo:hover {
-	background-image: url('hioalogo-hover-en-100px.svg');
+	background-image: url('../uploaded_files/HIOA/hioalogo-hover-en-100px.svg');
 }*/
 /*a.hioalogo:focus, a.hioalogo:active {
-	background-image: url('hioalogo-focus-no-100px.svg');
+	background-image: url('../uploaded_files/HIOA/hioalogo-focus-no-100px.svg');
 }*/
 /*.en a.hioalogo:focus, .en a.hioalogo:active {
-	background-image: url('hioalogo-focus-en-100px.svg');
+	background-image: url('../uploaded_files/HIOA/hioalogo-focus-en-100px.svg');
 }*/
 .hioasearchwrapper {
   position: absolute;

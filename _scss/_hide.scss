@@ -2,12 +2,13 @@
 
 #showhidediv, /*populære artikler*/
 .EXLFacebookIframe, /*Facebook Likes*/
-/*li#exlidTab0, /* Mitt bibliotek - fanen */ /* Trenger vi egentlig å ha denne ?*/
-/*li#exlidTab1, /* Alle bibliotek - fanen */ /* bør velges vekk i ORIA-adm-grensesnitt */
-li#exlidMainMenuItem3, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
+/*li#exlidMainMenuItem3, /* Bestill*/ /* bør velges vekk i ORIA-adm-grensesnitt - skal denne skjules? */
+/*li#exlidMainMenuItem4, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
 .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, /* Samisk språk fra språkmenyen */
-.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO, /* Nynorsk språk fra språkmenyen */
-.EXLSearchFieldRibbonBrowseSearchLink /* Bla i innhold - lenken ved søkefeltet */
+/*.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO /* Nynorsk språk fra språkmenyen skal ikke skjules allikevel*/
+.EXLSearchFieldRibbonBrowseSearchLink, /* Bla i innhold - lenken ved søkefeltet */
+.EXLEShelfTileGuest .EXLUserName, /*Gjest*/
+.EXLEShelfTileGuest .EXLMyAccount /*"Min konto" for gjestebruker*/
 {
 	display: none;
 }
