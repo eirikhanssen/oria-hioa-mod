@@ -8,9 +8,22 @@
 .EXLEShelfTileGuest .EXLMyAccount {
   display: none; }
 
-/* hide unwanted facets */
+/* Send til Referanse skjules fordi det er ofte formatert feil og vi ønsker ikke at studenter skal bruke den da. */
+#exlidResultsContainer .EXLButtonSendToCitation {
+  display: none; }
+
+/* Skjul uønskede fasetter */
+.EXLFacetContainer.facet_target_audience,
+.EXLFacetContainer.facet_music_classification,
+.EXLFacetContainer.facet_instrument,
+.EXLFacetContainer.facet_form_composition,
+.EXLFacetContainer.facet_form_production,
+.EXLFacetContainer.facet_domain,
+.EXLFacetContainer.facet_human_rights,
 .EXLFacetContainer.facet_series,
 .EXLFacetContainer.facet_jtitle,
+.EXLFacetContainer [class$="_jtitle"],
+.EXLFacetContainer [class$="_jtitle"] + ol,
 .EXLFacetContainer.facet_collection,
 .EXLFacetContainer.facet_bibliography,
 .EXLFacetContainer.facet_tek_words,
@@ -1230,6 +1243,11 @@ h2.EXLResultTitle {
 .EXLTabsRibbon div li.EXLResultSelectedTab {
   border: none;
   background-image: none; }
+
+/* må markere valgt fane */
+#exlidResultsTable .EXLResultSelectedTab a {
+  background-color: #e67300;
+  color: white; }
 
 .EXLResultTabContainer div.EXLTabHeader {
   border: 1px solid #8fb9d0; }

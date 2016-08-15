@@ -13,9 +13,21 @@
 	display: none;
 }
 
-/* hide unwanted facets */
+/* Send til Referanse skjules fordi det er ofte formatert feil og vi ønsker ikke at studenter skal bruke den da. */
+#exlidResultsContainer .EXLButtonSendToCitation {display:none;}
+
+/* Skjul uønskede fasetter */
+.EXLFacetContainer.facet_target_audience, /*Litterært nivå/type*/
+.EXLFacetContainer.facet_music_classification, /*Musikk-klassifikasjon*/
+.EXLFacetContainer.facet_instrument, /*Besetning*/
+.EXLFacetContainer.facet_form_composition, /*Komposisjonstype*/
+.EXLFacetContainer.facet_form_production, /*Framstillingsform*/
+.EXLFacetContainer.facet_domain, /*Kilde*/
+.EXLFacetContainer.facet_human_rights, /*Menneskerettighetstermer*/
 .EXLFacetContainer.facet_series, /*Serie*/
 .EXLFacetContainer.facet_jtitle, /*Tidsskrift*/
+.EXLFacetContainer [class$="_jtitle"], /*Bug med Tidsskrift-fasett som ikke har klassen sin, så må bruke denne */
+.EXLFacetContainer [class$="_jtitle"] + ol, /*Bug med Tidsskrift-fasett som ikke har klassen sin, så må bruke denne */
 .EXLFacetContainer.facet_collection, /*Kilde*/
 .EXLFacetContainer.facet_bibliography, /*Bibliografi*/
 .EXLFacetContainer.facet_tek_words, /*TEK-ord*/

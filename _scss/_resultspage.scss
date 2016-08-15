@@ -357,6 +357,12 @@ h2.EXLResultTitle {
 	background-image: none;
 }
 
+/* må markere valgt fane */
+#exlidResultsTable .EXLResultSelectedTab a {
+    background-color: $button-hover-bg;
+    color: $button-hover-fg;
+}
+
 .EXLResultTabContainer div.EXLTabHeader {
 	border: 1px solid #8fb9d0;
 }
