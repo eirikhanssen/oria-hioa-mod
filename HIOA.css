@@ -766,8 +766,8 @@ html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   display: block;
   width: 100%;
   float: right;
-  margin-left: -16em;
-  padding-left: 16.5em;
+  margin-left: -17.5em;
+  padding-left: 18em;
   border-left: none; }
 
 @media screen and (max-width: 40em), (max-width: 500px) {
@@ -776,17 +776,17 @@ html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
     padding-left: 0; } }
 @media screen and (min-width: 70em) {
   .EXLResultsContainer div.EXLResultsTile {
-    margin-left: -20em;
-    padding-left: 21em; } }
+    margin-left: -21.5em;
+    padding-left: 23em; } }
 .EXLFacetTile {
   float: left;
   display: inline-block;
-  width: 16em;
-  padding-right: .5em; }
+  width: 17.5em;
+  padding-right: 1em; }
 
 @media screen and (min-width: 70em) {
   .EXLFacetTile {
-    width: 20em;
+    width: 21.5em;
     padding-right: 1em; } }
 #exlidFacetTile,
 #exlidResultsContainer {
@@ -1099,6 +1099,7 @@ li.EXLSortByLinkSelected::after {
   float: none;
   display: block;
   margin: .5em;
+  margin-bottom: 1.5rem;
   float: left;
   clear: left;
   padding: 0;
@@ -1120,7 +1121,7 @@ div.EXLResultsNavigation .EXLDisplayedCount {
   display: inline-block;
   box-sizing: border-box;
   float: left;
-  margin: 0.3em;
+  margin: 0.5em;
   border: 1px solid #0075B0; }
 
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
@@ -1132,7 +1133,7 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination {
   height: 2em;
   line-height: 2em;
   display: inline-block;
-  margin: 0.3em;
+  margin: 0.5em;
   padding: 0;
   float: left;
   text-align: center; }
@@ -1188,7 +1189,7 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
   color: white; }
 
 .EXLResultsList td.EXLSummary {
-  padding: 1.5em 0 1em 0;
+  padding: 2em 0;
   position: relative; }
 
 .EXLResultsList,

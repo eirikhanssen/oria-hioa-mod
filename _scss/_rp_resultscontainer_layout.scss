@@ -29,14 +29,14 @@
 @media screen and (min-width: $leftmenu-wide-breakpoint) {
 	.EXLResultsContainer div.EXLResultsTile {
 		margin-left: -$leftmenu-wide-width;
-		padding-left: $leftmenu-wide-width +1em;}
+		padding-left: $leftmenu-wide-width +1.5em;}
 }
 
 .EXLFacetTile {
 	float: left;
 	display: inline-block;
 	width: $leftmenuwidth;
-	padding-right: .5em;
+	padding-right: 1em;
 }
 
 @media screen and (min-width: $leftmenu-wide-breakpoint) {

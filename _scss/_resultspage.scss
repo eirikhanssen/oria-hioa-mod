@@ -200,6 +200,7 @@ li.EXLSortByLinkSelected::after {
 	float: none;
 	display: block;
 	margin: .5em;
+	margin-bottom: 1.5rem;
 	float: left;
 	clear: left;
 	padding: 0;
@@ -302,7 +303,7 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
 }
 
 .EXLResultsList td.EXLSummary {
-	padding: 1.5em 0 1em 0;
+	padding: 2em 0;
 	position: relative;
 }
 
