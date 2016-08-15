@@ -5,17 +5,12 @@ div#exlidSearchRibbon {
 	max-width: 70em;
 	float: none;
 	margin: auto;
-}
-
-@media screen and (min-width: 501px) {
-	div#exlidSearchRibbon {
-		left: .5em;
-	}
+	margin-left: 0;
 }
 
 @media screen and (min-width: 85em) {
 	div#exlidSearchRibbon {
-		/*left: -3em;*/
+		/* spesielle regler for bred layout ? */
 	}
 
 }
@@ -30,7 +25,6 @@ div#exlidSearchRibbon {
 #exlidSearchTabs {
 	margin-bottom: 1.3em;
 	position: static;
-	/*padding-top: 2px;*/
 }
 
 #exlidSearchRibbon #exlidSearchTabs li {
@@ -91,6 +85,7 @@ div#exlidSearchRibbon {
 
 html #exlidSearchTile {
 	padding: 1em;
+	padding-left: $left-edge-margin;
 	font-size: 1em;
 	height: auto;
 	background-image: none;
