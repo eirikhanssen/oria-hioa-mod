@@ -229,6 +229,13 @@ div.EXLResultsNavigation .EXLDisplayedCount {
 	border: 1px solid $resultPaginationDisplayedCount-bordercolor;
 }
 
+body.EXLAlmaAz div.EXLResultsNavigation .EXLDisplayedCount {
+	width:auto;
+	padding-left: .25rem;
+	padding-right: .35rem;
+	text-align: center;
+}
+
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
 	font-size: 1em;
 	font-weight: bold;

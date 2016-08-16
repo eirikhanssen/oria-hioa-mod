@@ -83,7 +83,7 @@ div#exlidSearchRibbon {
 	z-index: 50
 }
 
-html #exlidSearchTile {
+html #exlidSearchTile.EXLSearch {
 	padding: 1em;
 	padding-left: $left-edge-margin;
 	font-size: 1em;
@@ -310,6 +310,22 @@ html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   margin-bottom: 1rem; }
 
 /* slutt søkeknapper avansert søk*/
+
+/* Søkefeltet på EJournals sidene */
+/* korriger høyden på bakgrunnen under søkefeltet */
+body.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals {
+    height:auto;
+}
+
+/* korriger plassering av lenken til enkelt søk */
+body.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink {
+    margin:0;
+    margin-top: 1rem;
+}
+
+body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
+	display:block; float:left; clear:left;
+}
 
 @media screen and (min-width: 501px) {
 	html:root #exlidSearchRibbon fieldset {
