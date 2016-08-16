@@ -475,6 +475,19 @@ html #exlidSearchTile.EXLSearch {
   display: table;
   clear: both; }
 
+/* ejournals search input field tweak */
+body.EXLAlmaAz #exlidSearchTileWrapper .EXLSearchFieldRibbonFormSearchFor input[type='text'] {
+  margin-right: 7rem;
+  font-size: 1.4rem;
+  min-height: 2.5rem;
+  line-height: 2.5rem;
+  box-sizing: border-box; }
+
+/*fix border around container of search input field on EJournals page */
+body.EXLAlmaAz #exlidSearchRibbonContent.EXLSearchFieldRibbon {
+  background: transparent;
+  border: 2px solid transparent; }
+
 div.EXLSearchFieldRibbonFormLinks {
   margin-left: 1em; }
 
@@ -696,6 +709,20 @@ body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
     bottom: auto;
     left: 0; }
 
+  body.EXLAlmaAz #exlidSearchRibbon div.EXLSearchFieldRibbonFormFields {
+    position: static;
+    margin: 0; }
+
+  body.EXLAlmaAz #exlidSearchRibbon #exlidSearchTile.EXLSearchEJournals {
+    padding-top: 0;
+    padding-left: 0.125rem; }
+
+  body.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset label {
+    margin-top: -1.5rem; }
+
+  body.EXLAlmaAz .EXLSearchFieldRibbon {
+    margin-left: 0.125rem; }
+
   html:root .EXLSearchFieldRibbonFormSubmitSearch,
   html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
   html:root #exlidSearchRibbon {
@@ -711,6 +738,28 @@ body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
   html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
     padding-right: .5em;
     border: 1px solid #666; }
+
+  body.EXLAlmaAz #exlidSearchTileWrapper .EXLSearchFieldRibbonFormSearchFor input[type='text'] {
+    margin-right: 7rem;
+    font-size: 1.4rem;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+    box-sizing: border-box; }
+
+  body.EXLAlmaAz #searchForm fieldset {
+    padding-bottom: 2rem;
+    position: static;
+    margin-top: -3rem; }
+
+  body.EXLAlmaAz #exlidSearchRibbonContent {
+    margin-top: 2.5rem;
+    margin-bottom: -2rem; }
+
+  body.EXLAlmaAz #exlidSearchRibbonContent label[for='search_field'] {
+    margin-left: 0; }
+
+  body.EXLAlmaAz #exlidSearchRibbon form[name='searchForm'] fieldset {
+    padding-left: 0.25rem; }
 
   /*
   html:root .EXLSearchFieldRibbonFormSubmitSearch {
