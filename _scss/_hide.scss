@@ -2,8 +2,6 @@
 
 #showhidediv, /*populære artikler*/
 .EXLFacebookIframe, /*Facebook Likes*/
-/*li#exlidMainMenuItem3, /* Bestill*/ /* bør velges vekk i ORIA-adm-grensesnitt - skal denne skjules? */
-/*li#exlidMainMenuItem4, /* Tagger*/ /* bør velges vekk i ORIA-adm-grensesnitt */
 .EXLLanguageLink a.EXLLanguageOptionLANGse_NO, /* Samisk språk fra språkmenyen */
 /*.EXLLanguageLink a.EXLLanguageOptionLANGnn_NO /* Nynorsk språk fra språkmenyen skal ikke skjules allikevel*/
 .EXLSearchFieldRibbonBrowseSearchLink, /* Bla i innhold - lenken ved søkefeltet */
@@ -12,6 +10,10 @@
 {
 	display: none;
 }
+
+/*Skjul uønskede topplenker*/
+#exlidMainMenuRibbon a.EXLMainMenuITEMcitationlinker, /*Bestill - kan også velges vekk i BO*/
+#exlidMainMenuRibbon a.EXLMainMenuITEMtags {display:none;} /*Tagger - kan også velges vekk i BO*/
 
 /* Send til Referanse skjules fordi det er ofte formatert feil og vi ønsker ikke at studenter skal bruke den da. */
 #exlidResultsContainer .EXLButtonSendToCitation {display:none;}
