@@ -598,6 +598,12 @@ html:root #exlidSearchRibbon fieldset {
   float: left; }
 
 /* Søkeknapper for avanset søk */
+#exlidAdvancedSearchRibbon {
+  margin-top: 1rem; }
+
+#exlidAdvancedSearchRibbon #exlidSearchTabs {
+  margin-bottom: 0; }
+
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
 html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   margin-top: .5rem; }
@@ -1248,7 +1254,8 @@ h2.EXLResultTitle {
 
 .EXLTabsRibbon div li.EXLResultSelectedTab {
   border: none;
-  background-image: none; }
+  background-image: none;
+  background-color: transparent; }
 
 /* må markere valgt fane */
 #exlidResultsTable .EXLResultSelectedTab a {
