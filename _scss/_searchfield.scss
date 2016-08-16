@@ -279,23 +279,23 @@ html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   position: relative;
-  left: 16rem;
+  left: 18rem;
   height: 1.5rem;
   width: 6rem;
   padding: 0;
   border: none; }
 
 #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch + div.EXLSearchFieldRibbonFormSubmitSearch {
-  left: 2rem; }
+  	left: 4rem;
+   }
 
-  #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormClearSearch input {
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormClearSearch input {
   	background-color: #6A7175;
   }
 
 #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
   position: relative;
-  left: -12rem;
-  margin-left: -1rem;
+  left: -13rem;
   height: 2rem;
   line-height: 2rem;
   font-size: 1.255rem; }
