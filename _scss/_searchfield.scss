@@ -106,6 +106,7 @@ html #exlidSearchTile {
 	right: 0;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
+	z-index: -1;
 }
 
 #exlidSearchTile::after {

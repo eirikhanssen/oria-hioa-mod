@@ -19,6 +19,10 @@
 	padding-left: $leftmenuwidth+1.5em;
 	border-left: none;
 }
+
+/* siden med elektroniske tidsskrifter skal ikke ha venstre marg */
+body.EXLAlmaAz .EXLResultsContainer div.EXLResultsTile {margin-left: 0; padding-left:0;}
+
 @media screen and (max-width: $narrow-layout-breakpoint), (max-width: 500px) {
 	.EXLResultsContainer div.EXLResultsTile {
 		margin-left:0;

@@ -467,7 +467,8 @@ html #exlidSearchTile {
   bottom: -5px;
   right: 0;
   border-top: 1px solid gray;
-  border-bottom: 1px solid gray; }
+  border-bottom: 1px solid gray;
+  z-index: -1; }
 
 #exlidSearchTile::after {
   content: "";
@@ -794,6 +795,11 @@ html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
   margin-left: -17.5em;
   padding-left: 19em;
   border-left: none; }
+
+/* siden med elektroniske tidsskrifter skal ikke ha venstre marg */
+body.EXLAlmaAz .EXLResultsContainer div.EXLResultsTile {
+  margin-left: 0;
+  padding-left: 0; }
 
 @media screen and (max-width: 40em), (max-width: 500px) {
   .EXLResultsContainer div.EXLResultsTile {
