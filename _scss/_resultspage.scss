@@ -36,6 +36,7 @@ tr.EXLResult:nth-child(2n) {
 	background-color: $button-bg;
 	color: $button-fg;
 	padding: $button-padding;
+	display: inline !important;
 }
 
 #exlidResultsTable .EXLResultTab a:hover {

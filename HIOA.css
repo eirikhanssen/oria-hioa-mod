@@ -1056,7 +1056,8 @@ tr.EXLResult:nth-child(2n) {
 #exlidResultsTable .EXLResultTab a {
   background-color: #0075B0;
   color: white;
-  padding: 0.5em 0.8em; }
+  padding: 0.5em 0.8em;
+  display: inline !important; }
 
 #exlidResultsTable .EXLResultTab a:hover {
   background-color: #e67300;
