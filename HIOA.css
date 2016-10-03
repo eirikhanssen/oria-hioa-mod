@@ -362,18 +362,14 @@ html:root #exlidMainMenuRibbon {
   font-size: 1.25em; }
 
 /* tar vekk marg og padding her. setter det på a elementet */
-/*#exlidMainMenuRibbon li.EXLMainMenuItem {*/
-#exlidMainMenuRibbon li.EXLMainMenuItem {
+/* redundant selectors for completion and making sure they are not overridden*/
+#exlidMainMenuRibbon li, #exlidMainMenuRibbon li.EXLMainMenuItem, #exlidMainMenuRibbon li.EXLMainMenuItemSelected {
   margin: 0;
   padding: 0;
   border: none;
   height: 1.5rem;
   line-height: 1.5rem;
   font-weight: normal; }
-
-/*#exlidMainMenuRibbon li.EXLMainMenuItemSelected {*/
-#exlidMainMenuRibbon li {
-  margin: 0; }
 
 #exlidMainMenuRibbon li span {
   border: none;
