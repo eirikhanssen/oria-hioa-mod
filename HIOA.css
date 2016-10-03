@@ -1877,7 +1877,7 @@ li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore 
   margin-top: 0; }
 
 /* --- FACETS END --- */
-.EXLNoResultsDivText ul + ul {
+.EXLNoResultsDivTitle ul li:first-child {
   margin-top: 1rem; }
 
 body {
