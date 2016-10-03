@@ -158,9 +158,10 @@ li.EXLSortByLinkSelected {
 	position: relative;
 	z-index: 1;
 	color: black;
+	font-weight: bold;
 }
 
-li.EXLSortByLinkSelected::after {
+/*li.EXLSortByLinkSelected::after {
 	position: absolute;
 	content: "";
 	z-index: -1;
@@ -172,7 +173,7 @@ li.EXLSortByLinkSelected::after {
 	background-color: #eee;
 	box-sizing: border-box;
 	border: 1px solid rgb(0, 117, 176);
-}
+}*/
 
 .EXLResultsHeader {
 	text-align: center;

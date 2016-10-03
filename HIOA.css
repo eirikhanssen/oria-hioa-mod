@@ -1190,21 +1190,22 @@ div.EXLResultsSortBy .EXLSortByLink a {
 li.EXLSortByLinkSelected {
   position: relative;
   z-index: 1;
-  color: black; }
+  color: black;
+  font-weight: bold; }
 
-li.EXLSortByLinkSelected::after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: .25em .5em;
-  background-color: #eee;
-  box-sizing: border-box;
-  border: 1px solid #0075b0; }
-
+/*li.EXLSortByLinkSelected::after {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: .25em .5em;
+	background-color: #eee;
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 117, 176);
+}*/
 .EXLResultsHeader {
   text-align: center; }
 
