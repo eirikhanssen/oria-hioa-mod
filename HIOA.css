@@ -390,8 +390,7 @@ html:root #exlidMainMenuRibbon {
   padding: 0;
   margin: 0; }
 
-#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a,
-a.EXLMainMenuSelected {
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a {
   background-color: transparent;
   background-image: none;
   color: black;
@@ -399,8 +398,7 @@ a.EXLMainMenuSelected {
   position: relative;
   margin: 0; }
 
-#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a::after,
-a.EXLMainMenuSelected::after {
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a::after {
   content: "";
   position: absolute;
   left: .5rem;
