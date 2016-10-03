@@ -90,7 +90,8 @@ html:root #exlidHeaderTile {
   background-repeat: no-repeat; }
 
 .headerwrapper h1, .headerwrapper h2 {
-  font-family: Georgia, "Times New Roman", Times, serif; }
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black; }
 
 .headerwrapper.en {
   width: 100px;
