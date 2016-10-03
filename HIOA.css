@@ -1888,6 +1888,48 @@ li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore 
 .EXLNoResultsDivTitle ul li:first-child {
   margin-top: 1rem; }
 
+/* runde knapper */
+#exlidResultsTable .EXLResultTab a,
+.EXLResultsSortBy a,
+.EXLFacetsDisplayMore a,
+.EXLDateRangeLine .EXLSliderRefine a,
+cite.EXLResultFRBR a,
+#exlidFacetsLightboxContainer a,
+#exlidFacetsLightboxContainer input.EXLReset {
+  border-radius: .3rem;
+  border: none; }
+
+/* Avgrens søket-knapper */
+#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {
+  border: none; }
+
+#exlidFacetsLightboxContainer input.EXLReset {
+  background: gray;
+  border: none; }
+
+#exlidFacetsLightboxContainer a.EXLSubmit,
+#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
+  border: none; }
+
+#exlidFacetsLightboxContainer a.EXLSubmit,
+#exlidFacetsLightboxContainer input.EXLReset {
+  position: relative;
+  width: 4.5rem;
+  text-align: center;
+  height: 2rem;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  line-height: 2rem; }
+
+#exlidFacetsLightboxContainer input.EXLReset {
+  left: -100%;
+  margin-right: .75rem; }
+
+#exlidFacetsLightboxContainer a.EXLSubmit {
+  right: -100%;
+  margin-left: 0.25rem; }
+
 body {
   min-width: 5em; }
 
