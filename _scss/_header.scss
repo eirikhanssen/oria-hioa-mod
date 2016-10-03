@@ -37,6 +37,10 @@ html:root #exlidHeaderTile {
 	background-repeat: no-repeat;
 }
 
+.headerwrapper h1, .headerwrapper h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 .headerwrapper.en {
 	width: 100px;
 	min-height: 100px;
@@ -45,6 +49,7 @@ html:root #exlidHeaderTile {
 
 .headerwrapper a {
 	float: left;
+	color: black;
 }
 
 a.hioalogo {
@@ -74,15 +79,16 @@ a.hioalogo {
 	background-image: url('../HIOA/hioalogo-focus-en-100px.svg');
 }*/
 
-.hioasearchwrapper {
+.hioatitlewrapper {
 	position: absolute;
 	left: 100%;
 	top: 1.5em;
 	margin-left: 1em;
 }
+.hioatitlewrapper a {white-space: pre;}
 
 @media screen and (max-width: $narrow-layout-breakpoint) {
-	.hioasearchwrapper {
+	.hioatitlewrapper {
 		top: 1em;
 	}
 }
