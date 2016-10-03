@@ -329,7 +329,8 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
 /* START hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
 /* mer luft under hovedmenyen*/
 #exlidMainMenuContainer {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
 
 /* flytte lenker ned på sin egen linje, venstrestilt for å unngå layoutproblemer */
 #exlidMainMenuTile {
