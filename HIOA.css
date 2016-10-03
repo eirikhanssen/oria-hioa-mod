@@ -66,6 +66,10 @@
 #exlidInput_drEndMonth_ {
   display: none; }
 
+/* hide error messages, really should we do this? */
+#exlidHeaderSystemFeedbackContent {
+  display: none; }
+
 /* --- HIDE END --- */
 /* --- HEADER START --- */
 div#exlidHeaderContainer {
