@@ -8,6 +8,8 @@ div#exlidSearchRibbon {
 	margin-left: 0;
 }
 
+.EXLSearchTabSelected a{color: black; text-decoration: none;}
+
 @media screen and (min-width: 85em) {
 	div#exlidSearchRibbon {
 		/* spesielle regler for bred layout ? */
