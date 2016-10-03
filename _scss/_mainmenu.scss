@@ -60,13 +60,12 @@ a.EXLMainMenuSelected {
     border: none;
     position: relative;
     margin:0;
-
 }
 
 #exlidMainMenuRibbon li.EXLMainMenuItemSelected span a::after,
 a.EXLMainMenuSelected::after {
     content:"";
-    position:absolute;
+    position: absolute;
     left: .5rem;
     right: .5rem;
     bottom: -.15rem;
