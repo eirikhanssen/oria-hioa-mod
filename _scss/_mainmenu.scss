@@ -47,9 +47,34 @@ html:root #exlidMainMenuRibbon {
     font-weight: normal;
 }
 
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected {
+    margin-top:0;
+}
+
+
 #exlidMainMenuRibbon li span {
     border: none; padding: 0; margin:0;
 }
+
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a {
+    background-color: transparent;
+    background-image: none;
+    color: black;
+    border: none;
+    position: relative;
+    margin:0;
+
+}
+
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a::after {
+    content:"";
+    position:absolute;
+    left: .5rem;
+    right: .5rem;
+    bottom: -.15rem;
+    border-top: 5px solid #666;
+}
+
 
 #exlidMainMenuRibbon li.EXLMainMenuItem a {
 	margin-left: .5rem; margin-right: .5rem;
