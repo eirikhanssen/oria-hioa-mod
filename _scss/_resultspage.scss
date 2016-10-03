@@ -154,14 +154,6 @@ div.EXLResultsSortBy .EXLSortByLink a {
 	text-decoration: underline;
 }
 
-#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
-	content: " … ↳";
-}
-
-#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:after {
-	content: " … ↱";
-}
-
 li.EXLSortByLinkSelected {
 	position: relative;
 	z-index: 1;
