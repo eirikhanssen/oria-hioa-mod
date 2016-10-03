@@ -59,6 +59,13 @@
 .EXLDateRangeText {
   margin-bottom: 0; }
 
+/* Advanced Search hide day and month date ranges */
+#exlidInput_drStartDay_,
+#exlidInput_drStartMonth_,
+#exlidInput_drEndDay_,
+#exlidInput_drEndMonth_ {
+  display: none; }
+
 /* --- HIDE END --- */
 /* --- HEADER START --- */
 div#exlidHeaderContainer {
