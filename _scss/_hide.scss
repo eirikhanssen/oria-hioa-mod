@@ -46,6 +46,10 @@
 { 
     display:none;
 }
+
+/* Skju lukke-lenken i menyen til tidsskrift-indexen */
+.EXLMainMenuITEMATOZClose {display:none;}
+
 /* Need to adjust margins since the slider and year-list is not rendered. */
 .EXLDateRangeLine {margin-bottom: .5em; margin-top: .5em;}
 .EXLDateRangeText {margin-bottom: 0;}

@@ -45,6 +45,10 @@
 .EXLTabsRibbon .EXLReviewsTab {
   display: none; }
 
+/* Skju lukke-lenken i menyen til tidsskrift-indexen */
+.EXLMainMenuITEMATOZClose {
+  display: none; }
+
 /* Need to adjust margins since the slider and year-list is not rendered. */
 .EXLDateRangeLine {
   margin-bottom: .5em;
@@ -361,7 +365,6 @@ html:root #exlidMainMenuRibbon {
 #exlidMainMenuRibbon li.EXLMainMenuItem {
   margin: 0;
   padding: 0;
-  margin-left: -.5rem;
   border: none;
   height: 1.5rem;
   line-height: 1.5rem;
