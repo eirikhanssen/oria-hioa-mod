@@ -327,6 +327,10 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
 /* --- USERMENU END --- */
 /* --- MAINMENU START --- */
 /* START hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
+/* mer luft under hovedmenyen*/
+#exlidMainMenuContainer {
+  padding-bottom: 1rem; }
+
 /* flytte lenker ned på sin egen linje, venstrestilt for å unngå layoutproblemer */
 #exlidMainMenuTile {
   clear: left;
