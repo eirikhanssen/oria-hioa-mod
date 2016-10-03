@@ -17,7 +17,9 @@
 #exlidMainMenuRibbon a.EXLMainMenuITEMtags {display:none;} /*Tagger - kan også velges vekk i BO*/
 
 /* Send til Referanse skjules fordi det er ofte formatert feil og vi ønsker ikke at studenter skal bruke den da. */
-#exlidResultsContainer .EXLButtonSendToCitation {display:none;}
+#exlidResultsContainer .EXLButtonSendToCitation,
+#exlidResultsContainer .EXLButtonSendToDelicious,
+#exlidResultsContainer .EXLButtonSendToEasyBib {display:none;}
 
 /* Skjul uønskede fasetter */
 .EXLFacetContainer.facet_target_audience, /*Litterært nivå/type*/
