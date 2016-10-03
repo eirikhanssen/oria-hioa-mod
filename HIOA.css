@@ -362,6 +362,7 @@ html:root #exlidMainMenuRibbon {
   font-size: 1.25em; }
 
 /* tar vekk marg og padding her. setter det på a elementet */
+/*#exlidMainMenuRibbon li.EXLMainMenuItem {*/
 #exlidMainMenuRibbon li.EXLMainMenuItem {
   margin: 0;
   padding: 0;
@@ -370,8 +371,9 @@ html:root #exlidMainMenuRibbon {
   line-height: 1.5rem;
   font-weight: normal; }
 
-#exlidMainMenuRibbon li.EXLMainMenuItemSelected {
-  margin-top: 0; }
+/*#exlidMainMenuRibbon li.EXLMainMenuItemSelected {*/
+#exlidMainMenuRibbon li {
+  margin: 0; }
 
 #exlidMainMenuRibbon li span {
   border: none;
