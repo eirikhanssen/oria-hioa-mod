@@ -1,66 +1,1945 @@
-/*
-Error: Invalid CSS after "...{border:none;} ": expected selector or at-rule, was "{"
-        on line 9 of _scss/_roundbuttons.scss
-        from line 15 of _scss/HIOA.scss
+@charset "UTF-8";
+/* --- HIOA CSS BEGIN --- */
+/* --- HIDE START --- */
+#showhidediv,
+.EXLFacebookIframe,
+.EXLLanguageLink a.EXLLanguageOptionLANGse_NO,
+.EXLSearchFieldRibbonBrowseSearchLink,
+.EXLEShelfTileGuest .EXLUserName,
+.EXLEShelfTileGuest .EXLMyAccount {
+  display: none; }
 
-4: .EXLFacetsDisplayMore a,
-5: .EXLDateRangeLine .EXLSliderRefine a,
-6: cite.EXLResultFRBR a,
-7: #exlidFacetsLightboxContainer a,
-8: #exlidFacetsLightboxContainer input.EXLReset,
-9: #exlidAdvancedSearchRibbon input.submit {border:none;} {
-10: border-radius: .3rem;
-11: border: none;
-12: }
-13: 
-14: /* Avgrens søket-knapper *\/
+/*Skjul uønskede topplenker*/
+#exlidMainMenuRibbon a.EXLMainMenuITEMcitationlinker,
+#exlidMainMenuRibbon a.EXLMainMenuITEMtags {
+  display: none; }
 
-Backtrace:
-_scss/_roundbuttons.scss:9
-_scss/HIOA.scss:15
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/scss/parser.rb:42:in `parse'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/home/hanson/.rvm/gems/ruby-2.3.1/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...{border:none;} \": expected selector or at-rule, was \"{\"\A         on line 9 of _scss/_roundbuttons.scss\A         from line 15 of _scss/HIOA.scss\A \A 4: .EXLFacetsDisplayMore a,\A 5: .EXLDateRangeLine .EXLSliderRefine a,\A 6: cite.EXLResultFRBR a,\A 7: #exlidFacetsLightboxContainer a,\A 8: #exlidFacetsLightboxContainer input.EXLReset,\A 9: #exlidAdvancedSearchRibbon input.submit {border:none;} {\A 10: border-radius: .3rem;\A 11: border: none;\A 12: }\A 13: \A 14: /* Avgrens søket-knapper */"; }
+/*Tagger - kan også velges vekk i BO*/
+/* Send til Referanse skjules fordi det er ofte formatert feil og vi ønsker ikke at studenter skal bruke den da. */
+#exlidResultsContainer .EXLButtonSendToCitation,
+#exlidResultsContainer .EXLButtonSendToDelicious,
+#exlidResultsContainer .EXLButtonSendToEasyBib {
+  display: none; }
+
+/* Skjul uønskede fasetter */
+.EXLFacetContainer.facet_target_audience,
+.EXLFacetContainer.facet_music_classification,
+.EXLFacetContainer.facet_instrument,
+.EXLFacetContainer.facet_form_composition,
+.EXLFacetContainer.facet_form_production,
+.EXLFacetContainer.facet_domain,
+.EXLFacetContainer.facet_human_rights,
+.EXLFacetContainer.facet_series,
+.EXLFacetContainer.facet_jtitle,
+.EXLFacetContainer [class$="_jtitle"],
+.EXLFacetContainer [class$="_jtitle"] + ol,
+.EXLFacetContainer.facet_collection,
+.EXLFacetContainer.facet_bibliography,
+.EXLFacetContainer.facet_tek_words,
+.EXLFacetContainer.facet_humord,
+.EXLFacetContainer.facet_geographical_subject_headings,
+.EXLFacetContainer.facet_agrovoc,
+.EXLFacetContainer.facet_udc,
+.EXLFacetContainer.facet_nlm,
+.EXLFacetContainer.facet_uio_class,
+#slider-range,
+#exlidFacetSublist2,
+.EXLTabsRibbon .EXLReviewsTab {
+  display: none; }
+
+/* Skju lukke-lenken i menyen til tidsskrift-indexen */
+.EXLMainMenuITEMATOZClose {
+  display: none; }
+
+/* Need to adjust margins since the slider and year-list is not rendered. */
+.EXLDateRangeLine {
+  margin-bottom: .5em;
+  margin-top: .5em; }
+
+.EXLDateRangeText {
+  margin-bottom: 0; }
+
+/* Advanced Search hide day and month date ranges */
+#exlidInput_drStartDay_,
+#exlidInput_drStartMonth_,
+#exlidInput_drEndDay_,
+#exlidInput_drEndMonth_ {
+  display: none; }
+
+/* hide error messages, really should we do this? */
+#exlidHeaderSystemFeedbackContent {
+  display: none; }
+
+/* --- HIDE END --- */
+/* --- HEADER START --- */
+div#exlidHeaderContainer {
+  background-color: transparent; }
+
+/* denne må være relative slik at langmenu kan posisjoneres i forhold til denne */
+html:root div#exlidHeaderContainer {
+  position: relative; }
+
+/* Denne borderen er nødvendig for at språkmenyen skal holdes innenfor den sorte bakgrunnen i headeren */
+#exlidMainMenuTile {
+  /*border-bottom: 2px solid black;*/ }
+
+/* Sørg for at luft rundt headeren forblir konstant også når nettleseren treffer 500px breakpoint  */
+/* Denne regelen er litt mer spesifikk enn mobile.css som setter padding her til .8em  */
+html:root #exlidHeaderTile {
+  padding: .25em;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* Don't display this link in standard layout size of page, it's intended for narrow mobile version of layout when logo is too large. */
+.hioalsblink {
+  display: none; }
+
+/*pre-loading background image for a.logowrapper */
+.headerwrapper {
+  position: relative;
+  width: 100px;
+  min-height: 100px;
+  background-color: transparent;
+  background-repeat: no-repeat; }
+
+.headerwrapper h1, .headerwrapper h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black; }
+
+.headerwrapper.en {
+  width: 100px;
+  min-height: 100px;
+  background-image: url("../HIOA/hioalogo-en-100px.svg"); }
+
+.headerwrapper a {
+  float: left;
+  color: black; }
+
+a.hioalogo {
+  background-image: url("../HIOA/hioalogo-no-100px.svg");
+  width: 100px;
+  min-height: 100px;
+  background-repeat: no-repeat; }
+
+.en a.hioalogo {
+  background-image: url("../HIOA/hioalogo-en-100px.svg"); }
+
+/*a.hioalogo:hover {
+	background-image: url('../HIOA/hioalogo-hover-no-100px.svg');
+}*/
+/*.en a.hioalogo:hover {
+	background-image: url('../HIOA/hioalogo-hover-en-100px.svg');
+}*/
+/*a.hioalogo:focus, a.hioalogo:active {
+	background-image: url('../HIOA/hioalogo-focus-no-100px.svg');
+}*/
+/*.en a.hioalogo:focus, .en a.hioalogo:active {
+	background-image: url('../HIOA/hioalogo-focus-en-100px.svg');
+}*/
+.hioatitlewrapper {
+  position: absolute;
+  left: 100%;
+  top: 1.5em;
+  margin-left: 1em; }
+
+.hioatitlewrapper a {
+  white-space: pre; }
+
+@media screen and (max-width: 40em) {
+  .hioatitlewrapper {
+    top: 1em; } }
+.en a.hioalogo {
+  width: 100px; }
+
+a.hioasearchtitle:link,
+a.hioasearchtitle:visited {
+  /*color: white;*/
+  text-decoration: none; }
+
+a.hioasearchtitle {
+  color: black; }
+
+a.hioasearchtitle:hover,
+a.hioasearchtitle:focus {
+  color: #00afff;
+  /* lyseblå - samme som lenker over sort bakgrunn */ }
+
+.tjenestetittel {
+  font-family: arial, sans-serif;
+  font-size: 1.5em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block; }
+
+@media screen and (min-width: 40em) {
+  .tjenestetittel {
+    width: 30em;
+    width: 30rem; } }
+/*legg til media query for smal bredde */
+.tjenestebeskrivelse {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5em;
+  font-weight: normal; }
+
+#exlidMainMenuContainer a:link,
+#exlidMainMenuContainer a:visited,
+#footerEXL a:link,
+.EXLFooterTile a:link,
+#footerEXL a:visited,
+.EXLFooterTile a:visited {
+  /*color: white;*/ }
+
+#exlidMainMenuContainer a:hover,
+#exlidMainMenuContainer a:active,
+#footerEXL a:hover,
+.EXLFooterTile a:hover,
+#footerEXL a:active,
+.EXLFooterTile a:active {
+  color: #00afff; }
+
+/* fjern litt marg over hovedmenyen for bred layout */
+@media screen and (min-width: 40em) {
+  #exlidMainMenuTile {
+    margin-top: -0.75em; } }
+/* --- HEADER END --- */
+/* --- FOOTER START --- */
+#footerEXL,
+.EXLFooterTile
+ {
+  background-color: transparent;
+  background-image: none; }
+
+#footerEXL *,
+.EXLFooterTile * {
+  /*color: white;*/ }
+
+.EXLFooterTile div.EXLFooterUpdateContainer, .EXLFooterTile li {
+  box-sizing: border-box; }
+
+/* footer link colors specified in hioa-header.css (uses the same colors) */
+@media screen and (max-width: 35rem) {
+  html:root .EXLFooterTile {
+    display: inline-block; } }
+@media screen and (max-width: 35rem) {
+  .EXLFooterTile div.EXLFooterLinksContainer {
+    width: 100%; }
+
+  ul.EXLFooterLinksList1 {
+    width: 100%;
+    margin: 0;
+    margin-top: 1px;
+    padding: 0; }
+
+  ul.EXLFooterLinksList1 li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    float: left;
+    /*background-color: #808080;*/
+    /*color: white;*/
+    border: none;
+    position: relative; }
+
+  ul.EXLFooterLinksList1 li a {
+    position: absolute;
+    display: block;
+    padding-top: .25rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center; }
+
+  .EXLFooterTile div.EXLFooterUpdateContainer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem; } }
+/* --- FOOTER END --- */
+/* --- USERMENU START --- */
+#exlidUserAreaRibbon li span.EXLUserAreaStart {
+  display: none; }
+
+#exlidUserAreaTile {
+  position: relative;
+  top: 1em; }
+
+@media screen and (min-width: 40em) {
+  #exlidUserAreaRibbon {
+    margin-top: -.75em; } }
+@media screen and (max-width: 500px), (max-width: 40em) {
+  #exlidUserAreaTile {
+    position: static;
+    margin-top: 1px;
+    top: 0; } }
+#exlidUserAreaRibbon li {
+  background-image: none;
+  padding: 0;
+  font-size: 1em; }
+
+html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
+  font-size: 1em !important; }
+
+#exlidUserAreaRibbon li + li {
+  margin-left: 1.25em; }
+
+#exlidUserAreaRibbon li a {
+  color: #0075B0; }
+
+@media screen and (min-width: 50em) {
+  #exlidUserAreaTile {
+    margin-right: 0.75em; } }
+@media screen and (max-width: 40em) {
+  #exlidUserAreaRibbon li {
+    background-image: none; }
+
+  #exlidUserAreaRibbon li span.EXLUserAreaStart,
+  #exlidUserAreaRibbon li#exlidMyShelf {
+    display: none; }
+
+  #exlidUserAreaTile {
+    width: 100%; }
+
+  #exlidUserAreaTile ul {
+    width: 100%;
+    position: relative;
+    right: 0; }
+
+  #exlidUserAreaTile ul li {
+    position: relative;
+    border: none;
+    background-color: #eee;
+    text-align: center;
+    width: 100%;
+    height: 2rem;
+    padding: 0 !important; }
+
+  ul#exlidUserAreaRibbon li#exlidUserName {
+    background-color: transparent;
+    margin-left: -1px; }
+
+  ul#exlidUserAreaRibbon li#exlidMyAccount {
+    margin-right: 1px; }
+
+  #exlidUserAreaTile ul li a,
+  #exlidUserAreaTile span.EXLUserNameDisplay {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    /*color: white;*/
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    position: absolute;
+    /*text-shadow: black 0 0 3px;*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+
+  #exlidUserAreaTile ul li + li {
+    margin-top: 1px;
+    margin-left: 0; } }
+/* --- USERMENU END --- */
+/* --- MAINMENU START --- */
+/* START hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
+/* mer luft under hovedmenyen*/
+#exlidMainMenuContainer {
+  padding-bottom: 1rem;
+  padding-top: 1rem; }
+
+/* flytte lenker ned på sin egen linje, venstrestilt for å unngå layoutproblemer */
+#exlidMainMenuTile {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-bottom: 0; }
+
+/* samme som over */
+#exlidMainMenuTile div.EXLMainMenuContainer {
+  float: left;
+  width: auto;
+  height: 1.5rem;
+  line-height: 1.5rem; }
+
+#exlidMainMenuRibbon {
+  margin-right: 1em;
+  padding: 0;
+  float: left;
+  margin-bottom: 5px;
+  margin-left: 6em; }
+
+html:root #exlidMainMenuRibbon {
+  margin-right: 0;
+  font-size: 1.25em; }
+
+/* tar vekk marg og padding her. setter det på a elementet */
+/* redundant selectors for completion and making sure they are not overridden*/
+#exlidMainMenuRibbon li, #exlidMainMenuRibbon li.EXLMainMenuItem, #exlidMainMenuRibbon li.EXLMainMenuItemSelected {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: normal; }
+
+#exlidMainMenuRibbon li span {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a {
+  background-color: transparent;
+  background-image: none;
+  color: black;
+  border: none;
+  position: relative;
+  margin: 0; }
+
+#exlidMainMenuRibbon li.EXLMainMenuItemSelected span a::after {
+  content: "";
+  position: absolute;
+  left: .5rem;
+  right: .5rem;
+  bottom: -.15rem;
+  border-top: 4px solid #e87107; }
+
+#exlidMainMenuRibbon li.EXLMainMenuItem a {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  color: #0075B0; }
+
+/* SLUTT hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
+@media screen and (max-width: 40em) {
+  html:root #exlidMainMenuTile div.EXLMainMenuContainer {
+    display: none; }
+
+  html:root #exlidMainMenuTile {
+    margin: 0; }
+
+  html:root #exlidUserAreaRibbon {
+    height: auto; } }
+/* --- MAINMENU END --- */
+/* --- SEARCHFIELD START --- */
+div#exlidSearchRibbon {
+  max-width: 70em;
+  float: none;
+  margin: auto;
+  margin-left: 0; }
+
+.EXLSearchTabSelected a {
+  color: black;
+  text-decoration: none; }
+
+@media screen and (min-width: 85em) {
+  div#exlidSearchRibbon {
+    /* spesielle regler for bred layout ? */ } }
+#exlidSearchRibbon div.EXLSearchFieldRibbon {
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+#exlidSearchTabs {
+  margin-bottom: 1.3em;
+  position: static; }
+
+#exlidSearchRibbon #exlidSearchTabs li {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0 .5em;
+  height: 1.75em;
+  font-size: 1em;
+  position: relative;
+  z-index: 50;
+  box-sizing: border-box;
+  border: none;
+  border-bottom-color: transparent;
+  top: 10px; }
+
+#exlidSearchRibbon #exlidSearchTabs li span {
+  line-height: 1.75em; }
+
+#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected {
+  background-color: white;
+  border: 1px solid #0075B0;
+  padding-bottom: 1px;
+  color: black;
+  font-weight: bold;
+  border-top-left-radius: .25em;
+  border-top-right-radius: .25em;
+  border-bottom: 1px solid white;
+  z-index: 51; }
+
+#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::before {
+  content: "";
+  border-left: 1px solid #0075B0;
+  border-right: 1px solid #0075B0;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  z-index: 55;
+  top: auto;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  box-sizing: border-box; }
+
+#exlidSearchRibbon #exlidSearchTabs li + li {
+  margin-left: 1em; }
+
+#exlidSearchRibbon div.EXLSearchFieldRibbon {
+  border: 1px solid #0075B0;
+  position: relative;
+  z-index: 50; }
+
+html #exlidSearchTile.EXLSearch {
+  padding: 1em;
+  padding-left: 2.5rem;
+  font-size: 1em;
+  height: auto;
+  background-image: none;
+  float: none;
+  box-sizing: border-box;
+  border-top: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
+  background-color: #eee;
+  position: relative; }
+
+#exlidSearchTile::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  bottom: -5px;
+  right: 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  z-index: -1; }
+
+#exlidSearchTile::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* ejournals search input field tweak */
+body.EXLAlmaAz #exlidSearchTileWrapper .EXLSearchFieldRibbonFormSearchFor input[type='text'] {
+  margin-right: 7rem;
+  font-size: 1.4rem;
+  min-height: 2.5rem;
+  line-height: 2.5rem;
+  box-sizing: border-box; }
+
+/*fix border around container of search input field on EJournals page */
+body.EXLAlmaAz #exlidSearchRibbonContent.EXLSearchFieldRibbon {
+  background: transparent;
+  border: 2px solid transparent; }
+
+div.EXLSearchFieldRibbonFormLinks {
+  margin-left: 1em; }
+
+/* Opera 12.6 browser styles bruker en sort border her som ikke tar seg fint ut */
+#exlidSearchRibbon input#goButton.submit {
+  border: none;
+  border-radius: 0;
+  font-weight: normal;
+  font-size: 1.25em;
+  background-image: none; }
+
+/* Utnytte hele bredden til søkefeltet */
+html:root #exlidSearchRibbon {
+  width: 100%;
+  padding-left: 0; }
+
+/* Sette bredde på søk-knappen */
+html:root #exlidSearchRibbon input#goButton {
+  width: 100%;
+  height: 100%;
+  float: right;
+  border: none;
+  padding: 0; }
+
+/* gjør søkefeltet tykkere vertikalt */
+html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
+html:root .EXLSearchFieldRibbonFormFields,
+html:root .EXLClearSimpleSearchBoxButtonClose,
+html:root .EXLSearchFieldRibbonFormSubmitSearch {
+  height: 2.5rem; }
+
+/* søkefeltet */
+/* ikke sett høyde på avansert søk! */
+#exlidAdvancedSearchRibbon .EXLClearSimpleSearchBoxButtonClose,
+#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSubmitSearch {
+  height: auto; }
+
+html:root .EXLSearchFieldRibbonFormFields,
+html:root .EXLSearchFieldRibbonFormSearchForMaximized .EXLSearchFieldRibbonFormSearchFor {
+  width: 100% !important;
+  padding-left: 0; }
+
+/* Selve input som man søker i */
+/* box-sizing: border-box er helt nødvendig for å beregne plass riktig. Må sjekke kompatibilitet. */
+/* padding for å gi plass til søk og tøm-søk knappene */
+html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 6.5rem;
+  padding-left: .5rem;
+  height: 2.5rem; }
+
+/* søkeknapp */
+html:root .EXLSearchFieldRibbonFormSubmitSearch {
+  width: 6rem;
+  margin-left: -6rem;
+  box-sizing: border-box;
+  padding: 1px; }
+
+/* Søkeknappen i avansert søk - da må den ikke ha negativ marg  */
+html:root #exlidAdvancedSearchTile .EXLSearchFieldRibbonFormSubmitSearch {
+  margin: 0; }
+
+/* Trekke clear-søk knappen til plassen sin */
+html:root .EXLSearchFieldRibbonFormSearchClear {
+  width: 2rem;
+  margin-left: -8.75rem; }
+
+/* Setter bredden på nullstill-knappen litt utenfor ikonet */
+/* Det blir da .5rem luft til søkeknappen for å unngå feiltrykk */
+html:root .EXLClearSimpleSearchBoxButtonClose {
+  width: 2.5rem; }
+
+.EXLSearchFieldRibbonAdvancedSearchLink,
+.EXLSearchFieldRibbonBrowseSearchLink {
+  width: auto; }
+
+.EXLSearchFieldRibbonAdvancedSearchLink {
+  margin: 0;
+  margin-right: 2%; }
+
+.EXLSearchFieldRibbonBrowseSearchLink {
+  margin-right: 2em; }
+
+#exlidSearchTile a.EXLSearchFieldRibbonAdvancedTwoLinks {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin: .25em 0 0 0; }
+
+/* Flytte søkefeltet ++ litt til høyre */
+html:root #exlidSearchRibbon fieldset {
+  overflow: hidden; }
+
+/* Luft mellom Avansert Søk og Bla i innhold lenkene til søkeknappen */
+/* Øker skriftstørrelsen i søkefeltet litt for bedre lesbarhet */
+html:root input#search_field {
+  font-size: 1.125rem;
+  line-height: 1rem;
+  /*margin-top: 5px;*/ }
+
+/* Optimalisert layout for moderne nettlesere (de støtter element:root selectoren) */
+/* Unngår at reglene treffer msie<=8 som kan skape problemer  */
+/* search */
+html:root #exlidSearchRibbon {
+  position: relative; }
+
+@media screen and (max-width: 40em) {
+  html:root #exlidSearchRibbon {
+    margin: 0;
+    top: .25rem; } }
+/* Lenken Avansert søk plasseres under søkefelt til venstre*/
+html:root div.EXLSearchFieldRibbonAdvancedSearchLink {
+  padding-top: 0.5rem;
+  float: left; }
+
+html:root #exlidSearchRibbon fieldset {
+  display: block;
+  margin: 0px;
+  box-sizing: border-box;
+  width: 100%;
+  float: left; }
+
+/* Søkeknapper for avanset søk */
+#exlidAdvancedSearchRibbon {
+  margin-top: 1rem; }
+
+#exlidAdvancedSearchRibbon #exlidSearchTabs {
+  margin-bottom: 0; }
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormLinks,
+html:root #exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  margin-top: .5rem; }
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch {
+  position: relative;
+  left: 18rem;
+  height: 1.5rem;
+  width: 6rem;
+  padding: 0;
+  border: none; }
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormSubmitSearch + div.EXLSearchFieldRibbonFormSubmitSearch {
+  left: 4rem; }
+
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbonFormClearSearch input {
+  background-color: #6A7175; }
+
+#exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a {
+  position: relative;
+  left: -13rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.255rem; }
+
+#exlidAdvancedSearchRibbon input#goButton, #exlidAdvancedSearchRibbon input#exlidClearSelectedFieldsAdvancedSearch {
+  background-image: none;
+  height: 2rem; }
+
+/* mer luft under knappene */
+#exlidAdvancedSearchRibbon {
+  margin-bottom: 1rem; }
+
+/* slutt søkeknapper avansert søk*/
+/* Søkefeltet på EJournals sidene */
+/* korriger høyden på bakgrunnen under søkefeltet */
+body.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals {
+  height: auto; }
+
+/* korriger plassering av lenken til enkelt søk */
+body.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals .EXLSearchFieldRibbonSimpleSearchLink {
+  margin: 0;
+  margin-top: 1rem; }
+
+body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
+  display: block;
+  float: left;
+  clear: left; }
+
+@media screen and (min-width: 501px) {
+  html:root #exlidSearchRibbon fieldset {
+    /*padding-right: 8rem;*/ } }
+/* TODO: Må gå gjennom mobiltilpasset css */
+@media screen and (max-width: 40em) {
+  html:root .EXLSearchFieldRibbonAdvancedSearchLink,
+  html:root .EXLSearchFieldRibbonBrowseSearchLink,
+  html:root div#exlidSearchRibbon div.EXLSearchTabsContainer {
+    display: none; }
+
+  /* fyll hele bredden */
+  html:root #exlidSearchRibbon fieldset {
+    right: 0;
+    left: 0; }
+
+  html:root #exlidSearchTile {
+    height: 3rem;
+    /* denne overskriver regel fra mobile.css */
+    padding: .5em 0;
+    box-sizing: content-box;
+    top: 1em; }
+
+  html:root form[name="searchForm"] {
+    margin-bottom: 2em; } }
+/* søkefelt får hele bredden, søk-knapp kommer under */
+@media screen and (max-width: 25em) {
+  html:root #exlidSearchRibbon input#goButton {
+    position: absolute;
+    bottom: 0.75em;
+    left: 0;
+    height: 2em;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666; }
+
+  html:root #exlidSearchRibbon div.EXLSearchFieldRibbonFormFields {
+    position: absolute;
+    height: 2em;
+    top: .75em;
+    bottom: auto;
+    left: 0; }
+
+  body.EXLAlmaAz #exlidSearchRibbon div.EXLSearchFieldRibbonFormFields {
+    position: static;
+    margin: 0; }
+
+  body.EXLAlmaAz #exlidSearchRibbon #exlidSearchTile.EXLSearchEJournals {
+    padding-top: 0;
+    padding-left: 0.125rem; }
+
+  body.EXLAlmaAz #exlidSearchTile.EXLSearchEJorunals fieldset label {
+    margin-top: -1.5rem; }
+
+  body.EXLAlmaAz .EXLSearchFieldRibbon {
+    margin-left: 0.125rem; }
+
+  html:root .EXLSearchFieldRibbonFormSubmitSearch,
+  html:root #exlidSearchRibbon div.EXLSearchFieldRibbon,
+  html:root #exlidSearchRibbon {
+    position: static; }
+
+  html:root #exlidSearchTile {
+    padding: 2.25em 0; }
+
+  html:root .EXLSearchFieldRibbonFormSearchClear,
+  html:root .EXLClearSimpleSearchBoxButtonClose {
+    display: none; }
+
+  html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+    padding-right: .5em;
+    border: 1px solid #666; }
+
+  body.EXLAlmaAz #exlidSearchTileWrapper .EXLSearchFieldRibbonFormSearchFor input[type='text'] {
+    margin-right: 7rem;
+    font-size: 1.4rem;
+    min-height: 2.5rem;
+    line-height: 2.5rem;
+    box-sizing: border-box; }
+
+  body.EXLAlmaAz #searchForm fieldset {
+    padding-bottom: 2rem;
+    position: static;
+    margin-top: -3rem; }
+
+  body.EXLAlmaAz #exlidSearchRibbonContent {
+    margin-top: 2.5rem;
+    margin-bottom: -2rem; }
+
+  body.EXLAlmaAz #exlidSearchRibbonContent label[for='search_field'] {
+    margin-left: 0; }
+
+  body.EXLAlmaAz #exlidSearchRibbon form[name='searchForm'] fieldset {
+    padding-left: 0.25rem; }
+
+  /*
+  html:root .EXLSearchFieldRibbonFormSubmitSearch {
+  	position: static;
+  }
+  html:root #exlidSearchRibbon fieldset {
+  	height: 5rem;
+  	
+  }
+  div#exlidSearchTile.EXLSearch {
+  	padding-bottom: 3rem;
+  }
+  #exlidSearchRibbon div.EXLSearchFieldRibbon {
+  	z-index: 1;
+  }
+  html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
+  	padding: 0;
+  	padding-left: .25rem;
+  	padding-right: .25rem;
+  }
+  html:root .EXLSearchFieldRibbonFormSearchClear,
+  html:root .EXLClearSimpleSearchBoxButtonClose {
+  	display: none;
+  }
+  html:root #exlidSearchRibbon input#goButton {
+  	position: absolute;
+  	bottom: -2.5rem;
+  	z-index: 200;
+  	left: 0;
+  	right: 0;
+  	margin: auto;
+  	border-top: 1px solid #a3420a;
+  	border-bottom: 1px solid #a3420a;
+  	border-left: none;
+  	border-right: none;
+  	box-shadow: 0 .125rem .25rem rgba(136, 136, 136, 0.69);
+  	margin-bottom: .25rem;
+  }
+  html:root #exlidSearchRibbon fieldset {
+  	margin-top: -.25rem;
+  }
+  html:root div.EXLSearchFieldRibbon {
+  	top: .25rem;
+  	box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
+  }*/ }
+/* --- SEARCHFIELD END --- */
+/*@import '_rp_frbr';*/
+/* --- FRBR START --- */
+/* (Vis flere treff) */
+.EXLResultsList div.EXLSummaryContainer {
+  margin-top: .25em; }
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {
+  top: 1px;
+  right: 0;
+  position: absolute; }
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a {
+  width: auto;
+  padding: 0.25em 0.4em;
+  color: white;
+  background: #0075B0;
+  text-decoration: none; }
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a:hover {
+  color: white;
+  background: #e67300; }
+
+/*Fjerner skrå felt som bare er til for presentasjonens skyld*/
+#contentEXL span.EXLResultBgFRBR {
+  display: none; }
+
+/* Tilpasninger ved smal bredde for å unngå kollison mellom 'vis flere versjoner' og tittel i treffet */
+/* sørg for at EXLResultTitle ikke havner under EXLResultFRBR, dvs 'vis flere versjoner'  */
+#contentEXL .EXLResultTitle {
+  /*margin-right: 1rem;*/ }
+
+/*.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR {background-color: #ffc;  border: 1px solid #ccc; border-top: none; border-right: none; border-bottom-left-radius: 3em;}
+
+.EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR span.EXLResultBgFRBR {background-image: none; background-color: transparent;}*/
+/* --- FRBR END --- */
+.EXLResultsTile,
+.EXLFacetTile {
+  box-sizing: border-box; }
+
+/* make sure send to reference will come out on top*/
+#exliWhiteContent {
+  z-index: 50; }
+
+.EXLResultsList td.EXLThumbnail span.EXLThumbnailCaption {
+  border: none; }
+
+.EXLResultsContainer div.EXLResultsTile {
+  display: block;
+  width: 100%;
+  float: right;
+  margin-left: -17.5em;
+  padding-left: 19em;
+  border-left: none; }
+
+/* siden med elektroniske tidsskrifter skal ikke ha venstre marg */
+body.EXLAlmaAz .EXLResultsContainer div.EXLResultsTile {
+  margin-left: 0;
+  padding-left: 0; }
+
+@media screen and (max-width: 40em), (max-width: 500px) {
+  .EXLResultsContainer div.EXLResultsTile {
+    margin-left: 0;
+    padding-left: 0; } }
+@media screen and (min-width: 70em) {
+  .EXLResultsContainer div.EXLResultsTile {
+    margin-left: -21.5em;
+    padding-left: 23em; } }
+.EXLFacetTile {
+  float: left;
+  display: inline-block;
+  width: 17.5em;
+  padding-right: 1.5em; }
+
+@media screen and (min-width: 70em) {
+  .EXLFacetTile {
+    width: 21.5em;
+    padding-right: 1.5em; } }
+#exlidFacetTile,
+#exlidResultsContainer {
+  position: relative;
+  z-index: 1; }
+
+#exlidResultsContainer {
+  /* clearfix */
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em; }
+
+#exlidResultsContainer::after {
+  /*clearfix*/
+  content: "";
+  display: table;
+  clear: both; }
+
+@media screen and (min-width: 501px) and (min-width: 40em) {
+  /* border between #exlidFacetTile and .EXLResultsContainer
+   when screen layout is bigger than 500px */
+  /*#exlidResultsContainer::after {
+  	position: absolute;
+  	top: .5em;
+  	bottom: .5em;
+  	content: "";
+  	z-index: 2;
+  	left: $leftmenuwidth + .5em;
+  	border-left: 1px solid $results-border-color;
+  }*/
+  #exlidFacetTile::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 100%;
+    top: 0;
+    bottom: -1em;
+    border-right: 1px solid #666; }
+
+  /*adjust the border placement when the left-menu is wide */
+  /*@media screen and (min-width: $leftmenu-wide-breakpoint) {
+  	#exlidResultsContainer::after {
+  		left: $leftmenu-wide-width + .5em;
+  	}
+  }*/ }
+@media screen and (max-width: 500px), (max-width: 40em) {
+  #exlidFacetTile {
+    margin-top: 4em;
+    display: block;
+    width: 100%; } }
+@media screen and (max-width: 500px) {
+  /* enable "narrow down the results" in mobile layout */
+  body #exliWhiteContent {
+    position: fixed;
+    width: auto;
+    height: auto;
+    top: .5em;
+    right: .5em;
+    left: .5em;
+    bottom: 3.5em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #666;
+    background: white; }
+
+  #exlidFacetsLightboxListWrapper {
+    padding-bottom: 3em; }
+
+  #exlidFacetsLightboxTile {
+    height: auto;
+    width: 100%;
+    padding: .25em;
+    border: none; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListContainer {
+    padding: 0;
+    height: auto;
+    width: auto;
+    height: auto;
+    margin-bottom: 1em; }
+
+  #exlidFacetsLightboxContainer {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    background: red; }
+
+  .EXLFacetsLightboxTabsRibbon {
+    padding-left: .5em; }
+
+  .EXLFacetsLightboxTabsRibbon span {
+    margin-right: auto;
+    min-width: auto; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
+    padding: 0; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
+    margin-left: 1em;
+    margin-top: 0; }
+
+  /* position buttons fixed */
+  #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
+    position: fixed;
+    bottom: .5em;
+    left: 4%;
+    width: 44%; }
+
+  #exlidFacetsLightboxContainer a.EXLSubmit {
+    height: 3em;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    line-height: 3em;
+    padding: 0; }
+
+  #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {
+    position: fixed;
+    bottom: .5em;
+    right: 4%;
+    width: 44%; }
+
+  #exlidFacetsLightboxContainer input.EXLReset {
+    height: 3em;
+    width: 100%;
+    box-sizing: border-box; }
+
+  /* style the rows with narrow down entries */
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow {
+    font-size: 1.25em;
+    position: relative;
+    background-color: #f0f0f0; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxList div.EXLFacetsLightboxListRow + .EXLFacetsLightboxListRow {
+    margin-top: .5em; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow input[type="checkbox"].EXLChkInclude {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: .25em;
+    margin: auto; }
+
+  #exlidFacetsLightboxTile div.EXLFacetsLightboxListRow span.legend {
+    margin-left: 0;
+    padding: .25em 0;
+    padding-left: 1.75em; } }
+/* --- RESULTSPAGE START --- */
+/* START treffliste */
+/* Søkeresultatene - annenhver trefflinje får lysegrå bakgrunn */
+tr.EXLResult:nth-child(2n) {
+  background-color: #f5f5f5; }
+
+/* I trefflisten er det på noen treff et lite utdrag fra kilden
+ * Har tydeligere markert dette ved å gi litt luft over og under dette utdraget.
+ * og gjøre teksten kursiv.
+ * Har også gjort tekten en anelse mørkere enn standard for å ha nok kontrast med 
+ * den lyseblå bakgrunnen som kommer annenhver treff.
+ */
+.EXLResultsList p.EXLResultSnippet {
+  color: #555;
+  margin: .75em 0;
+  font-style: italic; }
+
+/* Results navigation */
+.EXLTabsRibbon div li.EXLResultTab {
+  margin: 0;
+  padding: .5em;
+  height: 2em; }
+
+#exlidResultsTable .EXLResultTab a {
+  background-color: #0075B0;
+  color: white;
+  padding: 0.5em 0.8em;
+  display: inline !important; }
+
+#exlidResultsTable .EXLResultTab a:hover {
+  background-color: #e67300;
+  color: white;
+  padding: 0.5em 0.8em;
+  text-decoration: none; }
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy ul {
+  left: auto;
+  right: 0;
+  margin: 0;
+  top: 2.75em;
+  padding: .25em 0;
+  width: auto;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  border: 1px solid #0075B0;
+  background-color: white; }
+
+.EXLResultsHeader div.EXLResultsNumbers li.EXLSortByLink {
+  background: white; }
+
+#resultsNumbersTileBottom ul.EXLResultsSortByMenuShow {
+  bottom: .5em;
+  top: auto; }
+
+#resultsNumbersTile .EXLSortByLink a:hover {
+  text-decoration: underline; }
+
+.EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy {
+  float: none;
+  clear: both;
+  font-size: 0.8em;
+  /*margin: .5em auto .5em 1em;*/
+  margin: .5em 0 .5em auto;
+  /* margin shorthand: top right bottom left*/
+  padding: .25em;
+  /*width: auto;*/
+  width: 17em;
+  /*	top: 2.75em;*/
+  /*width: $EXLResultsSortBy-width;*/ }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortByLabel,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortByLabel {
+  position: relative;
+  display: inline;
+  font-weight: bold;
+  /*font-size: 1.25em;*/
+  line-height: 1.5em;
+  padding: .25em 1em .25em 0; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a {
+  margin: 0;
+  padding: 0.5em 0.8em;
+  color: white;
+  background: #0075B0;
+  display: inline-block;
+  width: auto;
+  float: right;
+  position: relative;
+  left: -.25em;
+  clear: none;
+  /*min-width: 10em;*/
+  width: 8em; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLResultsSortBySelected a:hover,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLResultsSortBySelected a:hover {
+  background: #e67300; }
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink {
+  padding: 0;
+  line-height: 2.5em; }
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
+  display: block;
+  color: white;
+  background: #0075B0;
+  margin: 0.25em .5em; }
+
+.EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
+  color: white;
+  background: #e67300; }
+
+.EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink.EXLSortByLinkSelected {
+  color: black;
+  padding: .25em 0; }
+
+div.EXLResultsSortBy .EXLSortByLink a {
+  padding: 0.5em 0.8em;
+  line-height: 1.5em; }
+
+#resultsNumbersTile div.EXLResultsSortBy .EXLSortByLink a:hover,
+#resultsNumbersTileBottom div.EXLResultsSortBy .EXLSortByLink a:hover {
+  text-decoration: underline; }
+
+li.EXLSortByLinkSelected {
+  position: relative;
+  z-index: 1;
+  color: black;
+  font-weight: bold; }
+
+/*li.EXLSortByLinkSelected::after {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: .25em .5em;
+	background-color: #eee;
+	box-sizing: border-box;
+	border: 1px solid rgb(0, 117, 176);
+}*/
+.EXLResultsHeader {
+  text-align: center; }
+
+.EXLResultsHeader h1 {
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box; }
+
+.EXLResultsHeader div.EXLResultsNumbers {
+  width: auto;
+  float: none; }
+
+.EXLResultsContainer .EXLResultsHeader div.EXLResultsNavigation {
+  width: auto;
+  float: none;
+  display: block;
+  margin: .5em;
+  margin-bottom: 1.5rem;
+  float: left;
+  clear: left;
+  padding: 0;
+  font-size: 1em; }
+
+#exlidResultsContainer {
+  padding-bottom: 1em; }
+
+div.EXLResultsNavigation .EXLDisplayedCount {
+  font-size: 1em;
+  padding: 0;
+  background-color: white;
+  color: black;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+  margin: 0.5em;
+  border: 1px solid #0075B0; }
+
+body.EXLAlmaAz div.EXLResultsNavigation .EXLDisplayedCount {
+  width: auto;
+  padding-left: .25rem;
+  padding-right: .35rem;
+  text-align: center; }
+
+div.EXLResultsNavigation a.EXLBriefResultsPagination {
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #eee;
+  color: #0075B0;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0;
+  float: left;
+  text-align: center; }
+
+div.EXLResultsNavigation a.EXLBriefResultsPagination a {
+  padding: 0;
+  background-color: #eee;
+  color: #0075B0;
+  margin: 0;
+  padding: 0;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box; }
+
+div.EXLResultsNavigation a.EXLBriefResultsPagination:hover,
+div.EXLResultsNavigation a.EXLBriefResultsPagination a:hover {
+  background: #e67300;
+  color: white;
+  text-decoration: none; }
+
+a.EXLBriefResultsPaginationLinkPrevious {
+  position: relative; }
+
+a.EXLBriefResultsPaginationLinkNext {
+  position: relative; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after,
+a.EXLBriefResultsPaginationLinkNext:last-child::after {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child::after {
+  content: "<"; }
+
+a.EXLBriefResultsPaginationLinkNext:last-child::after {
+  content: ">"; }
+
+a.EXLBriefResultsPaginationLinkPrevious img,
+a.EXLBriefResultsPaginationLinkNext img {
+  display: none; }
+
+a.EXLBriefResultsPaginationLinkPrevious:first-child:hover::after,
+a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
+  background: #e67300;
+  color: white; }
+
+.EXLResultsList td.EXLSummary {
+  padding: 2em 0;
+  position: relative; }
+
+.EXLResultsList,
+.EXLResultsList td {
+  border-color: #666; }
+
+.EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
+  width: auto; }
+
+.EXLResultsList div.EXLSummaryContainer {
+  box-sizing: border-box;
+  padding-right: .25em; }
+
+h2.EXLResultTitle {
+  font-size: 1.25em; }
+
+.EXLResultsList h3.EXLResultAuthor {
+  font-weight: bold;
+  margin-bottom: .75em; }
+
+.EXLResultsList h2 {
+  margin-bottom: .5em; }
+
+/* Ikon for bok og stjerne for lagre treff, dette posisjonerer dem like høyt som toppen av tittel i søketreffet */
+.EXLResultsList td.EXLMyShelfStar,
+.EXLResultsList td.EXLThumbnail {
+  padding-top: 2.5em; }
+
+.EXLDetailsTabContent div.EXLDetailsLinks {
+  line-height: 1.75em; }
+
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList {
+  background-color: white; }
+
+.EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li {
+  height: auto; }
+
+.EXLTabsRibbon div li.EXLResultSelectedTab {
+  border: none;
+  background-image: none;
+  background-color: transparent; }
+
+/* må markere valgt fane */
+#exlidResultsTable .EXLResultSelectedTab a {
+  background-color: #e67300;
+  color: white; }
+
+.EXLResultTabContainer div.EXLTabHeader {
+  border: 1px solid #8fb9d0; }
+
+.EXLTabHeader div.EXLTabHeaderContent {
+  padding: 0; }
+
+.EXLTabsRibbon {
+  border: none; }
+
+html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: .25em 0;
+  margin: .25em 0;
+  height: 2em;
+  line-height: 1.5em; }
+
+.EXLTabHeaderButtonSendTo img {
+  margin-left: .5em; }
+
+.EXLTabHeader div.EXLTabHeaderButtons li.EXLTabHeaderButtonSendTo > a {
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.EXLTabHeader div.EXLTabHeaderButtons li {
+  background-position: center right; }
+
+html:root .EXLTabHeaderButtons ol.EXLTabHeaderButtonSendToList li a:hover {
+  background-color: #abd3fa;
+  text-decoration: underline !important; }
+
+.EXLTabsRibbon div li.EXLResultTabIconPopout {
+  background-image: none; }
+
+/* BEGIN FIX popup - send to permanent url */
+/* make sure it comes out on top, centered on the screen */
+div#exliWhiteContent {
+  z-index: 100 !important;
+  border: none;
+  background-color: transparent;
+  overflow: auto; }
+
+#exlidPopupPermalinkContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid gray;
+  box-shadow: 0 0 2em gray; }
+
+.EXLPopupPermalinkContainer, .EXLPopupPermalink {
+  max-width: 100%; }
+
+.EXLPermalinkURL {
+  display: block;
+  width: auto;
+  margin-right: 1.6em;
+  position: relative;
+  left: -.3em; }
+
+.EXLPermalinkURL input {
+  display: block !important;
+  width: 100%;
+  padding: .1em; }
+
+#exlidPopupPermalink .EXLPermalinkHeaderButtonCloseLabel {
+  display: inline-block;
+  position: relative;
+  left: -1em; }
+
+#exlidPopupPermalink .EXLPermalinkHeaderButtonCloseLabel:hover {
+  text-decoration: underline; }
+
+/* END FIX popup - send to permanent url */
+/* BEGIN FIX bg fill Send til > Lenker Strekk background image til fill height */
+.EXLDetailsTabContent div.EXLDetailsLinks {
+  background-size: auto 100%; }
+
+/* END FIX bg fill Send til > Lenker */
+/* Ta høyde for å gi plass til: 'Plasseringen har endret seg' */
+.EXLTabContent {
+  padding-bottom: 2.5em; }
+
+/* siteringer og sitert av, satt inn vha js. trenger luft over */
+cite.EXLCitationTrailsIndicationContainer {
+  padding-top: 1em; }
+
+/* SLUTT Treffliste*/
+/* TEST NEW RULES*/
+#exliGreyOverlay {
+  z-index: 100; }
+
+div#exliWhiteContent {
+  z-index: 100 !important;
+  border: none;
+  overflow: auto;
+  position: fixed;
+  top: 0 !important;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+/* TEST END */
+/* --- RESULTSPAGE END --- */
+/* --- HOMEPAGE START --- */
+/*START forside - info */
+/* mer luft */
+.EXLContentBlock1 li + li {
+  margin-top: 1em; }
+
+.EXLContentBlock1 h1,
+.EXLContentBlock1 ul,
+.EXLContentBlock1 ol,
+.EXLContentBlock1 p {
+  margin-top: 1em; }
+
+#hioaOriaSearchTips {
+  position: relative; }
+
+#hioaOriaPromoImageContainer {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 2em;
+  display: inline-block;
+  width: 75%;
+  padding: 0;
+  background-color: white; }
+
+#hioaOriaPromoImage {
+  max-width: 90%;
+  margin: 0; }
+
+/*SLUTT forside - info */
+@media screen and (max-width: 35rem) {
+  /* Fjerner marg på startsiden (hioa.oria.no) */
+  div#exlidHomeContainer.EXLCustomLayoutContainer {
+    margin-left: 0; }
+
+  .EXLContentBlock1 li {
+    margin-left: 1.5em; } }
+/* --- HOMEPAGE END --- */
+/* --- MESSAGEBOX START --- */
+div#notifierDiv {
+  margin: 1em;
+  border: 3px solid #e67300;
+  line-height: 1.5em;
+  position: relative; }
+
+div#notifierDiv::before {
+  content: ".: System notice :.";
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  border: orange;
+  padding: .5em;
+  padding-bottom: .25em;
+  border-bottom: 1px solid black; }
+
+div#notifierDiv p + p {
+  margin-top: 1em; }
+
+/* --- MESSAGEBOX END --- */
+/* --- LANGMENU START --- */
+/* wrapperen rundt språkvalg og språkvalgslabel */
+#exlidMainMenuTile div.EXLLanguagesContainer,
+html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+  margin: auto;
+  height: 1.5rem; }
+
+html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+  position: relative;
+  top: -2.5em;
+  margin: 0 auto;
+  margin-right: 1px;
+  box-sizing: border-box;
+  width: 10em;
+  border: none;
+  float: none;
+  height: 2em; }
+
+@media screen and (max-width: 40em) {
+  html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+    top: .5rem;
+    margin: 0; } }
+/* listen med språkvalgene */
+#exlidMainMenuTile ul#exlidLanguages {
+  float: left; }
+
+/* et språkvalg */
+#exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink {
+  width: 100%; }
+
+/* wrapperen rundt listen med språkvalgene */
+#exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
+  float: left;
+  width: 100%;
+  position: absolute; }
+
+/* Styling av språkvalg som ikke er aktiv */
+#exlidHeaderContainer #exlidMainMenuTile #exlidLanguages a {
+  color: #0075B0;
+  font-weight: normal; }
+
+/* Styling av språkvalg som er aktiv */
+#exlidHeaderContainer #exlidMainMenuTile #exlidSelectedLanguage.EXLLanguageLink a {
+  color: black;
+  font-weight: bold; }
+
+/* ikke border når språkmenyen ikke vises*/
+#exlidMainMenuTile li#exlidSelectedLanguage {
+  border: none; }
+
+/* border top når språkmenyen vises for at man skal skille valgene bedre */
+#exlidMainMenuTile .EXLLanguageMenuShow li#exlidSelectedLanguage {
+  border: none; }
+
+/* Ekstra vertikal luft rundt språkvalgene gjør det lettere å trykke riktig */
+.EXLLanguageMenuHide a,
+.EXLLanguageMenuHide.EXLLanguageMenuShow a,
+.EXLLanguageMenuShow a {
+  height: 1.75rem;
+  line-height: 1.5rem; }
+
+/*.EXLLanguageMenuShow a {
+	font-size: 1em;
+	display: block;
+	padding: 0;
+}*/
+.EXLLanguageMenuShow.EXLLanguageMenuHide a {
+  font-size: 1em;
+  display: inline;
+  padding: 0; }
+
+/*tynn grå strek mellom språkvalgene */
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {
+  padding: 0; }
+
+#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow {
+  border: none; }
+
+/*#exlidMainMenuTile div.EXLLanguagesContainer ul.EXLLanguageMenuShow li + li {
+	border-top: 1px solid #ddd;
+}*/
+/*bedre plassering av drop-down-pil*/
+/*li.EXLLanguageLink {padding-right: 1.5em;}*/
+li.EXLLanguageLink {
+  position: relative; }
+
+li.EXLLanguageLink a {
+  padding: 0;
+  height: 2.25em;
+  line-height: 2em;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  margin: 0; }
+
+li.EXLLanguageLink + li a {
+  margin-top: -1px; }
+
+li.EXLLanguageLink img:first-child {
+  position: static;
+  vertical-align: middle;
+  margin-left: 5px; }
+
+ul#exlidLanguages.EXLLanguageMenuShow {
+  width: 100%;
+  box-shadow: 0 0 5px black; }
+
+ul#exlidLanguages.EXLLanguageMenuHide {
+  box-shadow: none; }
+
+/* Fremhev språklabel (Language:) bedre mot sort bakgrunn */
+div#exlidMainMenuTile div.EXLLanguagesContainer span.EXLLanguagesLabel {
+  display: none; }
+
+/* Narrow langmenu */
+#exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink img[src$="arrow_sendTo.png"] {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 5px; }
+
+#exlidMainMenuTile div.EXLLanguagesContainer li.EXLLanguageLink img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: .4em;
+  right: auto; }
+
+@media screen and (min-width: 500px), (min-width: 40em) {
+  #exlidMainMenuTile div.EXLLanguagesContainer div.EXLLanguagesMenu {
+    float: none;
+    position: absolute;
+    z-index: 2;
+    border: none; } }
+@media screen and (min-width: 50em) {
+  html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+    margin-right: 0.75em; } }
+@media screen and (max-width: 500px), (max-width: 40em) {
+  #exlidMainMenuTile div.EXLLanguagesContainer {
+    display: block !important; }
+
+  #exlidUserAreaRibbon li:not([id]) {
+    display: none; }
+
+  html:root #exlidMainMenuTile div.EXLLanguagesContainer {
+    display: block;
+    width: auto;
+    margin: .5em auto; } }
+/* --- LANGMENU END --- */
+/* --- PROMO START --- */
+body #exlidHomeContainer {
+  color: black; }
+
+#exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1 {
+  width: auto;
+  padding-left: 0;
+  float: none; }
+
+#exlidHomeContainer {
+  background: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/HIOA/oria-mouse-book.jpg");
+  background-position: 80% 50%;
+  background-repeat: no-repeat;
+  background-size: 20rem, 20rem;
+  width: 100%; }
+
+/*#exlidHomeContainer*/
+div.EXLContentBlock1,
+div.EXLContentBlock2,
+div.EXLContentBlock3 {
+  margin-left: 2.5rem; }
+
+div#exlidHomeContainer.EXLCustomLayoutContainer {
+  margin-left: 0; }
+
+#hioaOriaSearchTips {
+  width: 50%; }
+
+#exlidHomeContainer h1 {
+  color: black;
+  font-size: 1.5rem; }
+
+/* svart farge til promo overskrift og brødtekst */
+#exlidHomeContainer h4, #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannersContainer p {
+  color: black; }
+
+@media screen and (max-width: 35rem) {
+  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock1,
+  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock2,
+  body #exlidHomeContainer div.EXLHomeBlockContainer1 div.EXLContentBlock3 {
+    margin-left: 0;
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-right: 0; }
+
+  #exlidHomeContainer {
+    background: none; }
+
+  #hioaOriaSearchTips {
+    width: 100%; }
+
+  /*MyPage servicebox*/
+  div.EXLCustomLayoutTile.EXLHomeBlockContainer2 {
+    position: relative;
+    width: 100%; }
+
+  body #exlidHomeContainer div.EXLHomeBlockContainer2 div.EXLContentBlock3 {
+    float: none; }
+
+  body #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannersContainer {
+    display: block;
+    float: none; }
+
+  body #exlidHomeContainer div.EXLContentBlock3 div.EXLHomeBannerContainer1 {
+    float: none;
+    margin: 0 auto; }
+
+  #exlidHomeContainer div.EXLContentBlock3 h4 {
+    margin-bottom: .25rem; } }
+/* --- PROMO END --- */
+/* --- MOBILE500PXFIX START --- */
+/* Denne lastes inn av primo ved max-width 500px */
+@media screen and (max-width: 500px) {
+  html:root .EXLLanguagesContainer {
+    display: block !important; }
+
+  html:root #exlidUserAreaTile ul {
+    margin-top: 0; }
+
+  /* Skjuler labelen som er glemt skjult av mobile.css */
+  /* Hent frem denne med sorterings drop down senere når css er klar. */
+  html:root .EXLResultsHeader div.EXLResultsNumbers div.EXLResultsSortBy span.EXLResultsSortByLabel,
+  #exlidResultsContainer div.EXLResultsSortBy {
+    display: none; }
+
+  html .EXLResultsHeader {
+    margin-bottom: .5em; } }
+/* --- MOBILE500PXFIX END --- */
+/* --- FACETS START --- */
+/* Decide how many facets are visible.
+ * Here we show 3 facets - hide number 4 and up
+ */
+.EXLFacetContainer ol li:nth-child(1n+4) {
+  display: none; }
+
+/* Make visible the last element in the list the "More options"-button */
+.EXLFacetContainer ol li:last-of-type {
+  display: inline-block; }
+
+/* Show the 'More Options' button only if there are atleast 4 items in the list */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {
+  display: none; }
+
+li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore {
+  display: block; }
+
+.EXLFacetContainer ol li.EXLFacetsDisplayMore {
+  margin-top: .75em; }
+
+/* Style the "More options" button */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a {
+  background-color: #0075B0;
+  color: white;
+  padding: 0.5em 0.8em;
+  font-weight: normal;
+  text-decoration: none; }
+
+/*Add ellipsis in "More options" button */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a::after {
+  content: " …"; }
+
+/* Hide the downarrow image in the "More options" button */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a img {
+  display: none; }
+
+/* Add hover state to "More options" button - dark orange background-color */
+.EXLFacetContainer ol li.EXLFacetsDisplayMore a:hover {
+  background-color: #e67300; }
+
+.EXLDateRangeLine input {
+  margin-right: .75em; }
+
+.EXLSliderRefine {
+  display: inline-block;
+  padding: .75em 0; }
+
+.EXLDateRangeLine .EXLSliderRefine a {
+  padding: 0.5em 0.8em;
+  background-color: #0075B0;
+  margin-left: 0em;
+  margin-top: .5em;
+  border: none; }
+
+.EXLDateRangeLine .EXLSliderRefine a:hover,
+.EXLDateRangeLine .EXLSliderRefine a:focus {
+  background-color: #e67300; }
+
+.EXLFacetContainer ol li {
+  line-height: 1.5em; }
+
+/* Style the facet headers */
+.EXLFacetContainer {
+  margin: 0;
+  padding: 0; }
+
+.EXLFacetContainer h3,
+.EXLFacetContainer h1 {
+  font-size: 1.5em;
+  color: black;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  padding: 0;
+  margin-left: 0.3333em;
+  border-bottom: 1px solid #666; }
+
+.EXLFacetContainer h4 {
+  font-size: 1em;
+  margin-top: 1.5em;
+  margin-bottom: .25em;
+  color: #036; }
+
+.EXLFacetContainer h1 + h4, .EXLFacetContainer h3 + span + h4 {
+  margin-top: 0; }
+
+/* --- FACETS END --- */
+.EXLNoResultsDivTitle ul li:first-child {
+  margin-top: 1rem; }
+
+/* runde knapper */
+#exlidResultsTable .EXLResultTab a,
+.EXLResultsSortBy a,
+.EXLFacetsDisplayMore a,
+.EXLDateRangeLine .EXLSliderRefine a,
+cite.EXLResultFRBR a,
+#exlidFacetsLightboxContainer a,
+#exlidFacetsLightboxContainer input.EXLReset,
+#exlidAdvancedSearchRibbon input.submit {
+  border-radius: .3rem;
+  border: none; }
+
+/* Avgrens søket-knapper */
+#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {
+  border: none; }
+
+#exlidFacetsLightboxContainer input.EXLReset {
+  background: gray;
+  border: none; }
+
+#exlidFacetsLightboxContainer a.EXLSubmit,
+#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
+  border: none; }
+
+#exlidFacetsLightboxContainer a.EXLSubmit,
+#exlidFacetsLightboxContainer input.EXLReset {
+  position: relative;
+  width: 4.5rem;
+  text-align: center;
+  height: 2rem;
+  font-size: 0.9rem;
+  padding: 0;
+  margin: 0;
+  line-height: 2rem; }
+
+#exlidFacetsLightboxContainer input.EXLReset {
+  left: -100%;
+  margin-right: .75rem; }
+
+#exlidFacetsLightboxContainer a.EXLSubmit {
+  right: -100%;
+  margin-left: 0.25rem; }
+
+body {
+  min-width: 5em; }
+
+@media screen and (min-width: 500px) {
+  html {
+    overflow-x: hidden; } }
+
+/*# sourceMappingURL=HIOA.css.map */
