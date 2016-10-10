@@ -25,65 +25,72 @@ div#exlidSearchRibbon {
 }
 
 #exlidSearchTabs {
-	margin-bottom: 1.3em;
+	padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+    color: #555555;
+    height: 31px;
+    line-height: 30px;
+    clear: right;
 	position: static;
 }
 
-#exlidSearchRibbon #exlidSearchTabs li {
+#exlidSearchRibbon #exlidSearchTabs li,
+#exlidAdvancedSearchRibbon #exlidSearchTabs li{
 	background: none;
 	border: none;
 	margin: 0;
-	padding: 0 .5em;
+	padding: 2px 12px;
 	height: 1.75em;
 	font-size: 1em;
+	font-size: 1rem;
 	position: relative;
 	z-index: 50;
-	box-sizing: border-box;
+	box-sizing: content-box;
 	border: none;
 	border-bottom-color: transparent;
-	top: 10px;
 }
 
-#exlidSearchRibbon #exlidSearchTabs li span {
+#exlidSearchRibbon #exlidSearchTabs li span,
+#exlidAdvancedSearchRibbon #exlidSearchTabs {
 	line-height: 1.75em;
 }
 
-#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected {
+#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected,
+#exlidAdvancedSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected {
 	background-color: white;
 	border: 1px solid #0075B0;
 	padding-bottom: 1px;
 	color: black;
 	font-weight: bold;
-	border-top-left-radius: .25em;
-	border-top-right-radius: .25em;
-	border-bottom: 1px solid white;
+	border-top-left-radius: $btn-radius;
+	border-top-right-radius: $btn-radius;
+	border-bottom: none;
 	z-index: 51;
 }
 
-#exlidSearchRibbon #exlidSearchTabs li.EXLSearchTabSelected::before {
-	content: "";
-	border-left: 1px solid $button-bg;
-	border-right: 1px solid $button-bg;
-	height: 3px;
-	background-color: white;
-	position: absolute;
-	z-index: 55;
-	top: auto;
-	left: -1px;
-	right: -1px;
-	bottom: -1px;
-	box-sizing: border-box;
-}
-
-#exlidSearchRibbon #exlidSearchTabs li + li {
+#exlidSearchRibbon #exlidSearchTabs li + li,
+#exlidAdvancedSearchRibbon #exlidSearchTabs li + li {
 	margin-left: 1em;
 }
 
-#exlidSearchRibbon div.EXLSearchFieldRibbon {
+
+#exlidSearchRibbon div.EXLSearchFieldRibbon,
+#exlidAdvancedSearchRibbon div.EXLSearchFieldRibbon {
 	border: 1px solid #0075B0;
 	position: relative;
 	z-index: 50
 }
+
+div.EXLSearchFieldRibbon,
+div.EXLSearchFieldRibbonFormFields,
+div.EXLSearchFieldRibbonFormSearchFor,
+#search_field {
+    border-bottom-left-radius: $btn-radius;
+    border-top-right-radius: $btn-radius;
+    border-bottom-right-radius: $btn-radius;
+    }
 
 html #exlidSearchTile.EXLSearch {
 	padding: 1em;
@@ -93,11 +100,18 @@ html #exlidSearchTile.EXLSearch {
 	background-image: none;
 	float: none;
 	box-sizing: border-box;
-	border-top: 5px solid #ccc;
-	border-bottom: 5px solid #ccc;
+	border-top: $searchtile-border;
+	border-bottom: $searchtile-border;
 	background-color: #eee;
 	position: relative;
 }
+
+#exlidSearchTile.EXLSearch, #exlidAdvancedSearchTile.EXLAdvancedSearch {
+	border-top: $searchtile-border;
+	border-bottom: $searchtile-border;
+}
+
+html #exlidSearchTile.EXLSearch
 
 #exlidSearchTile::before {
 	position: absolute;
@@ -143,6 +157,8 @@ div.EXLSearchFieldRibbonFormLinks {
 	font-weight: normal;
 	font-size: 1.25em;
 	background-image: none;
+	border-top-right-radius: $btn-radius;
+	border-bottom-right-radius: $btn-radius;
 }
 /* Utnytte hele bredden til søkefeltet */
 
@@ -168,6 +184,9 @@ html:root .EXLSearchFieldRibbonFormSubmitSearch {
 	height: 2.5rem;
 }
 /* søkefeltet */
+
+html:root #exlidAdvancedSearchTile {background-image: none;}
+
 /* ikke sett høyde på avansert søk! */
 #exlidAdvancedSearchRibbon .EXLClearSimpleSearchBoxButtonClose,
 #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormSubmitSearch {
@@ -197,7 +216,6 @@ html:root .EXLSearchFieldRibbonFormSubmitSearch {
 	width: 6rem;
 	margin-left: -6rem;
 	box-sizing: border-box;
-	padding: 1px;
 }
 /* Søkeknappen i avansert søk - da må den ikke ha negativ marg  */
 
@@ -266,6 +284,13 @@ html:root #exlidSearchRibbon {
 		margin: 0;
 		top: .25rem;
 	}
+
+	div.EXLSearchFieldRibbon,
+	div.EXLSearchFieldRibbonFormFields,
+	div.EXLSearchFieldRibbonFormSearchFor,
+	#search_field {
+    	border-radius: $btn-radius;
+    }
 }
 /* Lenken Avansert søk plasseres under søkefelt til venstre*/
 
@@ -284,6 +309,9 @@ html:root #exlidSearchRibbon fieldset {
 	width: 100%;
 	float: left;
 }
+ul#exlidSearchTabs {
+}
+
 
 /* Søkeknapper for avanset søk */
 #exlidAdvancedSearchRibbon {margin-top: 1rem;}
@@ -452,50 +480,4 @@ body.EXLAlmaAz #searchForm fieldset {
     }
 
     body.EXLAlmaAz #exlidSearchRibbon form[name='searchForm'] fieldset {padding-left:0.25rem;}
-
-	/*
-	html:root .EXLSearchFieldRibbonFormSubmitSearch {
-		position: static;
-	}
-	html:root #exlidSearchRibbon fieldset {
-		height: 5rem;
-		
-	}
-	div#exlidSearchTile.EXLSearch {
-		padding-bottom: 3rem;
-	}
-	#exlidSearchRibbon div.EXLSearchFieldRibbon {
-		z-index: 1;
-	}
-	html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
-		padding: 0;
-		padding-left: .25rem;
-		padding-right: .25rem;
-	}
-	html:root .EXLSearchFieldRibbonFormSearchClear,
-	html:root .EXLClearSimpleSearchBoxButtonClose {
-		display: none;
-	}
-	html:root #exlidSearchRibbon input#goButton {
-		position: absolute;
-		bottom: -2.5rem;
-		z-index: 200;
-		left: 0;
-		right: 0;
-		margin: auto;
-		border-top: 1px solid #a3420a;
-		border-bottom: 1px solid #a3420a;
-		border-left: none;
-		border-right: none;
-		box-shadow: 0 .125rem .25rem rgba(136, 136, 136, 0.69);
-		margin-bottom: .25rem;
-	}
-	html:root #exlidSearchRibbon fieldset {
-		margin-top: -.25rem;
-	}
-	html:root div.EXLSearchFieldRibbon {
-		top: .25rem;
-		box-shadow: 0 0 .125rem rgba(136, 136, 136, 0.69);
-	}*/
 }
-/* --- SEARCHFIELD END --- */
