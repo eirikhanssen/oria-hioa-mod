@@ -71,6 +71,10 @@
   display: none; }
 
 /* --- HIDE END --- */
+/* --- SHOW Things that were hidden originally... --- */
+.EXLCitationLinker #exlidMainMenuContainer {
+  display: block; }
+
 /* --- HEADER START --- */
 div#exlidHeaderContainer {
   background-color: transparent; }
@@ -204,8 +208,7 @@ a.hioasearchtitle:focus {
 /* --- HEADER END --- */
 /* --- FOOTER START --- */
 #footerEXL,
-.EXLFooterTile
- {
+.EXLFooterTile {
   background-color: transparent;
   background-image: none; }
 
@@ -306,7 +309,7 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
   margin-left: 1.25em; }
 
 #exlidUserAreaRibbon li a {
-  color: #0075B0; }
+  color: #0075b0; }
 
 @media screen and (min-width: 50em) {
   #exlidUserAreaTile {
@@ -330,7 +333,7 @@ html #exlidUserAreaRibbon li *, html #exlidUserAreaRibbon li {
   #exlidUserAreaTile ul li {
     position: relative;
     border: none;
-    background-color: #eee;
+    background-color: #eeeeee;
     text-align: center;
     width: 100%;
     height: 2rem;
@@ -431,7 +434,7 @@ html:root #exlidMainMenuRibbon {
 #exlidMainMenuRibbon li.EXLMainMenuItem a {
   margin-left: .5rem;
   margin-right: .5rem;
-  color: #0075B0; }
+  color: #0075b0; }
 
 /* SLUTT hovedmeny (Nytt søk, Tagger, A-Å, Hjelp) */
 @media screen and (max-width: 40em) {
@@ -532,14 +535,14 @@ html #exlidSearchTile.EXLSearch {
   background-image: none;
   float: none;
   box-sizing: border-box;
-  border-top: 5px solid #ccc;
-  border-bottom: 5px solid #ccc;
+  border-top: 5px solid #cccccc;
+  border-bottom: 5px solid #cccccc;
   background-color: #eee;
   position: relative; }
 
 #exlidSearchTile.EXLSearch, #exlidAdvancedSearchTile.EXLAdvancedSearch {
-  border-top: 5px solid #ccc;
-  border-bottom: 5px solid #ccc; }
+  border-top: 5px solid #cccccc;
+  border-bottom: 5px solid #cccccc; }
 
 html #exlidSearchTile.EXLSearch
 #exlidSearchTile::before {
@@ -792,8 +795,8 @@ body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
     bottom: 0.75em;
     left: 0;
     height: 2em;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666; }
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666; }
 
   html:root #exlidSearchRibbon div.EXLSearchFieldRibbonFormFields {
     position: absolute;
@@ -830,7 +833,7 @@ body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
 
   html:root #exlidSearchRibbon input.EXLSearchFieldMaximized {
     padding-right: .5em;
-    border: 1px solid #666; }
+    border: 1px solid #666666; }
 
   body.EXLAlmaAz #exlidSearchTileWrapper .EXLSearchFieldRibbonFormSearchFor input[type='text'] {
     margin-right: 7rem;
@@ -868,7 +871,7 @@ body.EXLAlmaAz #exlidSearchFieldRibbonSimpleSearchLink {
   width: auto;
   padding: 0.25em 0.4em;
   color: white;
-  background: #0075B0;
+  background: #0075b0;
   text-decoration: none; }
 
 .EXLResultsList div.EXLSummaryContainer cite.EXLResultFRBR a:hover {
@@ -967,7 +970,7 @@ body.EXLAlmaAz .EXLResultsContainer div.EXLResultsTile {
     left: 100%;
     top: 0;
     bottom: -1em;
-    border-right: 1px solid #666; }
+    border-right: 1px solid #666666; }
 
   /*adjust the border placement when the left-menu is wide */
   /*@media screen and (min-width: $leftmenu-wide-breakpoint) {
@@ -992,7 +995,7 @@ body.EXLAlmaAz .EXLResultsContainer div.EXLResultsTile {
     bottom: 3.5em;
     overflow-y: scroll;
     overflow-x: hidden;
-    border: 1px solid #666;
+    border: 1px solid #666666;
     background: white; }
 
   #exlidFacetsLightboxListWrapper {
@@ -1101,7 +1104,7 @@ tr.EXLResult:nth-child(2n) {
   height: 2em; }
 
 #exlidResultsTable .EXLResultTab a {
-  background-color: #0075B0;
+  background-color: #0075b0;
   color: white;
   padding: 0.5em 0.8em;
   display: inline !important; }
@@ -1121,7 +1124,7 @@ tr.EXLResult:nth-child(2n) {
   width: auto;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.75);
   box-sizing: border-box;
-  border: 1px solid #0075B0;
+  border: 1px solid #0075b0;
   background-color: white; }
 
 .EXLResultsHeader div.EXLResultsNumbers li.EXLSortByLink {
@@ -1161,7 +1164,7 @@ tr.EXLResult:nth-child(2n) {
   margin: 0;
   padding: 0.5em 0.8em;
   color: white;
-  background: #0075B0;
+  background: #0075b0;
   display: inline-block;
   width: auto;
   float: right;
@@ -1182,7 +1185,7 @@ tr.EXLResult:nth-child(2n) {
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a {
   display: block;
   color: white;
-  background: #0075B0;
+  background: #0075b0;
   margin: 0.25em .5em; }
 
 .EXLResultsSortBy .EXLResultsSortByMenu .EXLResultsSortByMenuShow .EXLSortByLink a:hover {
@@ -1260,7 +1263,7 @@ div.EXLResultsNavigation .EXLDisplayedCount {
   box-sizing: border-box;
   float: left;
   margin: 0.5em;
-  border: 1px solid #0075B0; }
+  border: 1px solid #0075b0; }
 
 body.EXLAlmaAz div.EXLResultsNavigation .EXLDisplayedCount {
   width: auto;
@@ -1271,8 +1274,8 @@ body.EXLAlmaAz div.EXLResultsNavigation .EXLDisplayedCount {
 div.EXLResultsNavigation a.EXLBriefResultsPagination {
   font-size: 1em;
   font-weight: bold;
-  background-color: #eee;
-  color: #0075B0;
+  background-color: #eeeeee;
+  color: #0075b0;
   width: 2em;
   height: 2em;
   line-height: 2em;
@@ -1284,8 +1287,8 @@ div.EXLResultsNavigation a.EXLBriefResultsPagination {
 
 div.EXLResultsNavigation a.EXLBriefResultsPagination a {
   padding: 0;
-  background-color: #eee;
-  color: #0075B0;
+  background-color: #eeeeee;
+  color: #0075b0;
   margin: 0;
   padding: 0;
   width: 2em;
@@ -1338,7 +1341,7 @@ a.EXLBriefResultsPaginationLinkNext:last-child:hover::after {
 
 .EXLResultsList,
 .EXLResultsList td {
-  border-color: #666; }
+  border-color: #666666; }
 
 .EXLResultsList div.EXLSummaryContainer div.EXLSummaryFields {
   width: auto; }
@@ -1593,7 +1596,7 @@ html:root #exlidMainMenuTile div.EXLLanguagesContainer {
 
 /* Styling av språkvalg som ikke er aktiv */
 #exlidHeaderContainer #exlidMainMenuTile #exlidLanguages a {
-  color: #0075B0;
+  color: #0075b0;
   font-weight: normal; }
 
 /* Styling av språkvalg som er aktiv */
@@ -1819,7 +1822,7 @@ li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore 
 
 /* Style the "More options" button */
 .EXLFacetContainer ol li.EXLFacetsDisplayMore a {
-  background-color: #0075B0;
+  background-color: #0075b0;
   color: white;
   padding: 0.5em 0.8em;
   font-weight: normal;
@@ -1846,7 +1849,7 @@ li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore 
 
 .EXLDateRangeLine .EXLSliderRefine a {
   padding: 0.5em 0.8em;
-  background-color: #0075B0;
+  background-color: #0075b0;
   margin-left: 0em;
   margin-top: .5em;
   border: none; }
@@ -1874,7 +1877,7 @@ li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacet + li.EXLFacetsDisplayMore 
   margin-bottom: .5em;
   padding: 0;
   margin-left: 0.3333em;
-  border-bottom: 1px solid #666; }
+  border-bottom: 1px solid #666666; }
 
 .EXLFacetContainer h4 {
   font-size: 1em;
@@ -1964,5 +1967,3 @@ body {
 @media screen and (min-width: 500px) {
   html {
     overflow-x: hidden; } }
-
-/*# sourceMappingURL=HIOA.css.map */
