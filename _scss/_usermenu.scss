@@ -10,6 +10,31 @@
 	top: 1em;
 }
 
+/* MyAccount page page/menu indicators begin */
+#exlidUserAreaRibbon .selectedPage a {
+    background-color: transparent;
+    background-image: none;
+    color: black;
+    border: none;
+    position: relative;
+    
+}
+
+#exlidUserAreaRibbon li.selectedPage a::after {
+    content:"";
+    position: absolute;
+    left: 0rem;
+    right: 0rem;
+    bottom: -.5rem;
+    border-top: 4px solid $orange-color;
+}
+
+#exlidUserAreaRibbon li#exlidMyShelf.selectedPage a::after {
+    left: 1.5rem;
+}
+
+/* MyAccount page page/menu indicators end */
+
 @media screen and (min-width: $narrow-layout-breakpoint) {
 	#exlidUserAreaRibbon {
 		margin-top: -.75em;
