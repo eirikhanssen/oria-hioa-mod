@@ -1957,6 +1957,10 @@ cite.EXLResultFRBR a,
   right: -100%;
   margin-left: 0.25rem; }
 
+/* --- BESILLINGSSIDE START --- */
+.EXLCitationLinkerTabsRibbon div li.EXLCitationLinkerTab a {
+  display: block; }
+
 body {
   min-width: 5em; }
 
