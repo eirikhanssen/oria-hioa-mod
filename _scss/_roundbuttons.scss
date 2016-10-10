@@ -6,25 +6,32 @@
 cite.EXLResultFRBR a,
 #exlidFacetsLightboxContainer a,
 #exlidFacetsLightboxContainer input.EXLReset,
-#exlidAdvancedSearchRibbon input.submit {
+#exlidAdvancedSearchRibbon input.submit,
+.EXLCitationLinkerFieldRibbon input.EXLSubmit { /*bestillingssideknapper*/
 border-radius: .3rem;
 border: none;
+background-image: none;
 }
 
 /* Avgrens søket-knapper */
 
 #exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormResetSearch {border:none;}
-#exlidFacetsLightboxContainer input.EXLReset {
+#exlidFacetsLightboxContainer input.EXLReset,
+#exlidCitationLinkerContainer input.EXLSubmitClear { /*bestillingssideknapp*/
     background: gray;
+    color: white;
+}
+
+#exlidFacetsLightboxContainer a.EXLSubmit,
+#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected,
+#exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormSubmitSearch, /* på bestillingssiden */
+#exlidCitationLinkerContainer div.EXLCitationLinkerFieldRibbonFormClearSearch {
     border:none;
 }
 
 #exlidFacetsLightboxContainer a.EXLSubmit,
-#exlidFacetsLightboxContainer div.EXLFacetsLightboxFieldRibbonFormSubmitSelected {
-    border:none;
-}
-#exlidFacetsLightboxContainer a.EXLSubmit,
-#exlidFacetsLightboxContainer input.EXLReset {
+#exlidFacetsLightboxContainer input.EXLReset,
+#exlidCitationLinkerContainer input.EXLSubmit { /* bestillinssideknapper */
     position:relative;
     width: 4.5rem;
     text-align: center;
@@ -37,3 +44,12 @@ border: none;
 
 #exlidFacetsLightboxContainer input.EXLReset {left: -100%;margin-right: .75rem;}
 #exlidFacetsLightboxContainer a.EXLSubmit {right: -100%; margin-left: 0.25rem;}
+
+/* positiv knapp til høyre på bestillinssiden */
+.EXLCitationLinkerFieldRibbonFormSubmitSearch input.EXLSubmit {
+    left: 105%;
+}
+#exlidCitationLinkerContainer input.EXLSubmitClear {
+    background: gray; color:white;
+    left: -100%; margin-right: .5rem;
+}
