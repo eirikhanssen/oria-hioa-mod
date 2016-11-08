@@ -49,6 +49,11 @@
     display:none;
 }
 
+/*Denne skjules et annet sted av CSS, hent frem igjen*/
+  .EXLButtonSendToEndNote_Web {
+     display: list-item;
+}
+
 /* Skju lukke-lenken i menyen til tidsskrift-indexen */
 .EXLMainMenuITEMATOZClose {display:none;}
 
