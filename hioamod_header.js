@@ -7,4 +7,6 @@ $(document).ready(function(){
         // skjul tidsskrift-fane
         $('#citationLinkerTopTabContainer0').hide();
     }
+
+    
 });

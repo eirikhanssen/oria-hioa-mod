@@ -1726,7 +1726,7 @@ body #exlidHomeContainer {
   float: none; }
 
 #exlidHomeContainer {
-  background: url("https://www.bibsys.no/files/out/discovery/Primo_UI_files/HIOA/oria-mouse-book.jpg");
+  background: url("../HIOA/oria-mouse-book.jpg");
   background-position: 80% 50%;
   background-repeat: no-repeat;
   background-size: 20rem, 20rem;
